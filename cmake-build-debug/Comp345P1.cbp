@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.cpp">
+			<Option target="Comp345P1"/>
+		</Unit>
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.h">
+			<Option target="Comp345P1"/>
+		</Unit>
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.cpp">
+			<Option target="Comp345P1"/>
+		</Unit>
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.h">
+			<Option target="Comp345P1"/>
+		</Unit>
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Die.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
@@ -122,6 +134,12 @@
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Maps.h">
 			<Option target="Comp345P1"/>
 		</Unit>
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.cpp">
+			<Option target="Comp345P1"/>
+		</Unit>
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.h">
+			<Option target="Comp345P1"/>
+		</Unit>
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
@@ -146,10 +164,13 @@
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Player.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Strategy.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Strategy.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.cpp">
+			<Option target="Comp345P1"/>
+		</Unit>
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h">
 			<Option target="Comp345P1"/>
 		</Unit>
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.cpp">

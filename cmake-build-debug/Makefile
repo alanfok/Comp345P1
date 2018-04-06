@@ -123,6 +123,60 @@ Comp345P1/fast:
 	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/build
 .PHONY : Comp345P1/fast
 
+AggressivePlayer.o: AggressivePlayer.cpp.o
+
+.PHONY : AggressivePlayer.o
+
+# target to build an object file
+AggressivePlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o
+.PHONY : AggressivePlayer.cpp.o
+
+AggressivePlayer.i: AggressivePlayer.cpp.i
+
+.PHONY : AggressivePlayer.i
+
+# target to preprocess a source file
+AggressivePlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.i
+.PHONY : AggressivePlayer.cpp.i
+
+AggressivePlayer.s: AggressivePlayer.cpp.s
+
+.PHONY : AggressivePlayer.s
+
+# target to generate assembly for a file
+AggressivePlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.s
+.PHONY : AggressivePlayer.cpp.s
+
+DefensivePlayer.o: DefensivePlayer.cpp.o
+
+.PHONY : DefensivePlayer.o
+
+# target to build an object file
+DefensivePlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o
+.PHONY : DefensivePlayer.cpp.o
+
+DefensivePlayer.i: DefensivePlayer.cpp.i
+
+.PHONY : DefensivePlayer.i
+
+# target to preprocess a source file
+DefensivePlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.i
+.PHONY : DefensivePlayer.cpp.i
+
+DefensivePlayer.s: DefensivePlayer.cpp.s
+
+.PHONY : DefensivePlayer.s
+
+# target to generate assembly for a file
+DefensivePlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.s
+.PHONY : DefensivePlayer.cpp.s
+
 Die.o: Die.cpp.o
 
 .PHONY : Die.o
@@ -312,6 +366,33 @@ Maps.cpp.s:
 	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/Maps.cpp.s
 .PHONY : Maps.cpp.s
 
+ModeratePlayer.o: ModeratePlayer.cpp.o
+
+.PHONY : ModeratePlayer.o
+
+# target to build an object file
+ModeratePlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o
+.PHONY : ModeratePlayer.cpp.o
+
+ModeratePlayer.i: ModeratePlayer.cpp.i
+
+.PHONY : ModeratePlayer.i
+
+# target to preprocess a source file
+ModeratePlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.i
+.PHONY : ModeratePlayer.cpp.i
+
+ModeratePlayer.s: ModeratePlayer.cpp.s
+
+.PHONY : ModeratePlayer.s
+
+# target to generate assembly for a file
+ModeratePlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.s
+.PHONY : ModeratePlayer.cpp.s
+
 NodeRegion.o: NodeRegion.cpp.o
 
 .PHONY : NodeRegion.o
@@ -420,32 +501,32 @@ Player.cpp.s:
 	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/Player.cpp.s
 .PHONY : Player.cpp.s
 
-Strategy.o: Strategy.cpp.o
+RandomPlayer.o: RandomPlayer.cpp.o
 
-.PHONY : Strategy.o
+.PHONY : RandomPlayer.o
 
 # target to build an object file
-Strategy.cpp.o:
-	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/Strategy.cpp.o
-.PHONY : Strategy.cpp.o
+RandomPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o
+.PHONY : RandomPlayer.cpp.o
 
-Strategy.i: Strategy.cpp.i
+RandomPlayer.i: RandomPlayer.cpp.i
 
-.PHONY : Strategy.i
+.PHONY : RandomPlayer.i
 
 # target to preprocess a source file
-Strategy.cpp.i:
-	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/Strategy.cpp.i
-.PHONY : Strategy.cpp.i
+RandomPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.i
+.PHONY : RandomPlayer.cpp.i
 
-Strategy.s: Strategy.cpp.s
+RandomPlayer.s: RandomPlayer.cpp.s
 
-.PHONY : Strategy.s
+.PHONY : RandomPlayer.s
 
 # target to generate assembly for a file
-Strategy.cpp.s:
-	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/Strategy.cpp.s
-.PHONY : Strategy.cpp.s
+RandomPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.s
+.PHONY : RandomPlayer.cpp.s
 
 Tokens.o: Tokens.cpp.o
 
@@ -591,6 +672,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Comp345P1"
+	@echo "... AggressivePlayer.o"
+	@echo "... AggressivePlayer.i"
+	@echo "... AggressivePlayer.s"
+	@echo "... DefensivePlayer.o"
+	@echo "... DefensivePlayer.i"
+	@echo "... DefensivePlayer.s"
 	@echo "... Die.o"
 	@echo "... Die.i"
 	@echo "... Die.s"
@@ -612,6 +699,9 @@ help:
 	@echo "... Maps.o"
 	@echo "... Maps.i"
 	@echo "... Maps.s"
+	@echo "... ModeratePlayer.o"
+	@echo "... ModeratePlayer.i"
+	@echo "... ModeratePlayer.s"
 	@echo "... NodeRegion.o"
 	@echo "... NodeRegion.i"
 	@echo "... NodeRegion.s"
@@ -624,9 +714,9 @@ help:
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
-	@echo "... Strategy.o"
-	@echo "... Strategy.i"
-	@echo "... Strategy.s"
+	@echo "... RandomPlayer.o"
+	@echo "... RandomPlayer.i"
+	@echo "... RandomPlayer.s"
 	@echo "... Tokens.o"
 	@echo "... Tokens.i"
 	@echo "... Tokens.s"

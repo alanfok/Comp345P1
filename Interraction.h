@@ -14,10 +14,11 @@
 #include "ListofPlayer.h"
 #include "Veiwer.h"
 #include "Observer.h"
-#include "Strategy.h"
 #include "PhaseObserver.h"
-
-
+#include "AggressivePlayer.h"
+#include "DefensivePlayer.h"
+#include "ModeratePlayer.h"
+#include "RandomPlayer.h"
 
 
 using namespace std;

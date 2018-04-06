@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.cpp
+AggressivePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.h
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.h
+PlayerType.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.cpp
+DefensivePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.h
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.h
+PlayerType.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
+
 /Users/fokpoonkai/CLionProjects/Comp345P1/Die.cpp
 Die.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/Die.h
@@ -73,10 +89,16 @@ Veiwer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h
 Observer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
-Strategy.h
-/Users/fokpoonkai/CLionProjects/Comp345P1/Strategy.h
 PhaseObserver.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.h
+AggressivePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.h
+DefensivePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.h
+ModeratePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.h
+RandomPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.cpp
 ListofPlayer.h
@@ -115,6 +137,14 @@ iostream
 -
 vector
 -
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.cpp
+ModeratePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.h
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.h
+PlayerType.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.cpp
 NodeRegion.h
@@ -194,11 +224,7 @@ vector
 algorithm
 -
 
-/Users/fokpoonkai/CLionProjects/Comp345P1/Strategy.cpp
-Strategy.h
-/Users/fokpoonkai/CLionProjects/Comp345P1/Strategy.h
-
-/Users/fokpoonkai/CLionProjects/Comp345P1/Strategy.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
 stdio.h
 -
 Player.h
@@ -213,6 +239,14 @@ vector
 -
 PhaseObserver.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.h
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.cpp
+RandomPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h
+PlayerType.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.cpp
 Tokens.h
