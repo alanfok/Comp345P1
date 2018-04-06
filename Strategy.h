@@ -48,7 +48,6 @@ public: 
     int playerPopulation;
     bool conquer_check;
     bool Edgeoccupied;
-    vector <int> storage;
     int fromWhichRegion;
     int toWhichRegion;
     //inherate in PlayerType Class
@@ -81,7 +80,6 @@ public: 
     int playerPopulation;
     bool conquer_check;
     bool Edgeoccupied;
-    vector <int> storage;
     int firstLock=0;
     int toWhichRegion;
     int fromWhichRegion;
@@ -105,13 +103,16 @@ public: 
     virtual void scores(listOfPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<listOfPlayer> *lp_vtr);
     virtual void firstEdge(listOfPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<listOfPlayer> *lp_vtr);
     virtual void redeployment(listOfPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<listOfPlayer> *lp_vtr);
-    int total_number_of_region;
+    int totalNumberOfRegion;
     int randomnumber;
-    int playerid;
-    int playerpop;
+    int playerID;
+    int playerPopulation;
     bool conquer_check;
     bool Edgeoccupied;
-    vector <int> storage;
+
+    int toWhichRegion;
+    int input;
+    int fromWhichRegion;
 };
 
 
@@ -131,16 +132,19 @@ public:
     void scores(listOfPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<listOfPlayer> *lp_vtr);
     void firstEdge(listOfPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<listOfPlayer> *lp_vtr);
     void redeployment(listOfPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<listOfPlayer> *lp_vtr);
-    int total_number_of_region;
-    int randomnumber;
-    int playerid;
-    int playerpop;
+    int totalNumberOfRegion;
+
+    int playerID;
+    int playerPopulation;
     bool conquer_check;
     bool Edgeoccupied;
-    vector <int> storage;
+    int toWhichRegion;
+    int fromWhichRegion;
     int randomnumberV2;
-
-
-
+    bool redeployment_check;
+    int redeploymentPopulation;
+    int regionPopulation;
+    int input;
+    int firstLock;
 };
 #endif //COMP345P1_PLAYERTYPE_H

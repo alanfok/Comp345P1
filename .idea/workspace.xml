@@ -13,12 +13,11 @@
   <component name="ChangeListManager">
     <list default="true" id="799aa2ed-8446-4442-a965-a7e485c58a12" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Interraction.cpp" afterPath="$PROJECT_DIR$/Interraction.cpp" />
-      <change beforePath="$PROJECT_DIR$/Player.cpp" afterPath="$PROJECT_DIR$/Player.cpp" />
-      <change beforePath="$PROJECT_DIR$/Player.h" afterPath="$PROJECT_DIR$/Player.h" />
       <change beforePath="$PROJECT_DIR$/Strategy.cpp" afterPath="$PROJECT_DIR$/Strategy.cpp" />
       <change beforePath="$PROJECT_DIR$/Strategy.h" afterPath="$PROJECT_DIR$/Strategy.h" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Interraction.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Interraction.cpp.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Strategy.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Strategy.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/main.cpp.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Comp345P1" afterPath="$PROJECT_DIR$/cmake-build-debug/Comp345P1" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -34,14 +33,14 @@
     <favorites_list name="Comp345P1" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.51301587">
+    <splitter split-orientation="horizontal" split-proportion="0.3784127">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Strategy.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Strategy.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Strategy.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+                <state relative-caret-position="846">
+                  <caret line="149" column="30" lean-forward="false" selection-start-line="149" selection-start-column="30" selection-end-line="149" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -50,17 +49,17 @@
           <file leaf-file-name="Strategy.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Strategy.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="755">
-                  <caret line="371" column="9" lean-forward="false" selection-start-line="371" selection-start-column="9" selection-end-line="371" selection-end-column="9" />
+                <state relative-caret-position="1836">
+                  <caret line="108" column="63" lean-forward="false" selection-start-line="108" selection-start-column="63" selection-end-line="108" selection-end-column="63" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Interraction.cpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Interraction.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Interraction.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
+                <state relative-caret-position="1581">
                   <caret line="93" column="82" lean-forward="false" selection-start-line="93" selection-start-column="82" selection-end-line="93" selection-end-column="82" />
                   <folding />
                 </state>
@@ -70,7 +69,7 @@
           <file leaf-file-name="Player.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Player.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="710">
+                <state relative-caret-position="3774">
                   <caret line="222" column="105" lean-forward="false" selection-start-line="222" selection-start-column="105" selection-end-line="222" selection-end-column="105" />
                   <folding />
                 </state>
@@ -81,21 +80,21 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Strategy.cpp" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Strategy.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Strategy.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="931">
-                  <caret line="131" column="14" lean-forward="false" selection-start-line="131" selection-start-column="14" selection-end-line="131" selection-end-column="14" />
+                <state relative-caret-position="17">
+                  <caret line="724" column="12" lean-forward="false" selection-start-line="724" selection-start-column="12" selection-end-line="724" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Strategy.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Strategy.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Strategy.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="599">
-                  <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="30" />
+                <state relative-caret-position="1955">
+                  <caret line="115" column="2" lean-forward="false" selection-start-line="115" selection-start-column="2" selection-end-line="115" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
@@ -104,7 +103,7 @@
           <file leaf-file-name="Player.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Player.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1010">
+                <state relative-caret-position="1122">
                   <caret line="66" column="73" lean-forward="false" selection-start-line="66" selection-start-column="73" selection-end-line="66" selection-end-column="73" />
                   <folding />
                 </state>
@@ -210,9 +209,9 @@
         <option value="$PROJECT_DIR$/Interraction.h" />
         <option value="$PROJECT_DIR$/Player.h" />
         <option value="$PROJECT_DIR$/Player.cpp" />
-        <option value="$PROJECT_DIR$/Strategy.h" />
-        <option value="$PROJECT_DIR$/Strategy.cpp" />
         <option value="$PROJECT_DIR$/Interraction.cpp" />
+        <option value="$PROJECT_DIR$/Strategy.cpp" />
+        <option value="$PROJECT_DIR$/Strategy.h" />
       </list>
     </option>
   </component>
@@ -455,12 +454,14 @@
       <workItem from="1522813586379" duration="14000" />
       <workItem from="1522872221310" duration="794000" />
       <workItem from="1522977789074" duration="2674000" />
-      <workItem from="1522987030137" duration="2889000" />
+      <workItem from="1522987030137" duration="6283000" />
+      <workItem from="1523023006081" duration="886000" />
+      <workItem from="1523025769309" duration="358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="465317000" />
+    <option name="totallyTimeSpent" value="469955000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,20 +474,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17061612" sideWeight="0.4944" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17061612" sideWeight="0.4944" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32969216" sideWeight="0.401112" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3306852" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27235213" sideWeight="0.375695" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37437934" sideWeight="0.624305" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.110362254" sideWeight="0.5056" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36726272" sideWeight="0.54725975" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.110362254" sideWeight="0.5056" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3326713" sideWeight="0.401112" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -503,10 +503,22 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Strategy.h</url>
+          <line>87</line>
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Strategy.cpp</url>
+          <line>119</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="294" />
+      <option name="time" value="297" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
@@ -821,7 +833,6 @@ void Tokens::menu() {
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,7 +840,6 @@ void Tokens::menu() {
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="72" lean-forward="false" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +922,7 @@ void Tokens::menu() {
     </entry>
     <entry file="file://$PROJECT_DIR$/Player.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
+        <state relative-caret-position="1122">
           <caret line="66" column="73" lean-forward="false" selection-start-line="66" selection-start-column="73" selection-end-line="66" selection-end-column="73" />
           <folding />
         </state>
@@ -920,32 +930,32 @@ void Tokens::menu() {
     </entry>
     <entry file="file://$PROJECT_DIR$/Player.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
+        <state relative-caret-position="3774">
           <caret line="222" column="105" lean-forward="false" selection-start-line="222" selection-start-column="105" selection-end-line="222" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Strategy.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Strategy.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="371" column="9" lean-forward="false" selection-start-line="371" selection-start-column="9" selection-end-line="371" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Interraction.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="1581">
           <caret line="93" column="82" lean-forward="false" selection-start-line="93" selection-start-column="82" selection-end-line="93" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strategy.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="724" column="12" lean-forward="false" selection-start-line="724" selection-start-column="12" selection-end-line="724" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strategy.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" column="2" lean-forward="false" selection-start-line="115" selection-start-column="2" selection-end-line="115" selection-end-column="2" />
           <folding />
         </state>
       </provider>
