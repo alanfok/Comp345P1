@@ -252,7 +252,7 @@ void DefensivePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *
     cout<<"------------------------The player selected "<<toWhichRegion+1<<"------------------------"<<endl;
     py.prints();//print out the map
     cout<<"Update-->the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
-    firstLock=1;
+    firstLock=1;//mu
 }
 
 
@@ -340,15 +340,43 @@ if (firstLock==1){
 /*We leave 1 population on the region and take all remaining to Player hands)
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 void DefensivePlayer::redeployment(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
+    cout<<"because you choose the Defensive, you can redeploy the population to defense your region"<<endl;
 
-    for (int i = 0; i < py.vnodeRegion.size(); ++i) {
-        if((*nr_vPtr)[i].getid_player()==lp->getidPlayer()){
-            if((*nr_vPtr)[i].getregion_population()>1){
-                (*nr_vPtr)[i].setregion_population((*nr_vPtr)[i].getregion_population()-1);
-                lp->setpopulation(lp->getpopulation()+1);
+
+    redeployment_check= false;
+    do{
+        cout<<"Do you want to redeploymen\nPress 1: Yes \nPress 2: NO"<<endl;
+        cin>>input;
+        if(input==2){
+            redeployment_check=true;
+        }else if(input==1){
+        py.redeploymentVeiw(lp,nr_vPtr);
+        cout<<"Which region you want to withdraw"<<endl;
+        cin>>fromWhichRegion;
+            fromWhichRegion-=1;
+        if(lp->getidPlayer()==(*nr_vPtr)[fromWhichRegion].getid_player()){
+            regionPopulation=(*nr_vPtr)[fromWhichRegion].getregion_population();
+            cout<<"How many population you want to withdraw?\n"
+                    "(if you take all of the population from region, you will loose the region)"<<endl;
+            cin>>redeploymentPopulation;
+            if(redeploymentPopulation>regionPopulation){
+                cout<<"you cannot take more than Region has"<<endl;
+            }else{
+                (*nr_vPtr)[fromWhichRegion].setregion_population(regionPopulation-redeploymentPopulation);
+                cout<<"Which region you want to put the population to"<<endl;
+                cin>>toWhichRegion;
+                toWhichRegion-=1;
+                regionPopulation=(*nr_vPtr)[toWhichRegion].getregion_population();
+                (*nr_vPtr)[toWhichRegion].setregion_population(regionPopulation+redeploymentPopulation);
             }
         }
-    }
+        }
+
+
+
+
+
+    }while(redeployment_check== false);
 
 };
 void DefensivePlayer::scores(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr) {

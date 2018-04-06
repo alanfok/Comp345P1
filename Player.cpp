@@ -203,16 +203,30 @@ void Player::conquers_v4(listOfPlayer *lp,vector <NodeRegion> *nr_vPtr,int pop,i
 }
 
 
-void Player::returnToPreviousPlayer(vector<NodeRegion> *nr_vPtr, vector<listOfPlayer> *lp_vPtr, int regionid) {
+void Player::returnToPreviousPlayer(vector<NodeRegion> *nr_vPtr, vector<listOfPlayer> *vectorListOfPlayerPointer, int regionid) {
     if( (*nr_vPtr)[regionid].getid_player()!=0) {
         int temp_number = (*nr_vPtr)[regionid].getid_player();//get the player id in the region
         cout << "the region is belong Player " << temp_number << ", the population minus one will be turn to Player "
              << temp_number << endl;
 
-        (*lp_vPtr)[temp_number - 1].setpopulation((*nr_vPtr)[regionid].getregion_population() - 1);
-        (*lp_vPtr)[temp_number - 1].setNumberOfOccupiedRegion((*lp_vPtr)[temp_number - 1].getNumberOfOccupiedRegion() - 1);
+        (*vectorListOfPlayerPointer)[temp_number - 1].setpopulation((*nr_vPtr)[regionid].getregion_population() - 1);
+        (*vectorListOfPlayerPointer)[temp_number - 1].setNumberOfOccupiedRegion((*vectorListOfPlayerPointer)[temp_number - 1].getNumberOfOccupiedRegion() - 1);
     }
 }
+
+void Player::redeploymentVeiw(listOfPlayer *lp, vector<NodeRegion> *nr_vPtr) {
+    for (int i = 0; i < vnodeRegion.size(); ++i) {
+     if(lp->getidPlayer()==(*nr_vPtr)[i].getid_player()){
+         int PlayerId=(*nr_vPtr)[i].getid_player();
+         int regionPopulation=(*nr_vPtr)[i].getregion_population();
+         string regionStatus=(*nr_vPtr)[i].getregion_status();
+         cout<<"The region "<<i+1<<" is "<<regionStatus<<" has "<<regionPopulation<<" population."<<endl;
+     }
+
+
+    }
+}
+
 
 
 void Player::test1() {

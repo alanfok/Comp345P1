@@ -64,7 +64,7 @@ public:
     void conquers_v3(int player_population,listOfPlayer *lp, NodeRegion *nr
             , int region ,int invade_region);
     void conquers_v4(listOfPlayer *lp,vector <NodeRegion> *nr_vPtr ,int regionid,int pop);
-
+    void redeploymentVeiw(listOfPlayer *lp,vector <NodeRegion> *nr_vPtr);
 
 
 private:

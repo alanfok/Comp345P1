@@ -85,6 +85,10 @@ public: 
     int firstLock=0;
     int toWhichRegion;
     int fromWhichRegion;
+    bool redeployment_check;
+    int input;
+    int redeploymentPopulation;
+    int regionPopulation;
 
 };
 //for player who choose the Moderate(decline) behaiver

@@ -89,7 +89,9 @@ void Interraction ::setplayer(string map, int nbplayer) {
                                     &player.vplayer);//change  <~~make sure the player is entry from edge
             defensePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
                                    &player.vplayer);//change  <~~ occupied
-
+            defensePlayer.redeployment(&player.vplayer[i], player, &player.vnodeRegion,
+                                       &player.vplayer);
+            defensePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
 
         } else if (input == 3) {
             moderatePlayer.pickupRaceNSp(&player.vplayer[i]);
