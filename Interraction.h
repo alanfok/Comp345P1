@@ -51,13 +51,13 @@ public:
     int temp_id;
     int input_from;
     int input_to;
-    void setplayer(string map,int nbplayer);
+    void setplayer(string map, int nbplayer);
     bool nextturn;//for turn2-10
     bool Occupiedcheck2To10;//for turn 2-10
     bool pick_pop_during_Occupied2To10;//for turn 2-10
     bool Redeploymentcheck2TO10;
-    int nbOfracetaking;
-    int nb_pop ;
+    int raceSelection;
+    int numberOfPopulation ;
     int victorycoin;
     int input_select;
     int input_temp_enter_pop;

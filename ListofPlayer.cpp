@@ -12,6 +12,8 @@ listOfPlayer::listOfPlayer()
     race = "";
     decline=false;
     decline_lock=0;
+    strategyBehaviour=0;
+    numberOfOccupiedRegion=0;
 
 }
 
@@ -25,6 +27,16 @@ listOfPlayer::listOfPlayer(int idPlayer,int victoryCoins,int population,
     this->race = race;
     this->decline=decline;
     decline_lock=0;
+    strategyBehaviour=0;
+    numberOfOccupiedRegion=0;
+}
+
+int listOfPlayer::getStrategyBehaviour() {
+    return strategyBehaviour;
+}
+
+void listOfPlayer::setStrategyBehaviour(int strategyBehaviour) {
+    this->strategyBehaviour = strategyBehaviour;
 }
 
 int listOfPlayer::getidPlayer()
@@ -82,9 +94,6 @@ void  listOfPlayer::setrace( string race){
 
 listOfPlayer::~listOfPlayer(){}
 
-bool listOfPlayer::isDecline() const {
-    return decline;
-}
 
 void listOfPlayer::setDecline(bool decline) {
     listOfPlayer::decline = decline;
@@ -100,4 +109,12 @@ void listOfPlayer::setdecline_lock(int nb) {
 
 bool listOfPlayer::getDecline(){
     return decline;
+}
+
+int listOfPlayer::getNumberOfOccupiedRegion() const {
+    return numberOfOccupiedRegion;
+}
+
+void listOfPlayer::setNumberOfOccupiedRegion(int numberOfOccupiedRegion) {
+    listOfPlayer::numberOfOccupiedRegion = numberOfOccupiedRegion;
 }

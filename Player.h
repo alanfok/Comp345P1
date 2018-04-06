@@ -56,14 +56,14 @@ public:
     int tempNbIndex;
     void population_costv2(int playid,int regionid);
     void brr();
-    void AI_redeployment();
+    void returnToPreviousPlayer(vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr,int regionid);
     void test1 ();
     void test2 ();
     void test3 ();
     void test4 ();
     void conquers_v3(int player_population,listOfPlayer *lp, NodeRegion *nr
             , int region ,int invade_region);
-    void conquers_v4(listOfPlayer *lp, NodeRegion *nr,int pop);
+    void conquers_v4(listOfPlayer *lp,vector <NodeRegion> *nr_vPtr ,int regionid,int pop);
 
 
 

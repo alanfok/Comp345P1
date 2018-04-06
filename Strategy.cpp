@@ -13,8 +13,12 @@ AggressivePlayer::~AggressivePlayer(){}
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-void AggressivePlayer::pickupRaceNSp(listOfPlayer *lp,Player py,vector <NodeRegion>* nr_vPtr,vector<listOfPlayer> *lp_vPtr){
-    cout<<"you pick up the Aggressive Player"<<endl;
+void AggressivePlayer::pickupRaceNSp(listOfPlayer *lp){
+    cout<<"you pick up the Aggressive Player\n"
+            "for the people who select the aggressive player,it will focus to occupid the region until"
+            "the end of the game."<<endl;
+    cout<<"Player "<<lp->getidPlayer()<<" choose to be an agressive Player"<<endl;
+    lp->setStrategyBehaviour(1);//locked strategy in Player object
 }
 
 
@@ -22,47 +26,51 @@ void AggressivePlayer::pickupRaceNSp(listOfPlayer *lp,Player py,vector <NodeRegi
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 void AggressivePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr) {
+    py.prints();
+    py.brr();
     cout<<"------------------------first entry to the map------------------------"<<endl;
-    cout<<"the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
+    cout<<"the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<" population(token)"<<endl;
     observer.attach(py.vplayer[py.tempNbIndex]);// attach the player Object to Observer
-    total_number_of_region=py.maploader.nbline;// get how many region
-    playerid=lp->getidPlayer();//get Player ID
-    playerpop=lp->getpopulation();//get Player population
+    totalNumberOfRegion=py.maploader.nbline;// get how many region
+    playerID=lp->getidPlayer();//get Player ID
+    playerPopulation=lp->getpopulation();//get Player population
     do {//go to do loop to make sure the first region is from the edge of the map
-        srand(time(NULL));
-        randomnumber = (rand()) % total_number_of_region;
-        if (py.maploader.adjact[randomnumber].compare("y") != 0) {//←if the region is not an edge region
+        cout<<"please Enter the first region u want to occupy"<<endl;
+        cin>>toWhichRegion;
+        toWhichRegion-=1;
+
+        if (py.maploader.adjact[toWhichRegion].compare("y") != 0) {//←if the region is not an edge region
             Edgeoccupied=false;//no need to print out becuz it is a AI playing
+            cout<<"The first entyr has to be from the edge."<<endl;
         }else{
-            if (py.vnodeRegion[randomnumber].getregion_status().compare("____water__") == 0 && //←if the region is a water region
+            if (py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") == 0 && //←if the region is a water region
                 lp->getspecialPower().compare("Seafaring") != 0){//←and the player special power is no Seafaring
-                Edgeoccupied=false;//no need to print out becuz it is a AI playing
+                Edgeoccupied=false;
+                cout<<"The region is a water and you don't have a Seafaring power"<<endl;
+
             } else{//if all conditions match
-                py.population_costv2(playerid,randomnumber);//calculation how many region need to occupy that region
-                if(py.cost_of_population>playerpop){//if the population cost more that player population
+                py.population_costv2(playerID,toWhichRegion);//calculation how many region need to occupy that region
+                cout<<"the region cost you "<<py.cost_of_population<<" populations"<<endl;
+                if(py.cost_of_population>playerPopulation){//if the population cost more that player population
                     Edgeoccupied=false;
+                    cout<<"The region costs more population than you have"<<endl;
                 }else {
                     //return the previous user
-                    if(  (*nr_vPtr)[randomnumber].getid_player()!=0){//if the region  No 0,0=no player
-                        int temp_number=(*nr_vPtr)[randomnumber].getid_player();//get the player id in the region
-                        (*lp_vPtr)[temp_number-1].setpopulation((*nr_vPtr)[randomnumber].getregion_population()-1);
-                        //↑↑↑ find out the previous region owner and return the region population -1 to previous region owner
-                    }
+                    py.returnToPreviousPlayer(nr_vPtr,lp_vPtr,toWhichRegion);//in player class(Return to puopluation to ex-ocuppied player)
+                    //↑↑↑ find out the previous region owner and return the region population -1 to previous region owne
                     lp->setpopulation(lp->getpopulation()-py.cost_of_population);//←reset player object population (player origional population - population that player spend)
-                    (*nr_vPtr)[randomnumber].setregion_population(py.cost_of_population);//←reset the regional object to new population
-                    (*nr_vPtr)[randomnumber].setid_player(lp->getidPlayer());//←reset the regional object to new Player ID
-                    (*nr_vPtr)[randomnumber].setplayer_race(lp->getrace());//←reset the regional object to new Player population
-                    (*nr_vPtr)[randomnumber].setplayer_specialpower(lp->getspecialPower());//←reset the regional object to new Player special power
-                    py.invade_v2(playerid,randomnumber);//←set the matrix map to Player ID
-                    py.maploader.losttride[randomnumber] = "_none__";//←set the lost tride to none after ocuppied the region
+                    py.conquers_v4(lp,nr_vPtr,py.cost_of_population,toWhichRegion);//in player class
+                    py.invade_v2(playerID,toWhichRegion);//←set the matrix map to Player ID
+                    py.maploader.losttride[toWhichRegion] = "_none__";//←set the lost tride to none after ocuppied the region
                     Edgeoccupied=true;//get out the do-while loop
                 }
             }
         }
     }while (Edgeoccupied==false);
-    cout<<"------------------------The player selected "<<randomnumber+1<<"------------------------"<<endl;
+    cout<<"------------------------The player selected "<<toWhichRegion+1<<"------------------------"<<endl;
     py.prints();//print out the map
     cout<<"Update-->the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
+
 }
 
 
@@ -74,111 +82,71 @@ void AggressivePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> 
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 void AggressivePlayer::conquers(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr) {
     // observer.update_conquer();
-    cout << "the Player " << lp->getidPlayer() << " and " << lp->getpopulation() << endl;
+    cout << "the Player " << lp->getidPlayer() << " has " << lp->getpopulation() <<" population.\n"
+            "As Player choose the Aggressive Behavier , you only can occpied the region"<< endl;
     // observer.update_conquer();
-    playerid = lp->getidPlayer();//get Player ID
-    playerpop = lp->getpopulation();//get Player population
+    py.prints();
+    playerID = lp->getidPlayer();//get Player ID
+    playerPopulation = lp->getpopulation();//get Player population
     phase_observer.update_conquer(*lp_vPtr);//calling the Observer to update the information
-    cout << py.vnodeRegion[randomnumber].getid_player() << "get " << py.vnodeRegion[randomnumber].getregion_status()
+    cout << py.vnodeRegion[toWhichRegion].getid_player() << "get " << py.vnodeRegion[toWhichRegion].getregion_status()
          << endl;
     conquer_check = false;//get conquer_check to false to do-while loop purpose
 
-
     do {
-        //↓↓↓ the store the region Object vector index number for future occupy purpose↓↓↓
-        for (int i = 0; i < py.vnodeRegion.size(); ++i) {
-            if (py.vnodeRegion[i].getid_player() == playerid) {
-                storage.push_back(i);//store Object vector index in the storage vector if the player owns this region
-            }
+        cout<<"From which region"<<endl;
+        cin>>fromWhichRegion;
+        fromWhichRegion-=1;
+        cout<<"To which region"<<endl;
+        cin>>toWhichRegion;
+        toWhichRegion-=1;
+        py.population_costv2(playerID,toWhichRegion);
+
+        if(py.maploader.maps.pt[fromWhichRegion][toWhichRegion]==0){
+            cout<<"they are not linking together"<<endl;
+        }else if((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") == 0 &&
+                  py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") != 0)){
+            cout<<"The region costs more population than you have"<<endl;
         }
-        //↓↓↓ Occupied the region by using for loop↓↓↓
-        for (int j = 0; j < storage.size(); ++j) {
-            int temp = storage[j];//get the region then player already occupied by reading in "storage" vecotor
-            //↓↓↓by using loop the check the region player ID mactch the player id↓↓↓
-            for (int i = 0; i < py.vnodeRegion.size(); ++i) {
-                py.population_costv2(playerid, i);
+        else if (py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1 &&
+                 (((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") != 0 ||
+                    py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") == 0))) &&
+                 playerPopulation >= py.cost_of_population) {
 
-              /*check the matrix [x][y],x=region that player already occupid, y= region wanna occupy, is 1 which
-                mean is linking ,and (the y is not water region or player has seafaring), and player population is
-                equal or bigger the y cost
-                ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-                */
-                if (py.maploader.maps.pt[temp][i] == 1 &&
-                    (((py.vnodeRegion[i].getregion_status().compare("____water__") != 0 ||
-                       py.vplayer[i].getspecialPower().compare("Seafaring") == 0))) &&
-                    playerpop >= py.cost_of_population) {
-
-                        //↓↓↓return to player who already occupied of this region↓↓↓
-                    if(  (*nr_vPtr)[i].getid_player()!=0){//if the region  No 0,0=no player
-                        int temp_number=(*nr_vPtr)[i].getid_player();//get the player id in the region
-                        (*lp_vPtr)[temp_number-1].setpopulation((*nr_vPtr)[i].getregion_population()-1);
-                        //↑↑↑ find out the previous region owner and return the region population -1 to previous region owner
-                    }
-
-
-                    //occupied
-                    lp->setpopulation(lp->getpopulation() - py.cost_of_population);//←reset player object population (player origional population - population that player spend)
-                    (*nr_vPtr)[i].setregion_population(py.cost_of_population);//←reset the regional object to new population
-                    (*nr_vPtr)[i].setid_player(lp->getidPlayer());//←reset the regional object to new Player ID
-                    (*nr_vPtr)[i].setplayer_race(lp->getrace());//←reset the regional object to new Player population
-                    (*nr_vPtr)[i].setplayer_specialpower(lp->getspecialPower());//←reset the regional object to new Player special power
-                    py.invade_v2(playerid, i);//←set the matrix map to Player ID
-                    py.maploader.losttride[i] = "_none__";//←set the lost tride to none after ocuppied the region
-                    playerpop -= py.cost_of_population;//←the player  population minus player spent population on the region
-
-                }
-                    /*check the matrix [x][y],x=region that player already occupid, y= region wanna occupy, is 1 which
-                   mean is linking ,and (the y is not water region or player has seafaring), and player population is
-                   smaller than the y cost
-                   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-                   */
-                else if (py.maploader.maps.pt[temp][i] == 1 &&
-                           (((py.vnodeRegion[i].getregion_status().compare("____water__") != 0 ||//←if the region is not a water region
-                              py.vplayer[i].getspecialPower().compare("Seafaring") == 0))) &&//←or the player special power  Seafaring
-                           playerpop < py.cost_of_population) {//the player population is smaller than the region costs
-                    cout << "throw the die" << endl;
-                    int tempdice = py.getthrowdie();//the dice number which calling the dice class
-                    cout<< "The dice number is " <<tempdice<<" and the total is "<<tempdice + playerpop<<endl;
-
-                    if ((tempdice + playerpop) >= py.cost_of_population) {
-                        //return the previous user
-                        if(  (*nr_vPtr)[randomnumber].getid_player()!=0){//if the region  No 0,0=no player
-                            int temp_number=(*nr_vPtr)[randomnumber].getid_player();//get the player id in the region
-                            (*lp_vPtr)[temp_number-1].setpopulation((*nr_vPtr)[randomnumber].getregion_population()-1);
-                            //↑↑↑ find out the previous region owner and return the region population -1 to previous region owner
-                        }
-                        //conquer package
-                        lp->setpopulation(0);//set the Player object popluation to 0
-                        (*nr_vPtr)[i].setregion_population(playerpop);//←reset the regional object to new population which player already have
-                        (*nr_vPtr)[i].setid_player(lp->getidPlayer());//←reset the regional object to new Player ID
-                        (*nr_vPtr)[i].setplayer_race(lp->getrace());//←reset the regional object to new Player population
-                        (*nr_vPtr)[i].setplayer_specialpower(lp->getspecialPower());//←reset the regional object to new Player special power
-                        py.invade_v2(playerid, i);
-                        py.maploader.losttride[i] = "_none__";//←set the matrix map to Player ID
-                        playerpop -= py.cost_of_population;//←set the lost tride to none after ocuppied the region
-
-
-                        //out of the loop
-                        conquer_check = true;
-                        break;
-                    } else {
-                        //out of the loop
-                        conquer_check = true;
-                        break;
-                    }
-                }
-
-                if (conquer_check == true) {
-                    break;
-                }
-            }
-
-            if (conquer_check == true) {
-                break;
-            }
-
+            //↓↓↓return to player who already occupied of this region↓↓↓
+            py.returnToPreviousPlayer(nr_vPtr,lp_vPtr,toWhichRegion);//in player class(Return to puopluation to ex-ocuppied player)
+            //occupied
+            lp->setpopulation(lp->getpopulation() - py.cost_of_population);//←reset player object population (player origional population - population that player spend)
+            py.conquers_v4(lp,nr_vPtr,py.cost_of_population,toWhichRegion);//in player class
+            py.invade_v2(playerID, toWhichRegion);//←set the matrix map to Player ID
+            py.maploader.losttride[toWhichRegion] = "_none__";//←set the lost tride to none after ocuppied the region
+            playerPopulation -= py.cost_of_population;//←the player  population minus player spent population on the region
 
         }
+        else if (py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1 &&
+                 (((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") != 0 ||//←if the region is not a water region
+                    py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") == 0))) &&//←or the player special power  Seafaring
+                 playerPopulation < py.cost_of_population) {//the player population is smaller than the region costs
+            cout << "throw the die" << endl;
+            int tempdice = py.getthrowdie();//the dice number which calling the dice class
+            cout<< "The dice number is " <<tempdice<<" and the total is "<<tempdice + playerPopulation<<endl;
+
+            if ((tempdice + playerPopulation) >= py.cost_of_population) {
+                cout<<"The total is more than the region costes, so you can occupy the region"<<endl;
+                //return the previous user
+                py.returnToPreviousPlayer(nr_vPtr,lp_vPtr,toWhichRegion);//in player class(Return to puopluation to ex-ocuppied player)
+                py.conquers_v4(lp,nr_vPtr,py.cost_of_population,toWhichRegion);//in player class
+                py.invade_v2(playerID, toWhichRegion);
+                lp->setpopulation(0);//set the Player object popluation to 0
+                py.maploader.losttride[toWhichRegion] = "_none__";//←set the matrix map to Player ID
+                playerPopulation -= py.cost_of_population;//←set the lost tride to none after ocuppied the region
+                conquer_check = true;
+            } else {
+                cout<<"The total is less than the region costes, so you cannot occupy the region"<<endl;
+                conquer_check = true;
+            }
+        }
+
     } while (conquer_check == false);
 
     cout << "the Player " << lp->getidPlayer() << " and " << lp->getpopulation() << endl;
@@ -189,6 +157,7 @@ void AggressivePlayer::conquers(listOfPlayer *lp,Player py,vector <NodeRegion> *
 /*We leave 1 population on the region and take all remaining to Player hands)
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 void AggressivePlayer::redeployment(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
+    cout<<"Because Player selected the Aggresssive behavior, it will stay 1 popluation(token) on the re"<<endl;
     for (int i = 0; i < py.vnodeRegion.size(); ++i) {
         if((*nr_vPtr)[i].getid_player()==lp->getidPlayer()){
             if((*nr_vPtr)[i].getregion_population()>1){
@@ -227,58 +196,63 @@ DefensivePlayer::~DefensivePlayer() {} 
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-void DefensivePlayer::pickupRaceNSp(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
-    cout<<"you pick up the Defensive Player"<<endl;
+void DefensivePlayer::pickupRaceNSp(listOfPlayer *lp){
+    cout<<"you pick up the Defensive Player\n"
+            "For the people who select the defensive player,it will focus to occupid the region until"
+            "the end of the game."<<endl;
+    cout<<"Player "<<lp->getidPlayer()<<" choose to be an defensive Player"<<endl;
+    lp->setStrategyBehaviour(2);//locked strategy in Player object
 }
 
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 void DefensivePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
+    py.prints();
+    py.brr();
     cout<<"------------------------first entry to the map------------------------"<<endl;
-    cout<<"the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
+    cout<<"the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<" population(token)"<<endl;
     observer.attach(py.vplayer[py.tempNbIndex]);// attach the player Object to Observer
-    total_number_of_region=py.maploader.nbline;// get how many region
-    playerid=lp->getidPlayer();//get Player ID
-
-    playerpop=lp->getpopulation();//get Player population
+    totalNumberOfRegion=py.maploader.nbline;// get how many region
+    playerID=lp->getidPlayer();//get Player ID
+    playerPopulation=lp->getpopulation();//get Player population
     do {//go to do loop to make sure the first region is from the edge of the map
+        cout<<"please Enter the first region u want to occupy"<<endl;
+        cin>>toWhichRegion;
+        toWhichRegion-=1;
 
-        srand(time(NULL));
-        randomnumber = (rand()) % total_number_of_region;
-        if (py.maploader.adjact[randomnumber].compare("y") != 0) {//←if the region is not an edge region
+        if (py.maploader.adjact[toWhichRegion].compare("y") != 0) {//←if the region is not an edge region
             Edgeoccupied=false;//no need to print out becuz it is a AI playing
+            cout<<"The first entyr has to be from the edge."<<endl;
         }else{
-            if (py.vnodeRegion[randomnumber].getregion_status().compare("____water__") == 0 &&//←if the region is a water region
+            if (py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") == 0 && //←if the region is a water region
                 lp->getspecialPower().compare("Seafaring") != 0){//←and the player special power is no Seafaring
-                Edgeoccupied=false;//no need to print out becuz it is a AI playing
-            } else{//if all conditions match
-                py.population_costv2(playerid,randomnumber);//calculation how many region need to occupy that region
-                if(py.cost_of_population>playerpop){//if the population cost more that player population
-                    Edgeoccupied=false;
-                }else {
-                    //reutrn the previous user
-                    if(  (*nr_vPtr)[randomnumber].getid_player()!=0){//if the region  No 0,0=no player
-                        int temp_number=(*nr_vPtr)[randomnumber].getid_player();//get the player id in the region
-                        (*lp_vPtr)[temp_number-1].setpopulation((*nr_vPtr)[randomnumber].getregion_population()-1);
-                        //↑↑↑ find out the previous region owner and return the region population -1 to previous region owner
-                    }
+                Edgeoccupied=false;
+                cout<<"The region is a water and you don't have a Seafaring power"<<endl;
 
+            } else{//if all conditions match
+                py.population_costv2(playerID,toWhichRegion);//calculation how many region need to occupy that region
+                cout<<"the region cost you "<<py.cost_of_population<<" populations"<<endl;
+                if(py.cost_of_population>playerPopulation){//if the population cost more that player population
+                    Edgeoccupied=false;
+                    cout<<"The region costs more population than you have"<<endl;
+                }else {
+                    //return the previous user
+                    py.returnToPreviousPlayer(nr_vPtr,lp_vPtr,toWhichRegion);//in player class(Return to puopluation to ex-ocuppied player)
+                    //↑↑↑ find out the previous region owner and return the region population -1 to previous region owne
                     lp->setpopulation(lp->getpopulation()-py.cost_of_population);//←reset player object population (player origional population - population that player spend)
-                    (*nr_vPtr)[randomnumber].setregion_population(py.cost_of_population);//←reset the regional object to new population
-                    (*nr_vPtr)[randomnumber].setid_player(lp->getidPlayer());//←reset the regional object to new Player ID
-                    (*nr_vPtr)[randomnumber].setplayer_race(lp->getrace());//←reset the regional object to new Player population
-                    (*nr_vPtr)[randomnumber].setplayer_specialpower(lp->getspecialPower());//←reset the regional object to new Player special power
-                    py.invade_v2(playerid,randomnumber);//←set the matrix map to Player ID
-                    py.maploader.losttride[randomnumber] = "_none__";//←set the lost tride to none after ocuppied the region
+                    py.conquers_v4(lp,nr_vPtr,py.cost_of_population,toWhichRegion);//in player class
+                    py.invade_v2(playerID,toWhichRegion);//←set the matrix map to Player ID
+                    py.maploader.losttride[toWhichRegion] = "_none__";//←set the lost tride to none after ocuppied the region
                     Edgeoccupied=true;//get out the do-while loop
                 }
             }
         }
     }while (Edgeoccupied==false);
-    cout<<"------------------------The player selected "<<randomnumber+1<<"------------------------"<<endl;
-    py.prints();
+    cout<<"------------------------The player selected "<<toWhichRegion+1<<"------------------------"<<endl;
+    py.prints();//print out the map
     cout<<"Update-->the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
+    firstLock=1;
 }
 
 
@@ -286,16 +260,80 @@ void DefensivePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 void DefensivePlayer::conquers(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr) {
-    playerid = lp->getidPlayer();//get Player ID
-    playerpop = lp->getpopulation();//get Player population
-    /*we put all population in the same region
-     * */
-    for (int i = 0; i < py.vnodeRegion.size(); ++i) {
-        if((*nr_vPtr)[i].getid_player()==playerid){
-            (*nr_vPtr)[i].setregion_population(lp->getpopulation());
-            lp->setpopulation(0);
-        }
-    }
+    cout << "the Player " << lp->getidPlayer() << " has " << lp->getpopulation() <<" population.\n"
+            "As Player choose the Defensive Behavier , you only can occpily one region"<< endl;
+cout<<"test "<<firstLock<<endl;
+    py.prints();
+    playerID = lp->getidPlayer();//get Player ID
+    playerPopulation = lp->getpopulation();//get Player population
+    phase_observer.update_conquer(*lp_vPtr);//calling the Observer to update the information
+    cout << py.vnodeRegion[toWhichRegion].getid_player() << "get " << py.vnodeRegion[toWhichRegion].getregion_status()
+         << endl;
+    conquer_check = false;//get conquer_check to false to do-while loop purpose
+if (firstLock==1){
+    firstLock=0;
+}
+    else{
+        do {
+            cout<<"From which region"<<endl;
+            cin>>fromWhichRegion;
+            fromWhichRegion-=1;
+            cout<<"To which region"<<endl;
+            cin>>toWhichRegion;
+            toWhichRegion-=1;
+            py.population_costv2(playerID,toWhichRegion);
+
+            if(py.maploader.maps.pt[fromWhichRegion][toWhichRegion]==0){
+                cout<<"they are not linking together"<<endl;
+            }else if((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") == 0 &&
+                      py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") != 0)){
+                cout<<"The region costs more population than you have"<<endl;
+            }
+            else if (py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1 &&
+                     (((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") != 0 ||
+                        py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") == 0))) &&
+                     playerPopulation >= py.cost_of_population) {
+
+                //↓↓↓return to player who already occupied of this region↓↓↓
+                py.returnToPreviousPlayer(nr_vPtr,lp_vPtr,toWhichRegion);//in player class(Return to puopluation to ex-ocuppied player)
+                //occupied
+                lp->setpopulation(lp->getpopulation() - py.cost_of_population);//←reset player object population (player origional population - population that player spend)
+                py.conquers_v4(lp,nr_vPtr,py.cost_of_population,toWhichRegion);//in player class
+                py.invade_v2(playerID, toWhichRegion);//←set the matrix map to Player ID
+                py.maploader.losttride[toWhichRegion] = "_none__";//←set the lost tride to none after ocuppied the region
+                playerPopulation -= py.cost_of_population;//←the player  population minus player spent population on the region
+                conquer_check= true;
+
+            }
+            else if (py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1 &&
+                     (((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") != 0 ||//←if the region is not a water region
+                        py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") == 0))) &&//←or the player special power  Seafaring
+                     playerPopulation < py.cost_of_population) {//the player population is smaller than the region costs
+                cout << "throw the die" << endl;
+                int tempdice = py.getthrowdie();//the dice number which calling the dice class
+                cout<< "The dice number is " <<tempdice<<" and the total is "<<tempdice + playerPopulation<<endl;
+
+                if ((tempdice + playerPopulation) >= py.cost_of_population) {
+                    cout<<"The total is more than the region costes, so you can occupy the region"<<endl;
+                    //return the previous user
+                    py.returnToPreviousPlayer(nr_vPtr,lp_vPtr,toWhichRegion);//in player class(Return to puopluation to ex-ocuppied player)
+                    py.conquers_v4(lp,nr_vPtr,py.cost_of_population,toWhichRegion);//in player class
+                    py.invade_v2(playerID, toWhichRegion);
+                    lp->setpopulation(0);//set the Player object popluation to 0
+                    py.maploader.losttride[toWhichRegion] = "_none__";//←set the matrix map to Player ID
+                    playerPopulation -= py.cost_of_population;//←set the lost tride to none after ocuppied the region
+                    conquer_check = true;
+                } else {
+                    cout<<"The total is less than the region costes, so you cannot occupy the region"<<endl;
+                    conquer_check = true;
+                }
+            }
+
+            cout << "the Player " << lp->getidPlayer() << " and " << lp->getpopulation() << endl;
+            py.prints();
+        } while (conquer_check == false);
+
+}
 }
 
 
@@ -334,10 +372,12 @@ ModeratePlayer::~ModeratePlayer() {}
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-void ModeratePlayer::pickupRaceNSp(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
-    cout<<"you pick up the Moderate Player"<<endl;
-    cout<<lp->getidPlayer()<<endl;
-//do something};
+void ModeratePlayer::pickupRaceNSp(listOfPlayer *lp){
+    cout<<"you pick up the ModeratePlayer Player\n"
+            "For the people who select the moderatePlayer,it will focus to occupid the region until"
+            "the end of the game."<<endl;
+    cout<<"Player "<<lp->getidPlayer()<<" choose to be an moderatePlaye Player"<<endl;
+    lp->setStrategyBehaviour(3);//locked strategy in Player object
 }
 void ModeratePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
 
@@ -518,22 +558,6 @@ void ModeratePlayer::scores(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_v
         }
     }
 }
-////humanPlayer
-//HumanPlayer::HumanPlayer() {}
-//HumanPlayer::~HumanPlayer() {}
-//void HumanPlayer::pickupRaceNSp(listOfPlayer lp,Player py){
-//    cout<<"you pick up the Human Player"<<endl;
-//    cout<<lp.getidPlayer()<<endl;
-//}
-//void HumanPlayer::firstEdge(listOfPlayer lp,Player py){}
-//
-//void HumanPlayer::conquers(listOfPlayer lp,Player py) {
-//    //do something
-//}
-//void HumanPlayer::redeployment(listOfPlayer lp,Player py){};
-//void HumanPlayer::scores(listOfPlayer lp,Player py) {
-//    //do something
-//}
 
 
 
@@ -541,9 +565,13 @@ void ModeratePlayer::scores(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_v
 //RandomPlayer
 RandomPlayer::RandomPlayer() {} 
 RandomPlayer::~RandomPlayer() {} 
-void RandomPlayer::pickupRaceNSp(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
+void RandomPlayer::pickupRaceNSp(listOfPlayer *lp){
+    cout<<"you pick up the Random Player\n"
+            "For the people who select the random player,it will focus to occupid the region until"
+            "the end of the game."<<endl;
     cout<<"you pick up the Random Player"<<endl;
-    cout<<lp->getidPlayer()<<endl;
+    cout<<"Player "<<lp->getidPlayer()<<" choose to be an random Player"<<endl;
+    lp->setStrategyBehaviour(4);//locked strategy in Player object
 }
 //same with above
 void RandomPlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){

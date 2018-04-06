@@ -2,6 +2,7 @@
 // Created by fok poon kai on 2018-03-09.
 //
 
+
 #ifndef COMP345P1_NODEPLAYER_H
 #define COMP345P1_NODEPLAYER_H
 #include <string>
@@ -28,7 +29,8 @@ public:
     string getspecialPower();
     string getrace();
     int getdecline_lock();
-
+    int getNumberOfOccupiedRegion() const;
+    int getStrategyBehaviour();
 
 
 
@@ -39,12 +41,16 @@ public:
     void setspecialpower(string specialPower);
     void setrace(string race);
     void setdecline_lock(int nb);
+    void setNumberOfOccupiedRegion(int numberOfOccupiedRegion);
+
+
+    void setStrategyBehaviour(int strategyBehaviour);
 
 private:
     int idPlayer;
 
-    bool isDecline() const;
 
+    int numberOfOccupiedRegion;
     int victoryCoins;
     int population;
     bool decline;
@@ -52,5 +58,6 @@ private:
 
     string specialPower;
     string race;
+    int strategyBehaviour;
 };
 #endif //COMP345P1_NODEPLAYER_H

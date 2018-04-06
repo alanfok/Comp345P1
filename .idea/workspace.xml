@@ -11,7 +11,237 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="799aa2ed-8446-4442-a965-a7e485c58a12" name="Default" comment="" />
+    <list default="true" id="799aa2ed-8446-4442-a965-a7e485c58a12" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/CMakeLists.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Die.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Die.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/DominationObserverDecorator.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/DominationObserverDecorator.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/HandsObserverDecorator.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/HandsObserverDecorator.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Interraction.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Interraction.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/ListofPlayer.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/ListofPlayer.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Maploader.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Maploader.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Maps.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Maps.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/NodeRegion.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/NodeRegion.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Observer.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Observer.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/PhaseObserver.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/PhaseObserver.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Player.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Player.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Strategy.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Strategy.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Tokens.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Tokens.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Veiwer.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/Veiwer.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/VictoryCoinsObserverDecorator.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/VictoryCoinsObserverDecorator.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/2map.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/2players.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/3map.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/4map.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/5map.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeCache.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/3.9.4/CMakeCCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/3.9.4/CMakeCXXCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/3.9.4/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/3.9.4/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/3.9.4/CMakeSystem.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/a.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/a.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/CXX.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/Die.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/Interraction.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/Maploader.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/Maps.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/Observer.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/Player.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/Strategy.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/Tokens.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/Veiwer.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/gameStatsObserver.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/main.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Comp345P1.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Makefile2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Progress/11" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Progress/12" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Progress/13" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Progress/14" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Progress/15" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Progress/16" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Progress/17" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Progress/18" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Progress/7" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/Progress/count.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/cmake.check_cache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/feature_tests.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/Comp345P1.cbp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/cmake-build-debug/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/gameStatsObserver.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/gameStatsObserver.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 10/main.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/CMakeLists.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Die.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Die.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/DominationObserverDecorator.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/DominationObserverDecorator.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/HandsObserverDecorator.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/HandsObserverDecorator.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Interraction.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Interraction.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/ListofPlayer.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/ListofPlayer.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Maploader.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Maploader.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Maps.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Maps.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/NodeRegion.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/NodeRegion.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Observer.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Observer.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/PhaseObserver.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/PhaseObserver.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Player.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Player.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Strategy.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Strategy.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Tokens.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Tokens.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Veiwer.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/Veiwer.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/VictoryCoinsObserverDecorator.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/VictoryCoinsObserverDecorator.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/2map.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/2players.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/3map.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/4map.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/5map.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeCache.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/3.9.4/CMakeCCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/3.9.4/CMakeCXXCompiler.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/3.9.4/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/3.9.4/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/3.9.4/CMakeSystem.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/a.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/a.out" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/CXX.includecache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/DependInfo.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/Die.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/Interraction.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/Maploader.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/Maps.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/Observer.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/Player.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/Strategy.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/Tokens.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/Veiwer.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/build.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/cmake_clean.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/depend.internal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/depend.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/flags.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/gameStatsObserverDecorator.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/link.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/main.cpp.o" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Comp345P1.dir/progress.make" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/Makefile2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/cmake.check_cache" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/feature_tests.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/CMakeFiles/progress.marks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/Comp345P1" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/Comp345P1.cbp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/cmake-build-debug/cmake_install.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/gameStatsObserver.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/gameStatsObserverDecorator.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/gameStatsObserverDecorator.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 11/main.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 12.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 2.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 3.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 4.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 5.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 6.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 7.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 8.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Backup/Archive 9.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Interraction.cpp" afterPath="$PROJECT_DIR$/Interraction.cpp" />
+      <change beforePath="$PROJECT_DIR$/Interraction.h" afterPath="$PROJECT_DIR$/Interraction.h" />
+      <change beforePath="$PROJECT_DIR$/ListofPlayer.cpp" afterPath="$PROJECT_DIR$/ListofPlayer.cpp" />
+      <change beforePath="$PROJECT_DIR$/ListofPlayer.h" afterPath="$PROJECT_DIR$/ListofPlayer.h" />
+      <change beforePath="$PROJECT_DIR$/Player.cpp" afterPath="$PROJECT_DIR$/Player.cpp" />
+      <change beforePath="$PROJECT_DIR$/Player.h" afterPath="$PROJECT_DIR$/Player.h" />
+      <change beforePath="$PROJECT_DIR$/Strategy.cpp" afterPath="$PROJECT_DIR$/Strategy.cpp" />
+      <change beforePath="$PROJECT_DIR$/Strategy.h" afterPath="$PROJECT_DIR$/Strategy.h" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/CXX.includecache" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Interraction.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Interraction.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Maploader.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Maploader.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Observer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Observer.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Player.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Player.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Strategy.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Strategy.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Tokens.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Tokens.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Veiwer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Veiwer.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/gameStatsObserverDecorator.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/gameStatsObserverDecorator.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/main.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Comp345P1" afterPath="$PROJECT_DIR$/cmake-build-debug/Comp345P1" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,120 +255,66 @@
     <favorites_list name="Comp345P1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Observer.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Observer.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="72" lean-forward="false" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Observer.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Observer.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-              <folding>
-                <element signature="e#49#70#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListofPlayer.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ListofPlayer.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DominationObserverDecorator.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DominationObserverDecorator.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <element signature="e#49#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gameStatsObserverDecorator.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gameStatsObserverDecorator.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#49#88#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gameStatsObserver.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gameStatsObserver.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-              <folding>
-                <element signature="e#126#145#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HandsObserverDecorator.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HandsObserverDecorator.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <element signature="e#52#87#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DominationObserverDecorator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DominationObserverDecorator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="65" lean-forward="false" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Strategy.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Strategy.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="71" column="14" lean-forward="false" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HandsObserverDecorator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HandsObserverDecorator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-              <folding>
-                <element signature="e#135#154#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.69142854">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Strategy.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Strategy.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Strategy.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Strategy.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1693">
+                  <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Player.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Player.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="533">
+                  <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Strategy.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Strategy.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="148">
+                  <caret line="131" column="14" lean-forward="false" selection-start-line="131" selection-start-column="14" selection-end-line="131" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Strategy.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Strategy.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -207,7 +383,6 @@
         <option value="$PROJECT_DIR$/PlayerType.h" />
         <option value="$PROJECT_DIR$/PlayerType.cpp" />
         <option value="$PROJECT_DIR$/Maps.h" />
-        <option value="$PROJECT_DIR$/Player.h" />
         <option value="$PROJECT_DIR$/Maploader.cpp" />
         <option value="$PROJECT_DIR$/Maps.cpp" />
         <option value="$PROJECT_DIR$/NodeRegion.cpp" />
@@ -216,28 +391,29 @@
         <option value="$PROJECT_DIR$/Veiwer.cpp" />
         <option value="$PROJECT_DIR$/Veiwer.h" />
         <option value="$PROJECT_DIR$/gameStatsObserver.cpp" />
-        <option value="$PROJECT_DIR$/ListofPlayer.h" />
         <option value="$PROJECT_DIR$/NodeRegion.h" />
-        <option value="$PROJECT_DIR$/Player.cpp" />
-        <option value="$PROJECT_DIR$/Strategy.h" />
-        <option value="$PROJECT_DIR$/Interraction.h" />
         <option value="$PROJECT_DIR$/Observer.h" />
         <option value="$PROJECT_DIR$/gameStatsObserverDecorator.h" />
         <option value="$PROJECT_DIR$/VictoryCoinsObserverDecorator.cpp" />
         <option value="$PROJECT_DIR$/VictoryCoinsObserverDecorator.h" />
-        <option value="$PROJECT_DIR$/Interraction.cpp" />
         <option value="$PROJECT_DIR$/Maploader.h" />
-        <option value="$PROJECT_DIR$/Strategy.cpp" />
         <option value="$PROJECT_DIR$/PhaseObserver.h" />
         <option value="$PROJECT_DIR$/PhaseObserver.cpp" />
         <option value="$PROJECT_DIR$/DominationObserverDecorator.cpp" />
         <option value="$PROJECT_DIR$/gameStatsObserverDecorator.cpp" />
         <option value="$PROJECT_DIR$/HandsObserverDecorator.cpp" />
         <option value="$PROJECT_DIR$/Observer.cpp" />
-        <option value="$PROJECT_DIR$/ListofPlayer.cpp" />
         <option value="$PROJECT_DIR$/gameStatsObserver.h" />
         <option value="$PROJECT_DIR$/HandsObserverDecorator.h" />
         <option value="$PROJECT_DIR$/DominationObserverDecorator.h" />
+        <option value="$PROJECT_DIR$/ListofPlayer.cpp" />
+        <option value="$PROJECT_DIR$/ListofPlayer.h" />
+        <option value="$PROJECT_DIR$/Interraction.cpp" />
+        <option value="$PROJECT_DIR$/Interraction.h" />
+        <option value="$PROJECT_DIR$/Player.cpp" />
+        <option value="$PROJECT_DIR$/Player.h" />
+        <option value="$PROJECT_DIR$/Strategy.h" />
+        <option value="$PROJECT_DIR$/Strategy.cpp" />
       </list>
     </option>
   </component>
@@ -248,7 +424,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="777" />
@@ -479,12 +655,12 @@
       <workItem from="1522780178409" duration="30919000" />
       <workItem from="1522813586379" duration="14000" />
       <workItem from="1522872221310" duration="794000" />
-      <workItem from="1522977789074" duration="327000" />
+      <workItem from="1522977789074" duration="2405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="460081000" />
+    <option name="totallyTimeSpent" value="462159000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,21 +672,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2573471" sideWeight="0.4944" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17061612" sideWeight="0.4944" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.401112" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3306852" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27235213" sideWeight="0.375695" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37536657" sideWeight="0.624305" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37437934" sideWeight="0.624305" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.110362254" sideWeight="0.5056" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36726272" sideWeight="0.54725975" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35043988" sideWeight="0.401112" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -715,31 +890,10 @@ void Tokens::menu() {
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gameStatsObserver.cpp" />
-    <entry file="file://$PROJECT_DIR$/Player.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Veiwer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Player.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ListofPlayer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="53" column="16" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -789,20 +943,6 @@ void Tokens::menu() {
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interraction.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Strategy.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="123" column="5" lean-forward="false" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -869,13 +1009,6 @@ void Tokens::menu() {
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Interraction.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="769" column="5" lean-forward="false" selection-start-line="769" selection-start-column="5" selection-end-line="769" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PhaseObserver.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-61">
@@ -887,6 +1020,7 @@ void Tokens::menu() {
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -905,14 +1039,6 @@ void Tokens::menu() {
           <folding>
             <element signature="e#49#70#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ListofPlayer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -974,10 +1100,70 @@ void Tokens::menu() {
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ListofPlayer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="119" column="1" lean-forward="false" selection-start-line="119" selection-start-column="1" selection-end-line="119" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListofPlayer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interraction.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interraction.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="81" column="33" lean-forward="false" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+          <folding>
+            <element signature="e#116#135#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Player.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="64" column="39" lean-forward="false" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
+          <folding>
+            <element signature="e#104#121#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Player.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strategy.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Strategy.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="71" column="14" lean-forward="false" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+        <state relative-caret-position="1693">
+          <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
           <folding />
         </state>
       </provider>
