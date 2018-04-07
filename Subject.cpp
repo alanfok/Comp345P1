@@ -1,112 +1,20 @@
 //
-// Created by fok poon kai on 2018-04-06.
+// Created by fok poon kai on 2018-04-07.
 //
+
 #include "Subject.h"
-#include <iostream>
-#include <string>
 
-
-Subject::Subject()
-{
-
+void Subject::attach(Observer *ob) {
+observer.push_back(ob);
 }
 
-Subject::~Subject()
-{
-
+void Subject::detach(Observer *ob) {
+    observer.clear();
+    observer.shrink_to_fit();
 }
 
-void Subject::Attach(Observer* o)
-{
-    observers.push_back(o);
-
-    //cout << s->type << " Subscribed" << endl;
-}
-
-void Subject::Detach(Observer* o)
-{
-    for (int i = 0; i < int(observers.size()); i++)
-    {
-        if (observers[i] == o)
-        {
-            observers.erase(observers.begin() + i);
-            break;
-        }
-    }
-
-    cout << o->observerType << "Unsubscribed" << endl;
-}
-
-void Subject::Notify()
-{
-    //cout << "Notify" << endl;
-
-    for (int i = 0; i < int(observers.size()); i++)
-    {
-        //observers[i]->Update(this);
+void Subject::notify(ListofPlayer *pl) {
+    for (int i = 0; i <observer.size() ; ++i) {
+        observer[i]->update(pl);
     }
 }
-
-void Subject::Notify(int numRegion, Player * p)
-{
-    for (size_t i = 0; i < observers.size(); i++) {
-        if (observers[i]->observerType == "Statistics observer") {
-            //	observers[i]->Update(numRegion, p);
-        }
-    }
-}
-
-//void Subject::Notify(MapLoader* m )
-//{
-//	for (size_t i = 0; i < observers.size(); i++)
-//	{
-//		if (observers[i]->observerType == "Statistics observer") {
-//			observers[i]->Update(m);
-//		 }
-//	}
-//}
-
-void Subject::Notify(Player* s)
-{
-    //cout << "Notify" << endl;
-
-    for (size_t i = 0; i < observers.size(); i++)
-    {
-        observers[i]->Update(s);
-
-    }
-}
-
-void Subject::NotifyAll(int numRegion, vector<Player> &players)
-{
-    for (size_t i = 0; i < observers.size(); i++) {
-        if (observers[i]->observerType == "Statistics observer") {
-            observers[i]->UpdateP(numRegion, players);
-        }
-    }
-}
-//void Subject::NotifyT(Player* s)
-//{
-//	//cout << "Notify" << endl;
-//
-//	for (size_t i = 0; i < observers.size(); i++)
-//	{
-//
-//		if (observers[i]->observerType == "token observer") {
-//			observers[i]->Update(s);
-//		}
-//	}
-//}
-
-//void Subject::NotifyC(Player* s)
-//{
-//	//cout << "Notify" << endl;
-//
-//	for (size_t i = 0; i < observers.size(); i++)
-//	{
-//
-//		if (observers[i]->observerType == "victory observer") {
-//			observers[i]->Update(s);
-//		}
-//	}
-//}

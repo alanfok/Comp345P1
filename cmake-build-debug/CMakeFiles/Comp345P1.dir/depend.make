@@ -5,7 +5,6 @@ CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../AggressivePlayer.cpp
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../AggressivePlayer.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Die.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../ListofPlayer.h
-CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../MapLoader.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Maploader.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Maps.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../NodeRegion.h
@@ -19,7 +18,6 @@ CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../DefensivePlayer.cpp
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../DefensivePlayer.h
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../Die.h
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../ListofPlayer.h
-CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../MapLoader.h
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../Maploader.h
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../Maps.h
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../NodeRegion.h
@@ -38,7 +36,6 @@ CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Die.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Interraction.cpp
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Interraction.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../ListofPlayer.h
-CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../MapLoader.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Maploader.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Maps.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../ModeratePlayer.h
@@ -54,19 +51,22 @@ CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Veiwer.h
 
 CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o: ../ListofPlayer.cpp
 CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o: ../ListofPlayer.h
+CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o: ../Observer.h
+CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o: ../Subject.h
 
 CMakeFiles/Comp345P1.dir/Maploader.cpp.o: ../ListofPlayer.h
 CMakeFiles/Comp345P1.dir/Maploader.cpp.o: ../Maploader.cpp
 CMakeFiles/Comp345P1.dir/Maploader.cpp.o: ../Maploader.h
 CMakeFiles/Comp345P1.dir/Maploader.cpp.o: ../Maps.h
 CMakeFiles/Comp345P1.dir/Maploader.cpp.o: ../NodeRegion.h
+CMakeFiles/Comp345P1.dir/Maploader.cpp.o: ../Observer.h
+CMakeFiles/Comp345P1.dir/Maploader.cpp.o: ../Subject.h
 
 CMakeFiles/Comp345P1.dir/Maps.cpp.o: ../Maps.cpp
 CMakeFiles/Comp345P1.dir/Maps.cpp.o: ../Maps.h
 
 CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: ../Die.h
 CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: ../ListofPlayer.h
-CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: ../MapLoader.h
 CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: ../Maploader.h
 CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: ../Maps.h
 CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: ../ModeratePlayer.cpp
@@ -81,23 +81,17 @@ CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: ../Tokens.h
 CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o: ../ListofPlayer.h
 CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o: ../NodeRegion.cpp
 CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o: ../NodeRegion.h
+CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o: ../Observer.h
+CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o: ../Subject.h
 
-CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: ../Die.h
 CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: ../ListofPlayer.h
-CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: ../MapLoader.h
-CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: ../Maploader.h
-CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: ../Maps.h
-CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: ../NodeRegion.h
 CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: ../Observer.h
 CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: ../PhaseObserver.cpp
 CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: ../PhaseObserver.h
-CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: ../Player.h
 CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: ../Subject.h
-CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: ../Tokens.h
 
 CMakeFiles/Comp345P1.dir/Player.cpp.o: ../Die.h
 CMakeFiles/Comp345P1.dir/Player.cpp.o: ../ListofPlayer.h
-CMakeFiles/Comp345P1.dir/Player.cpp.o: ../MapLoader.h
 CMakeFiles/Comp345P1.dir/Player.cpp.o: ../Maploader.h
 CMakeFiles/Comp345P1.dir/Player.cpp.o: ../Maps.h
 CMakeFiles/Comp345P1.dir/Player.cpp.o: ../NodeRegion.h
@@ -109,7 +103,6 @@ CMakeFiles/Comp345P1.dir/Player.cpp.o: ../Tokens.h
 
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../Die.h
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../ListofPlayer.h
-CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../MapLoader.h
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../Maploader.h
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../Maps.h
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../NodeRegion.h
@@ -122,9 +115,6 @@ CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../Subject.h
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../Tokens.h
 
 CMakeFiles/Comp345P1.dir/Subject.cpp.o: ../ListofPlayer.h
-CMakeFiles/Comp345P1.dir/Subject.cpp.o: ../MapLoader.h
-CMakeFiles/Comp345P1.dir/Subject.cpp.o: ../Maps.h
-CMakeFiles/Comp345P1.dir/Subject.cpp.o: ../NodeRegion.h
 CMakeFiles/Comp345P1.dir/Subject.cpp.o: ../Observer.h
 CMakeFiles/Comp345P1.dir/Subject.cpp.o: ../Subject.cpp
 CMakeFiles/Comp345P1.dir/Subject.cpp.o: ../Subject.h
@@ -133,12 +123,13 @@ CMakeFiles/Comp345P1.dir/Tokens.cpp.o: ../ListofPlayer.h
 CMakeFiles/Comp345P1.dir/Tokens.cpp.o: ../Maploader.h
 CMakeFiles/Comp345P1.dir/Tokens.cpp.o: ../Maps.h
 CMakeFiles/Comp345P1.dir/Tokens.cpp.o: ../NodeRegion.h
+CMakeFiles/Comp345P1.dir/Tokens.cpp.o: ../Observer.h
+CMakeFiles/Comp345P1.dir/Tokens.cpp.o: ../Subject.h
 CMakeFiles/Comp345P1.dir/Tokens.cpp.o: ../Tokens.cpp
 CMakeFiles/Comp345P1.dir/Tokens.cpp.o: ../Tokens.h
 
 CMakeFiles/Comp345P1.dir/Veiwer.cpp.o: ../Die.h
 CMakeFiles/Comp345P1.dir/Veiwer.cpp.o: ../ListofPlayer.h
-CMakeFiles/Comp345P1.dir/Veiwer.cpp.o: ../MapLoader.h
 CMakeFiles/Comp345P1.dir/Veiwer.cpp.o: ../Maploader.h
 CMakeFiles/Comp345P1.dir/Veiwer.cpp.o: ../Maps.h
 CMakeFiles/Comp345P1.dir/Veiwer.cpp.o: ../NodeRegion.h
@@ -154,7 +145,6 @@ CMakeFiles/Comp345P1.dir/main.cpp.o: ../DefensivePlayer.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Die.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Interraction.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../ListofPlayer.h
-CMakeFiles/Comp345P1.dir/main.cpp.o: ../MapLoader.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Maploader.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Maps.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../ModeratePlayer.h

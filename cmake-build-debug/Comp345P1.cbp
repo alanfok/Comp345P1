@@ -176,9 +176,6 @@
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/fds.h">
-			<Option target="Comp345P1"/>
-		</Unit>
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/main.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>

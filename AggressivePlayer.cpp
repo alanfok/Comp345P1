@@ -9,19 +9,21 @@ AggressivePlayer::~AggressivePlayer(){}
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-void AggressivePlayer::pickupRaceNSp(listOfPlayer *lp){
+void AggressivePlayer::pickupRaceNSp(ListofPlayer *lp){
     cout<<"you pick up the Aggressive Player\n"
             "for the people who select the aggressive player,it will focus to occupid the region until"
             "the end of the game."<<endl;
     cout<<"Player "<<lp->getidPlayer()<<" choose to be an agressive Player"<<endl;
     lp->setStrategyBehaviour(1);//locked strategy in Player object
+    lp->setTurn(1);
+    lp->setPhase("conquer");
 }
 
 
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-void AggressivePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr) {
+void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
     py.prints();
     py.brr();
     cout<<"------------------------first entry to the map------------------------"<<endl;
@@ -76,7 +78,7 @@ void AggressivePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> 
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-void AggressivePlayer::conquers(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr) {
+void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
     // observer.update_conquer();
     cout << "the Player " << lp->getidPlayer() << " has " << lp->getpopulation() <<" population.\n"
             "As Player choose the Aggressive Behavier , you only can occpied the region"<< endl;
@@ -157,7 +159,7 @@ void AggressivePlayer::conquers(listOfPlayer *lp,Player py,vector <NodeRegion> *
 
 /*We leave 1 population on the region and take all remaining to Player hands)
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-void AggressivePlayer::redeployment(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
+void AggressivePlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr){
     cout<<"Because Player selected the Aggresssive behavior, it will stay 1 popluation(token) on the re"<<endl;
     for (int i = 0; i < py.vnodeRegion.size(); ++i) {
         if((*nr_vPtr)[i].getid_player()==lp->getidPlayer()){
@@ -172,7 +174,7 @@ void AggressivePlayer::redeployment(listOfPlayer *lp,Player py,vector <NodeRegio
 /*
  Collect the victory coin
  */
-void AggressivePlayer::scores(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr) {
+void AggressivePlayer::scores(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
     for (int i = 0; i < py.vnodeRegion.size(); ++i) {
         if((*nr_vPtr)[i].getid_player()==lp->getidPlayer()){
             //↓↓if the player race is Orcs

@@ -7,17 +7,18 @@
 #define COMP345P1_NODEPLAYER_H
 #include <string>
 #include "list"
+#include "Subject.h"
 
 
 using namespace std;
 
-class listOfPlayer{
+class ListofPlayer{
 public:
 
-    listOfPlayer();
-    listOfPlayer(int idPlayer,int victoryCoins,int population,
+    ListofPlayer();
+    ListofPlayer(int idPlayer,int victoryCoins,int population,
                  string specialPower,string race,bool decline);
-    ~listOfPlayer();
+    ~ListofPlayer();
 
 //get
     int getidPlayer();
@@ -43,15 +44,15 @@ public:
     void setdecline_lock(int nb);
     void setNumberOfOccupiedRegion(int numberOfOccupiedRegion);
 
+    const string &getPhase() const;
+
+    void setPhase(const string &phase);
 
     void setStrategyBehaviour(int strategyBehaviour);
 
+    int getTurn() const;
 
-
-
-
-
-
+    void setTurn(int turn);
 
 
 private:
@@ -63,10 +64,10 @@ private:
     int population;
     bool decline;
     int decline_lock=0;
-
+    int turn=1;
     string specialPower;
     string race;
     int strategyBehaviour;
-
+    string phase;
 };
 #endif //COMP345P1_NODEPLAYER_H

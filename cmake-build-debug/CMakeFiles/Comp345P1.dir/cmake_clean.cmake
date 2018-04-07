@@ -13,8 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o"
   "CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o"
   "CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o"
-  "CMakeFiles/Comp345P1.dir/Subject.cpp.o"
   "CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o"
+  "CMakeFiles/Comp345P1.dir/Subject.cpp.o"
   "Comp345P1.pdb"
   "Comp345P1"
 )

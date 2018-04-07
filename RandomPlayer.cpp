@@ -6,7 +6,7 @@
 
 RandomPlayer::RandomPlayer() {} 
 RandomPlayer::~RandomPlayer() {} 
-void RandomPlayer::pickupRaceNSp(listOfPlayer *lp){
+void RandomPlayer::pickupRaceNSp(ListofPlayer *lp){
     cout<<"you pick up the Random Player\n"
             "For the people who select the random player,it will focus to occupid the region until"
             "the end of the game."<<endl;
@@ -15,7 +15,7 @@ void RandomPlayer::pickupRaceNSp(listOfPlayer *lp){
     lp->setStrategyBehaviour(4);//locked strategy in Player object
 }
 //same with above
-void RandomPlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
+void RandomPlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr){
     py.prints();
     py.brr();
     cout<<"------------------------first entry to the map------------------------"<<endl;
@@ -64,7 +64,7 @@ void RandomPlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_
 }
 
 //becuz of ramdon it will have 50% chance it will decline or follow aggressive occupied method
-void RandomPlayer::conquers(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr) {
+void RandomPlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
 
     srand(time(NULL));
     randomnumberV2 = (rand()) % 3;// randomnumber will be 1 or 0
@@ -210,7 +210,7 @@ void RandomPlayer::conquers(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_v
     }
 
 }
-void RandomPlayer::redeployment(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
+void RandomPlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr){
 
     if(randomnumberV2==0){//we selected aggressive occupied meth
 
@@ -278,7 +278,7 @@ void RandomPlayer::redeployment(listOfPlayer *lp,Player py,vector <NodeRegion> *
 
 
 };
-void RandomPlayer::scores(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr) {
+void RandomPlayer::scores(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
 
 
     for (int i = 0; i < py.vnodeRegion.size(); ++i) {

@@ -55,6 +55,8 @@ ListofPlayer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 Veiwer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h
+PhaseObserver.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.h
 AggressivePlayer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.h
 DefensivePlayer.h
@@ -63,8 +65,6 @@ ModeratePlayer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.h
 RandomPlayer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h
-PhaseObserver.h
-/Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.h
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.cpp
 ListofPlayer.h
@@ -75,20 +75,8 @@ string
 -
 list
 /Users/fokpoonkai/CLionProjects/Comp345P1/list
-
-/Users/fokpoonkai/CLionProjects/Comp345P1/MapLoader.h
-iostream
--
-fstream
--
-string
--
-vector
--
-Maps.h
-/Users/fokpoonkai/CLionProjects/Comp345P1/Maps.h
-NodeRegion.h
-/Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.h
+Subject.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/Maploader.cpp
 Maploader.h
@@ -145,34 +133,22 @@ ListofPlayer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
-string
--
-iostream
--
-vector
--
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.cpp
 PhaseObserver.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.h
-vector
--
-string
--
-ctime
--
-cstdlib
--
-iostream
--
-random
--
-Player.h
-/Users/fokpoonkai/CLionProjects/Comp345P1/Player.h
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.h
-Player.h
-/Users/fokpoonkai/CLionProjects/Comp345P1/Player.h
+Observer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
+ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
+iostream
+-
+vector
+-
+ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/Player.cpp
 Player.h
@@ -191,8 +167,6 @@ vector
 -
 algorithm
 -
-Subject.h
-/Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
 stdio.h
@@ -217,20 +191,14 @@ PlayerType.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.cpp
 Subject.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
-iostream
--
-string
--
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
-list
--
-vector
--
 Observer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
-MapLoader.h
-/Users/fokpoonkai/CLionProjects/Comp345P1/MapLoader.h
+vector
+-
+ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.cpp
 Tokens.h

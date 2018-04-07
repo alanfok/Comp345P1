@@ -1,41 +1,30 @@
 //
-// Created by fok poon kai on 2018-04-06.
-#include "PhaseObserver.h"
-#include <vector>
-#include <string>
-#include <ctime>
-#include <cstdlib>
-#include <iostream>
-#include <random>
-#include "Player.h"
-
-using namespace std;
-
-PhaseObserver::PhaseObserver()
-{
-    observerType = "phase observer";
-}
-
-void PhaseObserver::Update(Player* player)
-{
-//    string step = player->getStep();
-//    int coin = player->getCoins();
-//    int turn = player->getPlayerTurn();
-//    int playerId = player->getPlayerId();
-
-//    if (step == "pick") {
-//        cout << "Turn->"<< turn <<" Player " << playerId << ": Please pick your race and power combo (1 to 6)." << endl;
-//    }
-//    else if (step == "conquer") {
-//        cout << "Turn->" << turn << " Player " << playerId << ": Please conquer some regions." << endl;
-//    }
-//    else if (step == "reDeploy") {
-//        cout << "Turn->" << turn << " Player " << playerId << ": Please make your redeployment." << endl;
-//    }
-//    else if (step == "score") {
-//        cout << "Turn->" << turn << " Player " << playerId << ": Scores some victory coins." << endl;
-//    }
-//    else if (step == "decline") {
+// Created by fok poon kai on 2018-04-07.
 //
-//    }
+
+#include "PhaseObserver.h"
+
+
+PhaseObserver::PhaseObserver() {
+
+
+
+}
+void PhaseObserver::update(ListofPlayer *lp){
+ phase=lp->getPhase();
+
+ //cout<<phase<<endl;
+ if(phase.compare("turn")==0){
+  cout<<"-------------Player "<<lp->getidPlayer()<<": turn "<<lp->getTurn()<<" .---------------------------------"<<endl;
+ }
+ if(phase.compare("coin")==0){
+  cout<<"-------------Player "<<lp->getidPlayer()<<": Scores some victory coins.-------------"<<endl;
+ }
+ if(phase.compare("conquer")==0){
+  cout<<"-------------Player "<<lp->getidPlayer()<<"conquer some regions.-------------"<<endl;
+ }
+
+
+
+
 }

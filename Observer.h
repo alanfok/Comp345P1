@@ -1,29 +1,21 @@
 //
-// Created by fok poon kai on 2018-04-06.
+// Created by fok poon kai on 2018-04-07.
 //
-//
-//#ifndef COMP345P1_OBSERVER_H
-//#define COMP345P1_OBSERVER_H
 
-#include <string>
-#include <iostream>
-#include <vector>
-using namespace std;
+#ifndef COMP345P1_OBSERVER_H
+#define COMP345P1_OBSERVER_H
 
+//#include "Subject.h"
+//#include "ListofPlayer.h"
 class Subject;
-class Player;
+class ListofPlayer;
 
-class Observer
-{
+class Observer {
+
 public:
-    string observerType;
 
-    //Observer();
-    //virtual void Update() = 0;
-    virtual void Update(Player*) {};
-    //virtual void Update(MapLoader*) = 0;
-    virtual void Update(int numRegion, Player * p) {};
-    virtual void UpdateP(int numRegion, vector<Player> &players) {};
+    virtual void update(ListofPlayer *pl){
+    };
+
 };
-
-//#endif //COMP345P1_OBSERVER_H
+#endif //COMP345P1_OBSERVER_H

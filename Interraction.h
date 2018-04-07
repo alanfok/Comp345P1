@@ -13,12 +13,11 @@
 #include <iostream>
 #include "ListofPlayer.h"
 #include "Veiwer.h"
-
+#include "PhaseObserver.h"
 #include "AggressivePlayer.h"
 #include "DefensivePlayer.h"
 #include "ModeratePlayer.h"
 #include "RandomPlayer.h"
-#include "PhaseObserver.h"
 
 using namespace std;
 class Interraction{
@@ -28,7 +27,7 @@ public:
     Maploader maploader;
     Tokens tokens;
     Maps maps;
-
+    ListofPlayer *lp;
     AggressivePlayer aggressivePlayer;
 
     DefensivePlayer  defensePlayer;

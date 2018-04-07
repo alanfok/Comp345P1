@@ -8,7 +8,7 @@ ModeratePlayer::~ModeratePlayer() {}
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-void ModeratePlayer::pickupRaceNSp(listOfPlayer *lp){
+void ModeratePlayer::pickupRaceNSp(ListofPlayer *lp){
     cout<<"you pick up the ModeratePlayer Player\n"
             "For the people who select the moderatePlayer,it will focus to occupid the region until"
             "the end of the game."<<endl;
@@ -20,7 +20,7 @@ void ModeratePlayer::pickupRaceNSp(listOfPlayer *lp){
 
 
 
-void ModeratePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
+void ModeratePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr){
     py.prints();
     py.brr();
     cout<<"------------------------first entry to the map------------------------"<<endl;
@@ -71,7 +71,7 @@ void ModeratePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *n
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-void ModeratePlayer::conquers(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr) {
+void ModeratePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
     //if(player no require decline in percious round and the player no even delcine before)
     cout<<"Because the player choose ModeratePlayer behavour , you can choose decline, However, for the player rule , u only can decline once"<<endl;
 
@@ -166,7 +166,7 @@ void ModeratePlayer::conquers(listOfPlayer *lp,Player py,vector <NodeRegion> *nr
 
 
 }
-void ModeratePlayer::redeployment(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
+void ModeratePlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr){
     for (int i = 0; i < py.vnodeRegion.size(); ++i) {
         if((*nr_vPtr)[i].getid_player()==lp->getidPlayer()){
             if((*nr_vPtr)[i].getregion_population()>1){
@@ -176,7 +176,7 @@ void ModeratePlayer::redeployment(listOfPlayer *lp,Player py,vector <NodeRegion>
         }
     }
 };
-void ModeratePlayer::scores(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr) {
+void ModeratePlayer::scores(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
     for (int i = 0; i < py.vnodeRegion.size(); ++i) {
         if((*nr_vPtr)[i].getid_player()==lp->getidPlayer()){
             if(lp->getrace().compare("Orcs")==0){

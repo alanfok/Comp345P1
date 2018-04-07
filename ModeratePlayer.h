@@ -13,11 +13,11 @@ public: 
 
     // Player py;
     //inherate in PlayerType Class
-    virtual void pickupRaceNSp(listOfPlayer *x);
-    virtual void conquers(listOfPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<listOfPlayer> *lp_vtr);
-    virtual void scores(listOfPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<listOfPlayer> *lp_vtr);
-    virtual void firstEdge(listOfPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<listOfPlayer> *lp_vtr);
-    virtual void redeployment(listOfPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<listOfPlayer> *lp_vtr);
+    virtual void pickupRaceNSp(ListofPlayer *x);
+    virtual void conquers(ListofPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<ListofPlayer> *lp_vtr);
+    virtual void scores(ListofPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<ListofPlayer> *lp_vtr);
+    virtual void firstEdge(ListofPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<ListofPlayer> *lp_vtr);
+    virtual void redeployment(ListofPlayer *x,Player py,vector <NodeRegion > *nr_vPtr,vector<ListofPlayer> *lp_vtr);
     int totalNumberOfRegion;
     int randomnumber;
     int playerID;

@@ -21,11 +21,11 @@ public:
     /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-    virtual void pickupRaceNSp(listOfPlayer *x) = 0;
-    virtual void conquers(listOfPlayer *x,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vtr) = 0;
-    virtual void  scores(listOfPlayer *x,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vtr)  = 0;
-    virtual void firstEdge(listOfPlayer *x,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vtr)=0;
-    virtual void redeployment(listOfPlayer *x,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vtr)=0;
+    virtual void pickupRaceNSp(ListofPlayer *x) = 0;
+    virtual void conquers(ListofPlayer *x,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vtr) = 0;
+    virtual void  scores(ListofPlayer *x,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vtr)  = 0;
+    virtual void firstEdge(ListofPlayer *x,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vtr)=0;
+    virtual void redeployment(ListofPlayer *x,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vtr)=0;
 
 };
 

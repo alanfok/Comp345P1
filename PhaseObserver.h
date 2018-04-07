@@ -1,22 +1,34 @@
 //
-// Created by fok poon kai on 2018-04-06.
+// Created by fok poon kai on 2018-04-07.
 //
 
 #ifndef COMP345P1_PHASEOBSERVER_H
 #define COMP345P1_PHASEOBSERVER_H
 
-//#include "Decorator.h"
-#include "Player.h"
+#include "Observer.h"
+#include "ListofPlayer.h"
+#include <iostream>
+#include <vector>
+#include "ListofPlayer.h"
 using namespace std;
 
-//class Player;
-
-class PhaseObserver : public Observer
-{
+class PhaseObserver:public Observer{
 public:
+//
+
+  //  vector<listOfPlayer*> lpvector;
     PhaseObserver();
-    virtual void Update(Player*);
-    //virtual void Update(int numRegion, Player * p);
+    virtual void update(ListofPlayer *lp);
+
+    string phase;
+    ListofPlayer *lpp;
+//
+//
+
 };
+
+
+
+
 
 #endif //COMP345P1_PHASEOBSERVER_H

@@ -11,7 +11,7 @@
 #include "ListofPlayer.h"
 #include <vector>
 #include <algorithm>
-#include "Subject.h"
+
 
 //#include "Interraction.handsObserverDecorator"
 using   namespace std;
@@ -26,7 +26,7 @@ public:
     bool check=false;
     bool isLostTribe;
     int cost_of_population;
-
+    int tempPlayerId;
     void picks_race(int race,Player player);
     void conquers(int region, int IdOfplayer, int invade_region,
                   int player_population );
@@ -36,16 +36,16 @@ public:
     void raceToken(int x);
 
     void token_sort();
-    void show_information(vector <listOfPlayer> mp);
+    void show_information(vector <ListofPlayer> mp);
     void show_information_of_region();
     int getthrowdie();
     void set_vnodeRegion_Vector(int nbline);
     void pickup(int i, int vicCion, int pop, string sp ,string race, bool decline);// node player
     void setRegionIntoVector();
 
-    vector <listOfPlayer> vplayer;
+    vector <ListofPlayer> vplayer;
     vector <NodeRegion> vnodeRegion;
-    vector <listOfPlayer> sortbyvplayercoin;
+    vector <ListofPlayer> sortbyvplayercoin;
     vector <int> vdecline;  // just holding the player ID
     int special_power_pop_cost_deternment(int playerid,int regoinid);
     void declare_winner();
@@ -57,15 +57,15 @@ public:
     int tempNbIndex;
     void population_costv2(int playid,int regionid);
     void brr();
-    void returnToPreviousPlayer(vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr,int regionid);
+    void returnToPreviousPlayer(vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr,int regionid);
     void test1 ();
     void test2 ();
     void test3 ();
     void test4 ();
-    void conquers_v3(int player_population,listOfPlayer *lp, NodeRegion *nr
+    void conquers_v3(int player_population,ListofPlayer *lp, NodeRegion *nr
             , int region ,int invade_region);
-    void conquers_v4(listOfPlayer *lp,vector <NodeRegion> *nr_vPtr ,int regionid,int pop);
-    void redeploymentVeiw(listOfPlayer *lp,vector <NodeRegion> *nr_vPtr);
+    void conquers_v4(ListofPlayer *lp,vector <NodeRegion> *nr_vPtr ,int regionid,int pop);
+    void redeploymentVeiw(ListofPlayer *lp,vector <NodeRegion> *nr_vPtr);
 
 
 private:

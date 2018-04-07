@@ -11,7 +11,7 @@ DefensivePlayer::~DefensivePlayer() {} 
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-void DefensivePlayer::pickupRaceNSp(listOfPlayer *lp){
+void DefensivePlayer::pickupRaceNSp(ListofPlayer *lp){
     cout<<"you pick up the Defensive Player\n"
             "For the people who select the defensive player,it will focus to occupid the region until"
             "the end of the game."<<endl;
@@ -22,7 +22,7 @@ void DefensivePlayer::pickupRaceNSp(listOfPlayer *lp){
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-void DefensivePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
+void DefensivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr){
     py.prints();
     py.brr();
     cout<<"------------------------first entry to the map------------------------"<<endl;
@@ -74,7 +74,7 @@ void DefensivePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-void DefensivePlayer::conquers(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr) {
+void DefensivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
     cout << "the Player " << lp->getidPlayer() << " has " << lp->getpopulation() <<" population.\n"
             "As Player choose the Defensive Behavier , you only can occpily one region"<< endl;
   //  py.prints();
@@ -153,7 +153,7 @@ void DefensivePlayer::conquers(listOfPlayer *lp,Player py,vector <NodeRegion> *n
 
 /*We leave 1 population on the region and take all remaining to Player hands)
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-void DefensivePlayer::redeployment(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr){
+void DefensivePlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr){
     cout<<"because you choose the Defensive, you can redeploy the population to defense your region"<<endl;
 
 
@@ -193,7 +193,7 @@ void DefensivePlayer::redeployment(listOfPlayer *lp,Player py,vector <NodeRegion
     }while(redeployment_check== false);
 
 };
-void DefensivePlayer::scores(listOfPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vPtr) {
+void DefensivePlayer::scores(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
     for (int i = 0; i < py.vnodeRegion.size(); ++i) {
         if((*nr_vPtr)[i].getid_player()==lp->getidPlayer()){
             //↓↓if the player race is Orcs
