@@ -10,9 +10,8 @@
 #include "Player.h"
 #include "ListofPlayer.h"
 #include <iostream>
-#include "Observer.h"
 #include <vector>
-#include "PhaseObserver.h"
+
 
 using namespace std;
 
@@ -28,8 +27,6 @@ public:
     virtual void firstEdge(listOfPlayer *x,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vtr)=0;
     virtual void redeployment(listOfPlayer *x,Player py,vector <NodeRegion> *nr_vPtr,vector<listOfPlayer> *lp_vtr)=0;
 
-protected:  
-private: 
 };
 
 

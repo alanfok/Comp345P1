@@ -10,8 +10,7 @@ class ModeratePlayer:public PlayerType{
 public: 
     ModeratePlayer();
     ~ModeratePlayer();
-    Observer observer;
-    PhaseObserver phase_observer;
+
     // Player py;
     //inherate in PlayerType Class
     virtual void pickupRaceNSp(listOfPlayer *x);

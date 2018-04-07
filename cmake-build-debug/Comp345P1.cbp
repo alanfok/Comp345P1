@@ -98,18 +98,6 @@
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Die.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.cpp">
-			<Option target="Comp345P1"/>
-		</Unit>
-		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.h">
-			<Option target="Comp345P1"/>
-		</Unit>
-		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.cpp">
-			<Option target="Comp345P1"/>
-		</Unit>
-		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.h">
-			<Option target="Comp345P1"/>
-		</Unit>
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Interraction.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
@@ -146,9 +134,6 @@
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Observer.cpp">
-			<Option target="Comp345P1"/>
-		</Unit>
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h">
 			<Option target="Comp345P1"/>
 		</Unit>
@@ -173,6 +158,12 @@
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h">
 			<Option target="Comp345P1"/>
 		</Unit>
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Subject.cpp">
+			<Option target="Comp345P1"/>
+		</Unit>
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h">
+			<Option target="Comp345P1"/>
+		</Unit>
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
@@ -185,19 +176,7 @@
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.cpp">
-			<Option target="Comp345P1"/>
-		</Unit>
-		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.h">
-			<Option target="Comp345P1"/>
-		</Unit>
-		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/gameStatsObserver.h">
-			<Option target="Comp345P1"/>
-		</Unit>
-		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/gameStatsObserverDecorator.cpp">
-			<Option target="Comp345P1"/>
-		</Unit>
-		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/gameStatsObserverDecorator.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/fds.h">
 			<Option target="Comp345P1"/>
 		</Unit>
 		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/main.cpp">

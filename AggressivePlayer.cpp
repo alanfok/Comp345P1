@@ -26,7 +26,7 @@ void AggressivePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> 
     py.brr();
     cout<<"------------------------first entry to the map------------------------"<<endl;
     cout<<"the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<" population(token)"<<endl;
-    observer.attach(py.vplayer[py.tempNbIndex]);// attach the player Object to Observer
+
     totalNumberOfRegion=py.maploader.nbline;// get how many region
     playerID=lp->getidPlayer();//get Player ID
     playerPopulation=lp->getpopulation();//get Player population
@@ -84,7 +84,7 @@ void AggressivePlayer::conquers(listOfPlayer *lp,Player py,vector <NodeRegion> *
     py.prints();
     playerID = lp->getidPlayer();//get Player ID
     playerPopulation = lp->getpopulation();//get Player population
-    phase_observer.update_conquer(*lp_vPtr);//calling the Observer to update the information
+
     cout << py.vnodeRegion[toWhichRegion].getid_player() << "get " << py.vnodeRegion[toWhichRegion].getregion_status()
          << endl;
     conquer_check = false;//get conquer_check to false to do-while loop purpose

@@ -12,8 +12,7 @@ public: 
     AggressivePlayer(); 
     ~AggressivePlayer();
 
-    Observer observer;
-    PhaseObserver phase_observer;
+
     NodeRegion *nr_ptr;
     int totalNumberOfRegion;
     int playerID;

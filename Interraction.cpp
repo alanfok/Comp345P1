@@ -74,6 +74,12 @@ void Interraction ::setplayer(string map, int nbplayer) {
         if (input < 0 || input > 4) {
             cout << "input is invalid" << endl;
         } else if (input == 1) {
+
+
+           po = new PhaseObserver();
+            player.Attach(po);
+           // ls->Attach(po);
+          //  ls->Notify();
             aggressivePlayer.pickupRaceNSp(&player.vplayer[i]);
             br();
             aggressivePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,

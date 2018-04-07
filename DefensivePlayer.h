@@ -12,8 +12,7 @@ class DefensivePlayer:public PlayerType{
 public: 
     DefensivePlayer(); 
     ~DefensivePlayer();
-    Observer observer;
-    PhaseObserver phase_observer;
+
     //   Player py;
 
 

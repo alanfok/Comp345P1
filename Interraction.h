@@ -13,13 +13,12 @@
 #include <iostream>
 #include "ListofPlayer.h"
 #include "Veiwer.h"
-#include "Observer.h"
-#include "PhaseObserver.h"
+
 #include "AggressivePlayer.h"
 #include "DefensivePlayer.h"
 #include "ModeratePlayer.h"
 #include "RandomPlayer.h"
-
+#include "PhaseObserver.h"
 
 using namespace std;
 class Interraction{
@@ -29,9 +28,9 @@ public:
     Maploader maploader;
     Tokens tokens;
     Maps maps;
-    Observer observer;
+
     AggressivePlayer aggressivePlayer;
-    PhaseObserver phase_observer;
+
     DefensivePlayer  defensePlayer;
     ModeratePlayer moderatePlayer;
     //HumanPlayer humanPlayer;
@@ -44,7 +43,8 @@ public:
 
     string tempvrace ;
     string tempsp;
-
+    Player* player_pointer;
+    PhaseObserver* po;
     int turn;
     int input;
     int temp_population=2;//all region need at least 2 to occupied

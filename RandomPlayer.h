@@ -10,8 +10,7 @@ class RandomPlayer:public PlayerType{
 public:
     RandomPlayer();
     ~RandomPlayer();
-    Observer observer;
-    PhaseObserver phase_observer;
+
 //    Player py;
 //inherate in PlayerType Class
     void pickupRaceNSp(listOfPlayer *x);

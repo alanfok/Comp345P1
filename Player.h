@@ -11,11 +11,12 @@
 #include "ListofPlayer.h"
 #include <vector>
 #include <algorithm>
+#include "Subject.h"
 
 //#include "Interraction.handsObserverDecorator"
 using   namespace std;
 
-class Player :public Tokens{
+class Player :public Tokens,public Subject{
 public:
 
     Die die;

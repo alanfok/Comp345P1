@@ -1,38 +1,29 @@
 //
-// Created by fok poon kai on 2018-04-01.
+// Created by fok poon kai on 2018-04-06.
 //
+//
+//#ifndef COMP345P1_OBSERVER_H
+//#define COMP345P1_OBSERVER_H
 
-
-
-
-#ifndef COMP345P1_OBSERVER_H
-#define COMP345P1_OBSERVER_H
-#include "ListofPlayer.h"
-#include "Player.h"
-#include <vector>
+#include <string>
 #include <iostream>
-
+#include <vector>
 using namespace std;
 
+class Subject;
+class Player;
 
-class Observer {
+class Observer
+{
 public:
-    vector <listOfPlayer> getPlayerList();
-    void attach(listOfPlayer ls);
-    void update_coin();
-    void update_conquer();
-    //void update(vector <listOfPlayer> phaseObserver);
-    void update(vector <listOfPlayer> phaseObserver,vector <int> playercounter,
-                int nbplayers,string race, string specialpower, int nbpopulation
-            ,int nb,Player py,int turn,string coin_status,string region_status,
-                vector <int> lostRegions , vector <listOfPlayer> vplayer);
+    string observerType;
 
-    void detach(listOfPlayer ls);
-    vector <listOfPlayer> phaseObserver;
-
+    //Observer();
+    //virtual void Update() = 0;
+    virtual void Update(Player*) {};
+    //virtual void Update(MapLoader*) = 0;
+    virtual void Update(int numRegion, Player * p) {};
+    virtual void UpdateP(int numRegion, vector<Player> &players) {};
 };
 
-
-
-
-#endif //COMP345P1_OBSERVER_H
+//#endif //COMP345P1_OBSERVER_H

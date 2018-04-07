@@ -46,6 +46,14 @@ public:
 
     void setStrategyBehaviour(int strategyBehaviour);
 
+
+
+
+
+
+
+
+
 private:
     int idPlayer;
 
@@ -59,5 +67,6 @@ private:
     string specialPower;
     string race;
     int strategyBehaviour;
+
 };
 #endif //COMP345P1_NODEPLAYER_H

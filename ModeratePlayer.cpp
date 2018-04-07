@@ -25,7 +25,7 @@ void ModeratePlayer::firstEdge(listOfPlayer *lp,Player py,vector <NodeRegion> *n
     py.brr();
     cout<<"------------------------first entry to the map------------------------"<<endl;
     cout<<"the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<" population(token)"<<endl;
-    observer.attach(py.vplayer[py.tempNbIndex]);// attach the player Object to Observer
+
     totalNumberOfRegion=py.maploader.nbline;// get how many region
     playerID=lp->getidPlayer();//get Player ID
     playerPopulation=lp->getpopulation();//get Player population
@@ -90,7 +90,7 @@ void ModeratePlayer::conquers(listOfPlayer *lp,Player py,vector <NodeRegion> *nr
             py.prints();
             playerID = lp->getidPlayer();//get Player ID
             playerPopulation = lp->getpopulation();//get Player population
-            phase_observer.update_conquer(*lp_vPtr);
+
             cout<<"From which region"<<endl;
             cin>>fromWhichRegion;
             fromWhichRegion-=1;
