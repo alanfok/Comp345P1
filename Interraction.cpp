@@ -229,12 +229,17 @@ void Interraction ::setplayer(string map, int nbplayer) {
     player_pointer->notifyStatic(&player.vplayer,maploader.nbline);
 // }//turn 2-10 endloop
     player_pointer->notifyStatic(&player.vplayer,maploader.nbline);
+
         player.declare_winner(); //declare who is winner
         player.del_pointer();
         player.vnodeRegion.clear();
         player.vnodeRegion.shrink_to_fit();
         player.vplayer.clear();
         player.vplayer.shrink_to_fit();
+        po=NULL;
+        so=NULL;
+        delete(po);
+        delete(so);
         cout << "end game" << endl;
 
     }

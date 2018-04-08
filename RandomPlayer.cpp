@@ -65,10 +65,9 @@ void RandomPlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_
 
 //becuz of ramdon it will have 50% chance it will decline or follow aggressive occupied method
 void RandomPlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
-
     srand(time(NULL));
-    randomnumberV2 = (rand()) % 3;// randomnumber will be 1 or 0
-    if(lp->getDecline()==true){
+    randomnumberV2 = (rand()) % 3;// randomnumber will be 0 , 1 and 2
+    if(lp->getDecline()==true){// it already decline
 /* if the player already decline before, we will follow the aggressive player occupied method
  * */ srand(time(NULL));
         randomnumberV2 = (rand()) % 2;
