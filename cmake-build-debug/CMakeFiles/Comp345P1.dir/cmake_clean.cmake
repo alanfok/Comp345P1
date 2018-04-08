@@ -19,6 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o"
   "CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o"
   "CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o"
+  "CMakeFiles/Comp345P1.dir/Component.cpp.o"
   "Comp345P1.pdb"
   "Comp345P1"
 )
