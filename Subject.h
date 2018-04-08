@@ -17,6 +17,7 @@ class Subject {
 
 protected:
     vector <Observer*> observer;
+    vector <Observer*> staticObserver;
 public:
        // class Observer;
        //
@@ -24,10 +25,10 @@ public:
        Subject(){};
     ~Subject(){};
     virtual void attach(Observer *observer) ;
-    virtual void detach(Observer *observer) ;
+    virtual void detach() ;
     virtual void notify(ListofPlayer *pl);
-
-
+    virtual void attachStatic(Observer *observer);
+    virtual void notifyStatic(vector<ListofPlayer> *lp_vPtr,int numberOfRegion);
 
 
 };

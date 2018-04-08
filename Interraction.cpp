@@ -73,13 +73,20 @@ void Interraction ::setplayer(string map, int nbplayer) {
              << endl;//strategy
         cin >> input;
         //use try and catch
+
+        player_pointer=&player;
+        lp=&player.vplayer[i];
+        po=new PhaseObserver();
+        so=new StatisticsObserve();
+        player_pointer->attach(po);
+        player_pointer->attachStatic(so);
         if (input < 0 || input > 4) {
             cout << "input is invalid" << endl;
         } else if (input == 1) {
-           player_pointer=&player;
-            lp=&player.vplayer[i];
-            po=new PhaseObserver();
-            player_pointer->attach(po);
+//           player_pointer=&player;
+//            lp=&player.vplayer[i];
+//            po=new PhaseObserver();
+//            player_pointer->attach(po);
             player_pointer->notify(&player.vplayer[i]);
             aggressivePlayer.pickupRaceNSp(&player.vplayer[i]);
             player_pointer->notify(&player.vplayer[i]);
@@ -119,8 +126,12 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
         }
         // player.test1();<~~~~ del
+
+
         cout << "the Player " << player.vplayer[i].getidPlayer() << " and " << player.vplayer[i].getpopulation()
              << endl;
+//
+//
     }
 
     //turn 2-10

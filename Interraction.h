@@ -14,6 +14,7 @@
 #include "ListofPlayer.h"
 #include "Veiwer.h"
 #include "PhaseObserver.h"
+#include "StatisticsObserver.h"
 #include "AggressivePlayer.h"
 #include "DefensivePlayer.h"
 #include "ModeratePlayer.h"
@@ -32,7 +33,6 @@ public:
 
     DefensivePlayer  defensePlayer;
     ModeratePlayer moderatePlayer;
-    //HumanPlayer humanPlayer;
     RandomPlayer randomPlayer;
     int tempvplayerid;
     int tempvplayerpop;
@@ -44,13 +44,12 @@ public:
     string tempsp;
     Player* player_pointer;
     PhaseObserver* po;
+    StatisticsObserve* so;
     int turn;
     int input;
     int temp_population=2;//all region need at least 2 to occupied
     string maps_using ;//<~~~change
     int temp_id;
-    int input_from;
-    int input_to;
     void setplayer(string map, int nbplayer);
     bool nextturn;//for turn2-10
     bool Occupiedcheck2To10;//for turn 2-10
@@ -62,8 +61,7 @@ public:
     int input_select;
     int input_temp_enter_pop;
     int select_play_type;
-    bool flag_Occ;//check the Occupied
-    bool flag_redeployment;//check the redeployment
+
     bool first_time_edge;
     bool edge_check;
     int race_coin  [6] ={0,0,0,0,0,0};

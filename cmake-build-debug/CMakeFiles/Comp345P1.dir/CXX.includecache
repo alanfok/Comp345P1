@@ -34,6 +34,34 @@ stdlib.h
 time.h
 -
 
+/Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.cpp
+DominationObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.h
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.h
+ObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ObserverDecorator.h
+ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
+iostream
+-
+vector
+-
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.cpp
+HandsObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.h
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.h
+ObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ObserverDecorator.h
+ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
+iostream
+-
+vector
+-
+
 /Users/fokpoonkai/CLionProjects/Comp345P1/Interraction.cpp
 Interraction.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/Interraction.h
@@ -57,6 +85,8 @@ Veiwer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h
 PhaseObserver.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.h
+StatisticsObserver.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.h
 AggressivePlayer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.h
 DefensivePlayer.h
@@ -133,6 +163,12 @@ ListofPlayer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
+vector
+-
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/ObserverDecorator.h
+Observer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.cpp
 PhaseObserver.h
@@ -188,6 +224,20 @@ RandomPlayer.h
 PlayerType.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
 
+/Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.cpp
+StatisticsObserver.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.h
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.h
+Observer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
+ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
+iostream
+-
+vector
+-
+
 /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.cpp
 Subject.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
@@ -230,6 +280,20 @@ Veiwer.h
 Player.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/Player.h
 iostream
+-
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.cpp
+VictoryCoinsObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.h
+
+/Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.h
+ObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ObserverDecorator.h
+ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
+iostream
+-
+vector
 -
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/main.cpp

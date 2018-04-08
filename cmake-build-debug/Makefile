@@ -204,6 +204,60 @@ Die.cpp.s:
 	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/Die.cpp.s
 .PHONY : Die.cpp.s
 
+DominationObserverDecorator.o: DominationObserverDecorator.cpp.o
+
+.PHONY : DominationObserverDecorator.o
+
+# target to build an object file
+DominationObserverDecorator.cpp.o:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o
+.PHONY : DominationObserverDecorator.cpp.o
+
+DominationObserverDecorator.i: DominationObserverDecorator.cpp.i
+
+.PHONY : DominationObserverDecorator.i
+
+# target to preprocess a source file
+DominationObserverDecorator.cpp.i:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.i
+.PHONY : DominationObserverDecorator.cpp.i
+
+DominationObserverDecorator.s: DominationObserverDecorator.cpp.s
+
+.PHONY : DominationObserverDecorator.s
+
+# target to generate assembly for a file
+DominationObserverDecorator.cpp.s:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.s
+.PHONY : DominationObserverDecorator.cpp.s
+
+HandsObserverDecorator.o: HandsObserverDecorator.cpp.o
+
+.PHONY : HandsObserverDecorator.o
+
+# target to build an object file
+HandsObserverDecorator.cpp.o:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o
+.PHONY : HandsObserverDecorator.cpp.o
+
+HandsObserverDecorator.i: HandsObserverDecorator.cpp.i
+
+.PHONY : HandsObserverDecorator.i
+
+# target to preprocess a source file
+HandsObserverDecorator.cpp.i:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.i
+.PHONY : HandsObserverDecorator.cpp.i
+
+HandsObserverDecorator.s: HandsObserverDecorator.cpp.s
+
+.PHONY : HandsObserverDecorator.s
+
+# target to generate assembly for a file
+HandsObserverDecorator.cpp.s:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.s
+.PHONY : HandsObserverDecorator.cpp.s
+
 Interraction.o: Interraction.cpp.o
 
 .PHONY : Interraction.o
@@ -447,6 +501,33 @@ RandomPlayer.cpp.s:
 	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.s
 .PHONY : RandomPlayer.cpp.s
 
+StatisticsObserver.o: StatisticsObserver.cpp.o
+
+.PHONY : StatisticsObserver.o
+
+# target to build an object file
+StatisticsObserver.cpp.o:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o
+.PHONY : StatisticsObserver.cpp.o
+
+StatisticsObserver.i: StatisticsObserver.cpp.i
+
+.PHONY : StatisticsObserver.i
+
+# target to preprocess a source file
+StatisticsObserver.cpp.i:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.i
+.PHONY : StatisticsObserver.cpp.i
+
+StatisticsObserver.s: StatisticsObserver.cpp.s
+
+.PHONY : StatisticsObserver.s
+
+# target to generate assembly for a file
+StatisticsObserver.cpp.s:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.s
+.PHONY : StatisticsObserver.cpp.s
+
 Subject.o: Subject.cpp.o
 
 .PHONY : Subject.o
@@ -528,6 +609,33 @@ Veiwer.cpp.s:
 	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/Veiwer.cpp.s
 .PHONY : Veiwer.cpp.s
 
+VictoryCoinsObserverDecorator.o: VictoryCoinsObserverDecorator.cpp.o
+
+.PHONY : VictoryCoinsObserverDecorator.o
+
+# target to build an object file
+VictoryCoinsObserverDecorator.cpp.o:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o
+.PHONY : VictoryCoinsObserverDecorator.cpp.o
+
+VictoryCoinsObserverDecorator.i: VictoryCoinsObserverDecorator.cpp.i
+
+.PHONY : VictoryCoinsObserverDecorator.i
+
+# target to preprocess a source file
+VictoryCoinsObserverDecorator.cpp.i:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.i
+.PHONY : VictoryCoinsObserverDecorator.cpp.i
+
+VictoryCoinsObserverDecorator.s: VictoryCoinsObserverDecorator.cpp.s
+
+.PHONY : VictoryCoinsObserverDecorator.s
+
+# target to generate assembly for a file
+VictoryCoinsObserverDecorator.cpp.s:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.s
+.PHONY : VictoryCoinsObserverDecorator.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -573,6 +681,12 @@ help:
 	@echo "... Die.o"
 	@echo "... Die.i"
 	@echo "... Die.s"
+	@echo "... DominationObserverDecorator.o"
+	@echo "... DominationObserverDecorator.i"
+	@echo "... DominationObserverDecorator.s"
+	@echo "... HandsObserverDecorator.o"
+	@echo "... HandsObserverDecorator.i"
+	@echo "... HandsObserverDecorator.s"
 	@echo "... Interraction.o"
 	@echo "... Interraction.i"
 	@echo "... Interraction.s"
@@ -600,6 +714,9 @@ help:
 	@echo "... RandomPlayer.o"
 	@echo "... RandomPlayer.i"
 	@echo "... RandomPlayer.s"
+	@echo "... StatisticsObserver.o"
+	@echo "... StatisticsObserver.i"
+	@echo "... StatisticsObserver.s"
 	@echo "... Subject.o"
 	@echo "... Subject.i"
 	@echo "... Subject.s"
@@ -609,6 +726,9 @@ help:
 	@echo "... Veiwer.o"
 	@echo "... Veiwer.i"
 	@echo "... Veiwer.s"
+	@echo "... VictoryCoinsObserverDecorator.o"
+	@echo "... VictoryCoinsObserverDecorator.i"
+	@echo "... VictoryCoinsObserverDecorator.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

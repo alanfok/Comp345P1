@@ -30,6 +30,20 @@ CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../Tokens.h
 CMakeFiles/Comp345P1.dir/Die.cpp.o: ../Die.cpp
 CMakeFiles/Comp345P1.dir/Die.cpp.o: ../Die.h
 
+CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: ../DominationObserverDecorator.cpp
+CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: ../DominationObserverDecorator.h
+CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: ../ListofPlayer.h
+CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: ../Observer.h
+CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: ../ObserverDecorator.h
+CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: ../Subject.h
+
+CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o: ../HandsObserverDecorator.cpp
+CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o: ../HandsObserverDecorator.h
+CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o: ../ListofPlayer.h
+CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o: ../Observer.h
+CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o: ../ObserverDecorator.h
+CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o: ../Subject.h
+
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../AggressivePlayer.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../DefensivePlayer.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Die.h
@@ -45,6 +59,7 @@ CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../PhaseObserver.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Player.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../PlayerType.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../RandomPlayer.h
+CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../StatisticsObserver.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Subject.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Tokens.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Veiwer.h
@@ -114,6 +129,12 @@ CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../RandomPlayer.h
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../Subject.h
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../Tokens.h
 
+CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o: ../ListofPlayer.h
+CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o: ../Observer.h
+CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o: ../StatisticsObserver.cpp
+CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o: ../StatisticsObserver.h
+CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o: ../Subject.h
+
 CMakeFiles/Comp345P1.dir/Subject.cpp.o: ../ListofPlayer.h
 CMakeFiles/Comp345P1.dir/Subject.cpp.o: ../Observer.h
 CMakeFiles/Comp345P1.dir/Subject.cpp.o: ../Subject.cpp
@@ -140,6 +161,13 @@ CMakeFiles/Comp345P1.dir/Veiwer.cpp.o: ../Tokens.h
 CMakeFiles/Comp345P1.dir/Veiwer.cpp.o: ../Veiwer.cpp
 CMakeFiles/Comp345P1.dir/Veiwer.cpp.o: ../Veiwer.h
 
+CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o: ../ListofPlayer.h
+CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o: ../Observer.h
+CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o: ../ObserverDecorator.h
+CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o: ../Subject.h
+CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o: ../VictoryCoinsObserverDecorator.cpp
+CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o: ../VictoryCoinsObserverDecorator.h
+
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../AggressivePlayer.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../DefensivePlayer.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Die.h
@@ -154,6 +182,7 @@ CMakeFiles/Comp345P1.dir/main.cpp.o: ../PhaseObserver.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Player.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../PlayerType.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../RandomPlayer.h
+CMakeFiles/Comp345P1.dir/main.cpp.o: ../StatisticsObserver.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Subject.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Tokens.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Veiwer.h

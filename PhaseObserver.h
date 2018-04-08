@@ -15,8 +15,6 @@ using namespace std;
 class PhaseObserver:public Observer{
 public:
 //
-
-  //  vector<listOfPlayer*> lpvector;
     PhaseObserver();
     virtual void update(ListofPlayer *lp);
 

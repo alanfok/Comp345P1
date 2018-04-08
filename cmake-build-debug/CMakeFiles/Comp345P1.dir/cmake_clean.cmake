@@ -15,6 +15,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o"
   "CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o"
   "CMakeFiles/Comp345P1.dir/Subject.cpp.o"
+  "CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o"
+  "CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o"
+  "CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o"
+  "CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o"
   "Comp345P1.pdb"
   "Comp345P1"
 )

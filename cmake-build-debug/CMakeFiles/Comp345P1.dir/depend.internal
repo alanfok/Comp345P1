@@ -30,6 +30,20 @@ CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o
 CMakeFiles/Comp345P1.dir/Die.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/Die.cpp
  /Users/fokpoonkai/CLionProjects/Comp345P1/Die.h
+CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o
+ /Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.cpp
+ /Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/ObserverDecorator.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
+CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o
+ /Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.cpp
+ /Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/ObserverDecorator.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.h
@@ -46,6 +60,7 @@ CMakeFiles/Comp345P1.dir/Interraction.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/Player.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h
@@ -114,6 +129,12 @@ CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h
+CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o
+ /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.cpp
+ /Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
 CMakeFiles/Comp345P1.dir/Subject.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
@@ -140,6 +161,13 @@ CMakeFiles/Comp345P1.dir/Veiwer.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.cpp
  /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h
+CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o
+ /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/ObserverDecorator.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.cpp
+ /Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.h
 CMakeFiles/Comp345P1.dir/main.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.h
@@ -155,6 +183,7 @@ CMakeFiles/Comp345P1.dir/main.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/Player.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h
