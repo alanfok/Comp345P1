@@ -71,7 +71,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                 "Press 3:ModeratePlaye          \n"
                 "Press 4:RandomPlayer           \n"
              << endl;//strategy
-        cin >> input;
+
         //use try and catch
 
         player_pointer=&player;
@@ -80,60 +80,76 @@ void Interraction ::setplayer(string map, int nbplayer) {
         so=new StatisticsObserve();
         player_pointer->attach(po);
         player_pointer->attachStatic(so);
-        if (input < 0 || input > 4) {
-            cout << "input is invalid" << endl;
-        } else if (input == 1) {
-//           player_pointer=&player;
-//            lp=&player.vplayer[i];
-//            po=new PhaseObserver();
-//            player_pointer->attach(po);
-            player_pointer->notify(&player.vplayer[i]);
-            aggressivePlayer.pickupRaceNSp(&player.vplayer[i]);
-            player_pointer->notify(&player.vplayer[i]);
-            br();
-            aggressivePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
-                                       &player.vplayer);//change  <~~make sure the player is entry from edge
-            veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(),player);
-            br();
+        inputCheck=false;
+        do {
+            cin >> input;
+            try {
+                if (input < 0 || input > 4) {
+                    throw input;
+                }
+                else if (input == 1) {
 
-            aggressivePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
-                                      &player.vplayer);//change <~~ occupied
-            aggressivePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion,
-                                    &player.vplayer);
-        } else if (input == 2) {
-            defensePlayer.pickupRaceNSp(&player.vplayer[i]);
-            defensePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
-                                    &player.vplayer);//change  <~~make sure the player is entry from edge
-            defensePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
-                                   &player.vplayer);//change  <~~ occupied
-            defensePlayer.redeployment(&player.vplayer[i], player, &player.vnodeRegion,
-                                       &player.vplayer);
-            defensePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
+                    player_pointer->notify(&player.vplayer[i]);
+                    aggressivePlayer.pickupRaceNSp(&player.vplayer[i]);
+                    player_pointer->notify(&player.vplayer[i]);
+                    br();
+                    aggressivePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
+                                               &player.vplayer);//change  <~~make sure the player is entry from edge
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    br();
 
-        } else if (input == 3) {
-            moderatePlayer.pickupRaceNSp(&player.vplayer[i]);
-            moderatePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
-                                     &player.vplayer);//change  <~~make sure the player is entry from edge
-            moderatePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
-                                    &player.vplayer);//change   <~~ occupied
+                    aggressivePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
+                                              &player.vplayer);//change <~~ occupied
+                    aggressivePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion,
+                                            &player.vplayer);
 
-        } else {
-            randomPlayer.pickupRaceNSp(&player.vplayer[i]);
-            randomPlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
-                                   &player.vplayer);//change  <~~make sure the player is entry from edge
-            randomPlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
-                                  &player.vplayer);//change   <~~ occupied
+                    inputCheck=true;
+                } else if (input == 2) {
+                    defensePlayer.pickupRaceNSp(&player.vplayer[i]);
+                    defensePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
+                                            &player.vplayer);//change  <~~make sure the player is entry from edge
+//                    defensePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
+//                                           &player.vplayer);//change  <~~ occupied
+                    defensePlayer.redeployment(&player.vplayer[i], player, &player.vnodeRegion,
+                                               &player.vplayer);
+                    defensePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
 
-        }
-        // player.test1();<~~~~ del
+                    inputCheck=true;
+                } else if (input == 3) {
+                    moderatePlayer.pickupRaceNSp(&player.vplayer[i]);
+                    moderatePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
+                                             &player.vplayer);//change  <~~make sure the player is entry from edge
+                    moderatePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
+                                            &player.vplayer);//change   <~~ occupied
+                    moderatePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
+                    inputCheck=true;
+                } else if (input == 4) {
+                    randomPlayer.pickupRaceNSp(&player.vplayer[i]);
+                    randomPlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
+                                           &player.vplayer);//change  <~~make sure the player is entry from edge
+                    randomPlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
+                                          &player.vplayer);//change   <~~ occupied
+                    randomPlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
+                    inputCheck=true;
+                }
 
+            } catch (int input) {
+                cout << "the input is invalid \n"
+                     "Enter again:"<< endl;
+                cin.clear();
+                cin.ignore(1);
+            }
+            catch (...){
+                cout<<"the type is not right"<<endl;
+            }
+        }while(inputCheck==false);
 
         cout << "the Player " << player.vplayer[i].getidPlayer() << " and " << player.vplayer[i].getpopulation()
              << endl;
-//
-//
-    }
 
+    player.prints();
+    }
+    player_pointer->notifyStatic(&player.vplayer,maploader.nbline);
     //turn 2-10
     player.token_sort();
     //for (int j = 2; j <+10 ; ++j) {//2-10 loop
@@ -143,13 +159,13 @@ void Interraction ::setplayer(string map, int nbplayer) {
             if (player.vplayer[k].getidPlayer() == player.vplayer[l].getidPlayer()) {
                 temp_id = player.sortbyvplayercoin[k].getidPlayer();
             }
-
+            //player.vplayer[temp_id - 1].setTurn(j);
 
             //for decline <~~add to claudia computer
             if (player.vplayer[temp_id - 1].getDecline() == true &&
-                player.vplayer[temp_id - 1].getdecline_lock()) {//for player object who select decline
+                player.vplayer[temp_id - 1].getdecline_lock()==0) {//for player object who select decline
 
-                for (int i = 0; i < nbplayer; ++i) {
+              //  for (int i = 0; i < nbplayer; ++i) {
                     player.setRace_population(0);
                     numberOfPopulation = 0;
                     player.vrace_vspecialpower_print();
@@ -169,51 +185,40 @@ void Interraction ::setplayer(string map, int nbplayer) {
                                                      player.getvspecialpower(raceSelection));
                     numberOfPopulation = player.getRace_population();
                     cout << "You have " << numberOfPopulation << " poulation" << endl;
-                    player.vplayer[temp_id - 1].setspecialpower(player.getvspecialpower(raceSelection));
-                    player.vplayer[temp_id - 1].setrace(player.getvspecialpower(raceSelection));
-                    player.vplayer[temp_id - 1].setpopulation(numberOfPopulation);
-                    player.vplayer[temp_id - 1].setdecline_lock(1);//locked it
-                    player.shift(raceSelection);
+                    player.pickupAfterDecline(&player.vplayer[temp_id - 1],player.getvrace(raceSelection),player.getvspecialpower(raceSelection),numberOfPopulation);
+                   player.shift(raceSelection);
 
-
-                }
-                //decline end
-                //strategy
-                cout << "▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"
-                        "▉Select the player type         ▉\n"
-                        "▉Press 1:AggressivePlayer       ▉\n"
-                        "▉Press 2:DefensivePlayer        ▉\n"
-                        "▉Press 3:ModeratePlaye          ▉\n"
-                        "▉Press 4:RandomPlayer           ▉\n"
-                        "▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"
-                     << endl;//strategy
-                cin >> input;
-
-                if (input < 0 || input > 5) {
-                    cout << "input is invalid" << endl;
-                } else if (input == 1) {//Aggressive
+            //    }
+                } else if (player.vplayer[temp_id-1].getStrategyBehaviour()==1) {//Aggressive
                     aggressivePlayer.redeployment(&player.vplayer[temp_id - 1], player, &player.vnodeRegion,
                                                   &player.vplayer);
                     aggressivePlayer.conquers(&player.vplayer[temp_id - 1], player, &player.vnodeRegion,
                                               &player.vplayer);
 
+                    aggressivePlayer.scores(&player.vplayer[temp_id - 1], player, &player.vnodeRegion,
+                                            &player.vplayer);
 
-                } else if (input == 2) {//Defensive
+
+            } else if (player.vplayer[temp_id-1].getStrategyBehaviour() == 2) {//Defensive
                     defensePlayer.redeployment(&player.vplayer[temp_id - 1], player, &player.vnodeRegion,
                                                &player.vplayer);
                     defensePlayer.conquers(&player.vplayer[temp_id - 1], player, &player.vnodeRegion,
                                            &player.vplayer);
+                    defensePlayer.scores(&player.vplayer[temp_id - 1], player, &player.vnodeRegion,
+                                         &player.vplayer);
 
 
-                } else if (input == 3) {//Moderate
-                    moderatePlayer.pickupRaceNSp(&player.vplayer[temp_id - 1]);
+                } else if (player.vplayer[temp_id-1].getStrategyBehaviour() == 3) {//Moderate
+                moderatePlayer.conquers(&player.vplayer[temp_id - 1], player, &player.vnodeRegion,
+                                        &player.vplayer);//change   <~~ occupied
+                moderatePlayer.scores(&player.vplayer[temp_id - 1], player, &player.vnodeRegion, &player.vplayer);
 
 
-                } else if (input == 4) {
-                    //humanPlayer.pickupRaceNSp(player.vplayer[temp_id-1],player);
-                } else {//RandomPlayer
-                    randomPlayer.pickupRaceNSp(&player.vplayer[temp_id - 1]);
-                }
+                } else if (player.vplayer[temp_id-1].getStrategyBehaviour() == 4) {
+                randomPlayer.conquers(&player.vplayer[temp_id - 1], player, &player.vnodeRegion,
+                                        &player.vplayer);//change   <~~ occupied
+                randomPlayer.scores(&player.vplayer[temp_id - 1], player, &player.vnodeRegion, &player.vplayer);
+            }
                 cout << "the Player " << player.vplayer[temp_id - 1].getidPlayer() << " and "
                      << player.vplayer[temp_id - 1].getpopulation()
                      << endl;
@@ -221,9 +226,9 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
 
         }
-
+    player_pointer->notifyStatic(&player.vplayer,maploader.nbline);
 // }//turn 2-10 endloop
-
+    player_pointer->notifyStatic(&player.vplayer,maploader.nbline);
         player.declare_winner(); //declare who is winner
         player.del_pointer();
         player.vnodeRegion.clear();
@@ -233,7 +238,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
         cout << "end game" << endl;
 
     }
-}
+
 
 void Interraction::br() {
     cout<<"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"<<endl;

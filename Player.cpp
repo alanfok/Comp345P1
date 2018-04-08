@@ -82,23 +82,6 @@ void Player::declare_winner(){
 }
 
 
-
-void Player::return_puplation_to_occupied_player(int regionid) {
-    if(vnodeRegion[regionid].getid_player()!=0){
-        vnodeRegion[regionid].getid_player();
-        int temp_pop=vnodeRegion[regionid].getregion_population();
-        for (int i = 0; i < vplayer.size(); ++i) {
-            if(vplayer[i].getidPlayer()==vnodeRegion[regionid].getid_player()){
-                ListofPlayer *lpp=&vplayer[i];
-                lpp->setpopulation(lpp->getpopulation()+(temp_pop-1));
-                delete lpp;
-            }
-        }
-    }
-}
-
-
-
 int Player::special_power_pop_cost_deternment(int playerid, int regoinid) {
     if(vplayer[playerid].getspecialPower().compare("Commando")==0){
         return 1;
@@ -108,32 +91,6 @@ int Player::special_power_pop_cost_deternment(int playerid, int regoinid) {
         return 1;
     } else{
         return 2;}
-
-}
-
-void Player::conquers_v2(int region, int IdOfplayer,int player_population) {
-    int temp = player_population;
-    vplayer[IdOfplayer-1].setpopulation(vplayer[IdOfplayer-1].getpopulation() -temp);
-    vnodeRegion[region].setregion_population(temp);
-    vnodeRegion[region].setid_player(IdOfplayer);
-
-
-}
-
-void Player::withdraw_v2(int region, int Idofplayer, int pop) {
-    if(vnodeRegion[region].getid_player()==Idofplayer){
-        if(vnodeRegion[region].getregion_population()<pop){//
-            cout<<"you can't withdraw more than you have"<<endl;
-        }else{//pop withdraw = or less than region has(good)
-            int temp = vnodeRegion[region].getregion_population()-pop;
-            int temppypop=vplayer[Idofplayer].getpopulation()+pop;
-            vnodeRegion[region].setregion_population(temp);
-            vplayer[Idofplayer-1].setpopulation(temppypop);
-            check_region_is_zero_pop(region);
-        }
-    } else{//not occupid by the same player
-        cout<<"you don't have this region"<<endl;
-    }
 
 }
 
@@ -160,12 +117,6 @@ void Player::redeployment(int region, int Idofplayer, int pop) {
     }
 }
 
-void Player::brr(){
-
-
-    cout<<"▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉"<<endl;
-
-}
 
 void Player::population_costv2(int playerid,int regionid){
     cost_of_population=special_power_pop_cost_deternment(playerid,regionid);
@@ -227,19 +178,10 @@ void Player::redeploymentVeiw(ListofPlayer *lp, vector<NodeRegion> *nr_vPtr) {
     }
 }
 
+void Player::pickupAfterDecline(ListofPlayer *listofplayer, string race, string specialpower, int population) {
+    listofplayer->setspecialpower(specialpower);
+    listofplayer->setrace(race);
+    listofplayer->setpopulation(population);
+    listofplayer->setdecline_lock(1);
 
-
-void Player::test1() {
-    cout<<"--------------------------------test1-------------------------------"<<endl;
 }
-void Player::test2() {
-    cout<<"--------------------------------test2-------------------------------"<<endl;
-}
-void Player::test3() {
-    cout<<"--------------------------------test3-------------------------------"<<endl;
-}
-void Player::test4() {
-    cout<<"--------------------------------test4-------------------------------"<<endl;
-}
-
-

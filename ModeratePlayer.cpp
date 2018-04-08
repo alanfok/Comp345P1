@@ -22,7 +22,7 @@ void ModeratePlayer::pickupRaceNSp(ListofPlayer *lp){
 
 void ModeratePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr){
     py.prints();
-    py.brr();
+
     cout<<"------------------------first entry to the map------------------------"<<endl;
     cout<<"the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<" population(token)"<<endl;
 
@@ -65,7 +65,6 @@ void ModeratePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *n
     cout<<"------------------------The player selected "<<toWhichRegion+1<<"------------------------"<<endl;
     py.prints();//print out the map
     cout<<"Update-->the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
-
 }
 
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region

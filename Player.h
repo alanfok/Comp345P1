@@ -46,27 +46,20 @@ public:
     vector <ListofPlayer> vplayer;
     vector <NodeRegion> vnodeRegion;
     vector <ListofPlayer> sortbyvplayercoin;
-    vector <int> vdecline;  // just holding the player ID
     int special_power_pop_cost_deternment(int playerid,int regoinid);
     void declare_winner();
     void return_puplation_to_occupied_player(int regionid);//when invade the occupied regi
-    void conquers_v2(int region, int IdOfplayer , int player_population);
-    void withdraw_v2(int region, int Idofplayer , int pop);
+
     void redeployment(int region, int Idofplayer , int pop);
     void collecttoken(int playid);
     int tempNbIndex;
     void population_costv2(int playid,int regionid);
-    void brr();
     void returnToPreviousPlayer(vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr,int regionid);
-    void test1 ();
-    void test2 ();
-    void test3 ();
-    void test4 ();
     void conquers_v3(int player_population,ListofPlayer *lp, NodeRegion *nr
             , int region ,int invade_region);
     void conquers_v4(ListofPlayer *lp,vector <NodeRegion> *nr_vPtr ,int regionid,int pop);
     void redeploymentVeiw(ListofPlayer *lp,vector <NodeRegion> *nr_vPtr);
-
+    void pickupAfterDecline(ListofPlayer * player,string specialpower,string race, int population);
 
 private:
     void check_region_is_zero_pop(int region);

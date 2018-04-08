@@ -17,7 +17,7 @@ void RandomPlayer::pickupRaceNSp(ListofPlayer *lp){
 //same with above
 void RandomPlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr){
     py.prints();
-    py.brr();
+
     cout<<"------------------------first entry to the map------------------------"<<endl;
     cout<<"the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<" population(token)"<<endl;
 
@@ -77,7 +77,6 @@ void RandomPlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_v
 //same with aggessive occiped method, explanation in above
     if(randomnumberV2==0){
         py.prints();
-        py.brr();
         cout<<"------------------------first entry to the map------------------------"<<endl;
         cout<<"the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<" population(token)"<<endl;
 

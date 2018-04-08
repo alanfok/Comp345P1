@@ -27,13 +27,14 @@ public: 
     int playerPopulation;
     bool conquer_check;
     bool Edgeoccupied;
-    int firstLock=0;
+    //int firstLock=0;
     int toWhichRegion;
     int fromWhichRegion;
     bool redeployment_check;
     int input;
     int redeploymentPopulation;
     int regionPopulation;
+    bool input_check;
 
 };
 #endif //COMP345P1_DEFENSIVEPLAYER_H

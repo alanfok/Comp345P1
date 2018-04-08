@@ -52,9 +52,7 @@ public:
     int temp_id;
     void setplayer(string map, int nbplayer);
     bool nextturn;//for turn2-10
-    bool Occupiedcheck2To10;//for turn 2-10
-    bool pick_pop_during_Occupied2To10;//for turn 2-10
-    bool Redeploymentcheck2TO10;
+    bool inputCheck;//for turn 2-10
     int raceSelection;
     int numberOfPopulation ;
     int victorycoin;

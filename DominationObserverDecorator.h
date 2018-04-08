@@ -14,9 +14,5 @@ class DominationObserverDecorator: public ObserverDecorator{
 public:
     DominationObserverDecorator(Observer decoratedObserver) :ObserverDecorator(decoratedObserver) {};
     virtual void Update(vector<ListofPlayer> *lp_vPtr,int numberOfRegion);
-
-
-
-
 };
 #endif //COMP345P1_DOMINATIONOBSERVERDECORATOR_H
