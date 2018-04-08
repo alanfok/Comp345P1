@@ -9,10 +9,16 @@
 /Users/cfeochari/CLionProjects/Comp345P11/AggressivePlayer.cpp
 AggressivePlayer.h
 /Users/cfeochari/CLionProjects/Comp345P11/AggressivePlayer.h
+DominationObserverDecorator.h
+/Users/cfeochari/CLionProjects/Comp345P11/DominationObserverDecorator.h
 
 /Users/cfeochari/CLionProjects/Comp345P11/AggressivePlayer.h
 PlayerType.h
 /Users/cfeochari/CLionProjects/Comp345P11/PlayerType.h
+
+/Users/cfeochari/CLionProjects/Comp345P11/Component.cpp
+
+/Users/cfeochari/CLionProjects/Comp345P11/Component.h
 
 /Users/cfeochari/CLionProjects/Comp345P11/DefensivePlayer.cpp
 DefensivePlayer.h
@@ -34,13 +40,23 @@ stdlib.h
 time.h
 -
 
+/Users/cfeochari/CLionProjects/Comp345P11/DominationObserver.cpp
+DominationObserver.h
+/Users/cfeochari/CLionProjects/Comp345P11/DominationObserver.h
+iostream
+-
+
+/Users/cfeochari/CLionProjects/Comp345P11/DominationObserver.h
+Component.h
+/Users/cfeochari/CLionProjects/Comp345P11/Component.h
+
 /Users/cfeochari/CLionProjects/Comp345P11/DominationObserverDecorator.cpp
-DominationObserverDecorator.h
-/Users/cfeochari/CLionProjects/Comp345P11/DominationObserverDecorator.h
 
 /Users/cfeochari/CLionProjects/Comp345P11/DominationObserverDecorator.h
-ObserverDecorator.h
-/Users/cfeochari/CLionProjects/Comp345P11/ObserverDecorator.h
+DominationObserver.h
+/Users/cfeochari/CLionProjects/Comp345P11/DominationObserver.h
+Component.h
+/Users/cfeochari/CLionProjects/Comp345P11/Component.h
 ListofPlayer.h
 /Users/cfeochari/CLionProjects/Comp345P11/ListofPlayer.h
 iostream
@@ -95,6 +111,10 @@ ModeratePlayer.h
 /Users/cfeochari/CLionProjects/Comp345P11/ModeratePlayer.h
 RandomPlayer.h
 /Users/cfeochari/CLionProjects/Comp345P11/RandomPlayer.h
+Component.h
+/Users/cfeochari/CLionProjects/Comp345P11/Component.h
+DominationObserver.h
+/Users/cfeochari/CLionProjects/Comp345P11/DominationObserver.h
 
 /Users/cfeochari/CLionProjects/Comp345P11/ListofPlayer.cpp
 ListofPlayer.h

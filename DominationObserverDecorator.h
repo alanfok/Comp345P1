@@ -4,8 +4,24 @@
 
 #ifndef COMP345P1_DOMINATIONOBSERVERDECORATOR_H
 #define COMP345P1_DOMINATIONOBSERVERDECORATOR_H
+
+#include "DominationObserver.h"
+#include "Component.h"
+
+class DominationObserverDecorator : public Component
+{
+public:
+    DominationObserverDecorator(Component* ic) : dominationobserver(ic) {}
+    ~DominationObserverDecorator() {}
+    virtual void showIceCream() =0;
+    Component* getIceCream() { return this->dominationobserver; }
+
+
+private:
+    Component* dominationobserver;
+};
 //https://gist.github.com/dlivingstone/3006324
-#include "ObserverDecorator.h"
+/*#include "ObserverDecorator.h"
 #include "ListofPlayer.h"
 #include <iostream>
 #include <vector>
@@ -17,6 +33,5 @@ public:
 
 
 
-
-};
+};*/
 #endif //COMP345P1_DOMINATIONOBSERVERDECORATOR_H

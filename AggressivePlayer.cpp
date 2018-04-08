@@ -3,6 +3,8 @@
 //
 
 #include "AggressivePlayer.h"
+#include "DominationObserverDecorator.h"
+//DominationObserverDecorator d;
 AggressivePlayer::AggressivePlayer(){}
 AggressivePlayer::~AggressivePlayer(){}
 
@@ -54,6 +56,8 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
                     cout<<"The region costs more population than you have"<<endl;
                 }else {
                     //return the previous user
+                    //DominationObserverDecorator d(*lp,23);
+                    //cout << "HERE"<<endl;
                     py.returnToPreviousPlayer(nr_vPtr,lp_vPtr,toWhichRegion);//in player class(Return to puopluation to ex-ocuppied player)
                     //↑↑↑ find out the previous region owner and return the region population -1 to previous region owne
                     lp->setpopulation(lp->getpopulation()-py.cost_of_population);//←reset player object population (player origional population - population that player spend)

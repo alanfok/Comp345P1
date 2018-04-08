@@ -231,6 +231,33 @@ Die.cpp.s:
 	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/Die.cpp.s
 .PHONY : Die.cpp.s
 
+DominationObserver.o: DominationObserver.cpp.o
+
+.PHONY : DominationObserver.o
+
+# target to build an object file
+DominationObserver.cpp.o:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/DominationObserver.cpp.o
+.PHONY : DominationObserver.cpp.o
+
+DominationObserver.i: DominationObserver.cpp.i
+
+.PHONY : DominationObserver.i
+
+# target to preprocess a source file
+DominationObserver.cpp.i:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/DominationObserver.cpp.i
+.PHONY : DominationObserver.cpp.i
+
+DominationObserver.s: DominationObserver.cpp.s
+
+.PHONY : DominationObserver.s
+
+# target to generate assembly for a file
+DominationObserver.cpp.s:
+	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/DominationObserver.cpp.s
+.PHONY : DominationObserver.cpp.s
+
 DominationObserverDecorator.o: DominationObserverDecorator.cpp.o
 
 .PHONY : DominationObserverDecorator.o
@@ -711,6 +738,9 @@ help:
 	@echo "... Die.o"
 	@echo "... Die.i"
 	@echo "... Die.s"
+	@echo "... DominationObserver.o"
+	@echo "... DominationObserver.i"
+	@echo "... DominationObserver.s"
 	@echo "... DominationObserverDecorator.o"
 	@echo "... DominationObserverDecorator.i"
 	@echo "... DominationObserverDecorator.s"

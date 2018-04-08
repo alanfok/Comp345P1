@@ -3,7 +3,10 @@
 
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../AggressivePlayer.cpp
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../AggressivePlayer.h
+CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Component.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Die.h
+CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../DominationObserver.h
+CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../DominationObserverDecorator.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../ListofPlayer.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Maploader.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Maps.h
@@ -13,6 +16,8 @@ CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Player.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../PlayerType.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Subject.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Tokens.h
+
+CMakeFiles/Comp345P1.dir/Component.cpp.o: ../Component.cpp
 
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../DefensivePlayer.cpp
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../DefensivePlayer.h
@@ -30,12 +35,11 @@ CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../Tokens.h
 CMakeFiles/Comp345P1.dir/Die.cpp.o: ../Die.cpp
 CMakeFiles/Comp345P1.dir/Die.cpp.o: ../Die.h
 
+CMakeFiles/Comp345P1.dir/DominationObserver.cpp.o: ../Component.h
+CMakeFiles/Comp345P1.dir/DominationObserver.cpp.o: ../DominationObserver.cpp
+CMakeFiles/Comp345P1.dir/DominationObserver.cpp.o: ../DominationObserver.h
+
 CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: ../DominationObserverDecorator.cpp
-CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: ../DominationObserverDecorator.h
-CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: ../ListofPlayer.h
-CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: ../Observer.h
-CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: ../ObserverDecorator.h
-CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: ../Subject.h
 
 CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o: ../HandsObserverDecorator.cpp
 CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o: ../HandsObserverDecorator.h
@@ -45,8 +49,10 @@ CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o: ../ObserverDecorator.h
 CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o: ../Subject.h
 
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../AggressivePlayer.h
+CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Component.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../DefensivePlayer.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Die.h
+CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../DominationObserver.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Interraction.cpp
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Interraction.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../ListofPlayer.h
@@ -169,8 +175,10 @@ CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o: ../VictoryCoinsObs
 CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o: ../VictoryCoinsObserverDecorator.h
 
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../AggressivePlayer.h
+CMakeFiles/Comp345P1.dir/main.cpp.o: ../Component.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../DefensivePlayer.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Die.h
+CMakeFiles/Comp345P1.dir/main.cpp.o: ../DominationObserver.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Interraction.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../ListofPlayer.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Maploader.h

@@ -91,6 +91,9 @@
 		<Unit filename="/Users/cfeochari/CLionProjects/Comp345P11/Component.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
+		<Unit filename="/Users/cfeochari/CLionProjects/Comp345P11/Component.h">
+			<Option target="Comp345P1"/>
+		</Unit>
 		<Unit filename="/Users/cfeochari/CLionProjects/Comp345P11/DefensivePlayer.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
@@ -101,6 +104,12 @@
 			<Option target="Comp345P1"/>
 		</Unit>
 		<Unit filename="/Users/cfeochari/CLionProjects/Comp345P11/Die.h">
+			<Option target="Comp345P1"/>
+		</Unit>
+		<Unit filename="/Users/cfeochari/CLionProjects/Comp345P11/DominationObserver.cpp">
+			<Option target="Comp345P1"/>
+		</Unit>
+		<Unit filename="/Users/cfeochari/CLionProjects/Comp345P11/DominationObserver.h">
 			<Option target="Comp345P1"/>
 		</Unit>
 		<Unit filename="/Users/cfeochari/CLionProjects/Comp345P11/DominationObserverDecorator.cpp">

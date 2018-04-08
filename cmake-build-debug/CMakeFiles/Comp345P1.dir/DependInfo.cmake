@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/cfeochari/CLionProjects/Comp345P11/Component.cpp" "/Users/cfeochari/CLionProjects/Comp345P11/cmake-build-debug/CMakeFiles/Comp345P1.dir/Component.cpp.o"
   "/Users/cfeochari/CLionProjects/Comp345P11/DefensivePlayer.cpp" "/Users/cfeochari/CLionProjects/Comp345P11/cmake-build-debug/CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o"
   "/Users/cfeochari/CLionProjects/Comp345P11/Die.cpp" "/Users/cfeochari/CLionProjects/Comp345P11/cmake-build-debug/CMakeFiles/Comp345P1.dir/Die.cpp.o"
+  "/Users/cfeochari/CLionProjects/Comp345P11/DominationObserver.cpp" "/Users/cfeochari/CLionProjects/Comp345P11/cmake-build-debug/CMakeFiles/Comp345P1.dir/DominationObserver.cpp.o"
   "/Users/cfeochari/CLionProjects/Comp345P11/DominationObserverDecorator.cpp" "/Users/cfeochari/CLionProjects/Comp345P11/cmake-build-debug/CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o"
   "/Users/cfeochari/CLionProjects/Comp345P11/HandsObserverDecorator.cpp" "/Users/cfeochari/CLionProjects/Comp345P11/cmake-build-debug/CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o"
   "/Users/cfeochari/CLionProjects/Comp345P11/Interraction.cpp" "/Users/cfeochari/CLionProjects/Comp345P11/cmake-build-debug/CMakeFiles/Comp345P1.dir/Interraction.cpp.o"

@@ -2,7 +2,7 @@
 // Created by fok poon kai on 2018-04-07.
 //
 
-#include "DominationObserverDecorator.h"
+/*#include "DominationObserverDecorator.h"
 void DominationObserverDecorator::Update(vector<ListofPlayer> *lp_vPtr, int numberOfRegion) {
 
     for (int i = 0; i < lp_vPtr->size(); ++i) {
@@ -10,4 +10,4 @@ void DominationObserverDecorator::Update(vector<ListofPlayer> *lp_vPtr, int numb
            ((*lp_vPtr)[i].getNumberOfOccupiedRegion()/numberOfRegion)/100<<" precent"<<
            endl;
     }
-}
+}*/

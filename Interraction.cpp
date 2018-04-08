@@ -65,6 +65,8 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
         player.tempPlayerId=player.vplayer[i].getidPlayer();//for observer purpose
         //strategy
+        Component* dominationobserver = new DominationObserver();
+        dominationobserver->showIceCream();
         cout << "Select the player type         \n"
                 "Press 1:AggressivePlayer       \n"
                 "Press 2:DefensivePlayer        \n"

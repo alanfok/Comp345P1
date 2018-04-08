@@ -4,7 +4,10 @@
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o
  /Users/cfeochari/CLionProjects/Comp345P11/AggressivePlayer.cpp
  /Users/cfeochari/CLionProjects/Comp345P11/AggressivePlayer.h
+ /Users/cfeochari/CLionProjects/Comp345P11/Component.h
  /Users/cfeochari/CLionProjects/Comp345P11/Die.h
+ /Users/cfeochari/CLionProjects/Comp345P11/DominationObserver.h
+ /Users/cfeochari/CLionProjects/Comp345P11/DominationObserverDecorator.h
  /Users/cfeochari/CLionProjects/Comp345P11/ListofPlayer.h
  /Users/cfeochari/CLionProjects/Comp345P11/Maploader.h
  /Users/cfeochari/CLionProjects/Comp345P11/Maps.h
@@ -14,6 +17,8 @@ CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o
  /Users/cfeochari/CLionProjects/Comp345P11/PlayerType.h
  /Users/cfeochari/CLionProjects/Comp345P11/Subject.h
  /Users/cfeochari/CLionProjects/Comp345P11/Tokens.h
+CMakeFiles/Comp345P1.dir/Component.cpp.o
+ /Users/cfeochari/CLionProjects/Comp345P11/Component.cpp
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o
  /Users/cfeochari/CLionProjects/Comp345P11/DefensivePlayer.cpp
  /Users/cfeochari/CLionProjects/Comp345P11/DefensivePlayer.h
@@ -30,13 +35,12 @@ CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o
 CMakeFiles/Comp345P1.dir/Die.cpp.o
  /Users/cfeochari/CLionProjects/Comp345P11/Die.cpp
  /Users/cfeochari/CLionProjects/Comp345P11/Die.h
+CMakeFiles/Comp345P1.dir/DominationObserver.cpp.o
+ /Users/cfeochari/CLionProjects/Comp345P11/Component.h
+ /Users/cfeochari/CLionProjects/Comp345P11/DominationObserver.cpp
+ /Users/cfeochari/CLionProjects/Comp345P11/DominationObserver.h
 CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o
  /Users/cfeochari/CLionProjects/Comp345P11/DominationObserverDecorator.cpp
- /Users/cfeochari/CLionProjects/Comp345P11/DominationObserverDecorator.h
- /Users/cfeochari/CLionProjects/Comp345P11/ListofPlayer.h
- /Users/cfeochari/CLionProjects/Comp345P11/Observer.h
- /Users/cfeochari/CLionProjects/Comp345P11/ObserverDecorator.h
- /Users/cfeochari/CLionProjects/Comp345P11/Subject.h
 CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o
  /Users/cfeochari/CLionProjects/Comp345P11/HandsObserverDecorator.cpp
  /Users/cfeochari/CLionProjects/Comp345P11/HandsObserverDecorator.h
@@ -46,8 +50,10 @@ CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o
  /Users/cfeochari/CLionProjects/Comp345P11/Subject.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o
  /Users/cfeochari/CLionProjects/Comp345P11/AggressivePlayer.h
+ /Users/cfeochari/CLionProjects/Comp345P11/Component.h
  /Users/cfeochari/CLionProjects/Comp345P11/DefensivePlayer.h
  /Users/cfeochari/CLionProjects/Comp345P11/Die.h
+ /Users/cfeochari/CLionProjects/Comp345P11/DominationObserver.h
  /Users/cfeochari/CLionProjects/Comp345P11/Interraction.cpp
  /Users/cfeochari/CLionProjects/Comp345P11/Interraction.h
  /Users/cfeochari/CLionProjects/Comp345P11/ListofPlayer.h
@@ -170,8 +176,10 @@ CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o
  /Users/cfeochari/CLionProjects/Comp345P11/VictoryCoinsObserverDecorator.h
 CMakeFiles/Comp345P1.dir/main.cpp.o
  /Users/cfeochari/CLionProjects/Comp345P11/AggressivePlayer.h
+ /Users/cfeochari/CLionProjects/Comp345P11/Component.h
  /Users/cfeochari/CLionProjects/Comp345P11/DefensivePlayer.h
  /Users/cfeochari/CLionProjects/Comp345P11/Die.h
+ /Users/cfeochari/CLionProjects/Comp345P11/DominationObserver.h
  /Users/cfeochari/CLionProjects/Comp345P11/Interraction.h
  /Users/cfeochari/CLionProjects/Comp345P11/ListofPlayer.h
  /Users/cfeochari/CLionProjects/Comp345P11/Maploader.h

@@ -19,6 +19,9 @@
 #include "DefensivePlayer.h"
 #include "ModeratePlayer.h"
 #include "RandomPlayer.h"
+#include "Component.h"
+#include "DominationObserver.h"
+
 
 using namespace std;
 class Interraction{
