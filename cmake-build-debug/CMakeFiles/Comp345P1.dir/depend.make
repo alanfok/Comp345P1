@@ -47,6 +47,7 @@ CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o: ../Subject.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../AggressivePlayer.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../DefensivePlayer.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Die.h
+CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../HandsObserverDecorator.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Interraction.cpp
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Interraction.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../ListofPlayer.h
@@ -55,6 +56,7 @@ CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Maps.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../ModeratePlayer.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../NodeRegion.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Observer.h
+CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../ObserverDecorator.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../PhaseObserver.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Player.h
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../PlayerType.h
@@ -171,6 +173,7 @@ CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o: ../VictoryCoinsObs
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../AggressivePlayer.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../DefensivePlayer.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Die.h
+CMakeFiles/Comp345P1.dir/main.cpp.o: ../HandsObserverDecorator.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Interraction.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../ListofPlayer.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Maploader.h
@@ -178,6 +181,7 @@ CMakeFiles/Comp345P1.dir/main.cpp.o: ../Maps.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../ModeratePlayer.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../NodeRegion.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Observer.h
+CMakeFiles/Comp345P1.dir/main.cpp.o: ../ObserverDecorator.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../PhaseObserver.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../Player.h
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../PlayerType.h

@@ -19,6 +19,7 @@
 #include "DefensivePlayer.h"
 #include "ModeratePlayer.h"
 #include "RandomPlayer.h"
+#include "HandsObserverDecorator.h"
 
 using namespace std;
 class Interraction{
@@ -36,6 +37,7 @@ public:
     RandomPlayer randomPlayer;
     int tempvplayerid;
     int tempvplayerpop;
+    HandsObserverDecorator *hod;
 
     vector <int> playercounter;
     vector <int> lostRegions;
@@ -56,15 +58,12 @@ public:
     int raceSelection;
     int numberOfPopulation ;
     int victorycoin;
-    int input_select;
-    int input_temp_enter_pop;
-    int select_play_type;
+    int temp_index;
 
     bool first_time_edge;
     bool edge_check;
     int race_coin  [6] ={0,0,0,0,0,0};
-    void population_cost(int regionid , int playerid);
-    void invade_pack(int input_to, int tempvplayerid, int temp_occ_pp);
+
     void br();
 
 };

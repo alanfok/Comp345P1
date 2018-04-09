@@ -94,13 +94,13 @@ int Player::special_power_pop_cost_deternment(int playerid, int regoinid) {
 
 }
 
-void Player::check_region_is_zero_pop(int region) {
-    if (vnodeRegion[region].getregion_population()==0){
-        vnodeRegion[region].setid_player(0);//erase the regionid data
-        vnodeRegion[region].setplayer_race("");//erase the regionrace data
-        vnodeRegion[region].setplayer_specialpower("");  //erase the regionsp data
-    }
-}
+//void Player::check_region_is_zero_pop(int region) {
+//    if (vnodeRegion[region].getregion_population()==0){
+//        vnodeRegion[region].setid_player(0);//erase the regionid data
+//        vnodeRegion[region].setplayer_race("");//erase the regionrace data
+//        vnodeRegion[region].setplayer_specialpower("");  //erase the regionsp data
+//    }
+//}
 
 void Player::redeployment(int region, int Idofplayer, int pop) {
     if(vnodeRegion[region].getid_player()==Idofplayer){// if ther
@@ -131,18 +131,18 @@ void Player::population_costv2(int playerid,int regionid){
     }
 }
 
-
-void Player::conquers_v3(int player_population,ListofPlayer *lp, NodeRegion *nr
-        , int region ,int invade_region) {
-
-    occupied(region, lp->getidPlayer(), invade_region);
-    int temp = player_population;
-    lp->setpopulation(lp->getpopulation() -temp);
-    nr->setregion_population(temp);
-    nr->setid_player(lp->getidPlayer());
-
-
-}
+//
+//void Player::conquers_v3(int player_population,ListofPlayer *lp, NodeRegion *nr
+//        , int region ,int invade_region) {
+//
+//    occupied(region, lp->getidPlayer(), invade_region);
+//    int temp = player_population;
+//    lp->setpopulation(lp->getpopulation() -temp);
+//    nr->setregion_population(temp);
+//    nr->setid_player(lp->getidPlayer());
+//
+//
+//}
 
 
 void Player::conquers_v4(ListofPlayer *lp,vector <NodeRegion> *nr_vPtr,int pop,int regionid){

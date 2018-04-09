@@ -21,13 +21,13 @@ public: 
     virtual  void conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr);
     virtual void scores(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr);
     virtual  void firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr);
-    void redeployment(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr);
+    virtual void redeployment(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr);
     int totalNumberOfRegion;
     int playerID;
     int playerPopulation;
     bool conquer_check;
     bool Edgeoccupied;
-    //int firstLock=0;
+
     int toWhichRegion;
     int fromWhichRegion;
     bool redeployment_check;

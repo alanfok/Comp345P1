@@ -95,6 +95,8 @@ ModeratePlayer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.h
 RandomPlayer.h
 /Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h
+HandsObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.h
 
 /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.cpp
 ListofPlayer.h

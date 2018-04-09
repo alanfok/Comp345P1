@@ -77,11 +77,11 @@ string ListofPlayer::getrace(){
     return race;
 }
 
-void ListofPlayer::setidPlayer(int idPlayer)
-{
-    this->idPlayer=idPlayer;
-
-}
+//void ListofPlayer::setidPlayer(int idPlayer)
+//{
+//    this->idPlayer=idPlayer;
+//
+//}
 
 void ListofPlayer::setvictoryCoins(int victoryCoins){
 

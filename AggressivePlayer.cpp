@@ -33,9 +33,34 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
     playerID=lp->getidPlayer();//get Player ID
     playerPopulation=lp->getpopulation();//get Player population
     do {//go to do loop to make sure the first region is from the edge of the map
+
+
+
+
+
         cout<<"please Enter the first region u want to occupy"<<endl;
+
+        bool checkVaild=false;
+
+        do {
         cin>>toWhichRegion;
         toWhichRegion-=1;
+
+            try {
+                if (toWhichRegion < 0 || toWhichRegion > totalNumberOfRegion) {
+                    throw toWhichRegion;
+                }
+                if (!cin) {
+                    toWhichRegion;
+                }else{
+                    checkVaild=true;
+                }
+            } catch (int toWhichRegion) {
+                cout << "The input is invalid\nPlease enter again" << endl;
+                cin.clear();
+                cin.ignore(1);
+            }
+        }while (checkVaild==false);
 
         if (py.maploader.adjact[toWhichRegion].compare("y") != 0) {//←if the region is not an edge region
             Edgeoccupied=false;//no need to print out becuz it is a AI playing

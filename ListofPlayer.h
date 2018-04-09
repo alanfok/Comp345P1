@@ -22,9 +22,6 @@ public:
 
 //get
     int getidPlayer();
-
-    void setDecline(bool decline);
-    bool getDecline();
     int getvictoryCoins();
     int getpopulation();
     string getspecialPower();
@@ -32,33 +29,24 @@ public:
     int getdecline_lock();
     int getNumberOfOccupiedRegion() const;
     int getStrategyBehaviour();
-
-
+    int getTurn() const;
+    bool getDecline();
 
 //set
-    void setidPlayer(int idPlayer);
+ //   void setidPlayer(int idPlayer);
     void setvictoryCoins(int victoryCoins);
     void setpopulation(int population);
     void setspecialpower(string specialPower);
     void setrace(string race);
     void setdecline_lock(int nb);
     void setNumberOfOccupiedRegion(int numberOfOccupiedRegion);
-
     const string &getPhase() const;
-
     void setPhase(const string &phase);
-
     void setStrategyBehaviour(int strategyBehaviour);
-
-    int getTurn() const;
-
+    void setDecline(bool decline);
     void setTurn(int turn);
-
-
 private:
     int idPlayer;
-
-
     int numberOfOccupiedRegion;
     int victoryCoins;
     int population;
