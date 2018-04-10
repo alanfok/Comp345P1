@@ -55,8 +55,8 @@ void Interraction ::setplayer(string map, int nbplayer) {
                 cin.clear();
             }
         }while(check==false);
-
         // claudia
+
         cout << "This race you picking us " << player.getvrace(raceSelection) << " "
              << player.getvspecialpower(raceSelection) << endl;
         victorycoin = 5;//start with 5 victory coin
@@ -109,7 +109,14 @@ void Interraction ::setplayer(string map, int nbplayer) {
         do {
             cin >> input;
             try {
-                if (input < 0 || input > 4) {
+                if (cin.fail()) {
+                    cin.clear();
+                    throw raceSelection;
+                    // if the input is not an integer, an error is thrown
+                    // claudia
+                }
+                    // claudia : Added if statement here
+                else if (input < 0 || input > 4) {
                     throw input;
                 }
                 else if (input == 1) {
@@ -160,15 +167,13 @@ void Interraction ::setplayer(string map, int nbplayer) {
                 }
 
             } catch (int input) {
-                //cout << "ASDFASFAS" << endl;
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                // claudia
                 cout << "the input is invalid \n"
                      "Enter again:"<< endl;
                 cin.clear();
-                cin.ignore(1);
             }
-            catch (...){
-                cout<<"the type is not right"<<endl;
-            }
+
         }while(inputCheck==false);
 
         cout << "the Player " << player.vplayer[i].getidPlayer() << " and " << player.vplayer[i].getpopulation()
