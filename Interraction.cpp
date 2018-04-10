@@ -266,7 +266,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                 temp_id = player.sortbyvplayercoin[k].getidPlayer();
                  indexOfPlayerVector=temp_id-1;
             }
-            //player.vplayer[temp_id - 1].setTurn(j);  // To set the turn observer
+            player.vplayer[indexOfPlayerVector].setTurn(j);  // To set the turn observer
 
             //for decline <~~add to claudia computer
             if (player.vplayer[indexOfPlayerVector].getDecline() == true &&
@@ -296,11 +296,17 @@ void Interraction ::setplayer(string map, int nbplayer) {
                    player.shift(raceSelection);
 
             //    }
-                } else if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour()==1) {//Aggressive
+                }
 
 
 
-                    player.vplayer[indexOfPlayerVector].setTurn(j);
+
+
+          if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour()==1) {//Aggressive
+
+
+
+                    //player.vplayer[indexOfPlayerVector].setTurn(j);
                     player.vplayer[indexOfPlayerVector].setPhase("turn");
                     player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
 
@@ -334,9 +340,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
             } else if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour() == 2) {//defensive
 
 
-
-                //Defensive
-                player.vplayer[indexOfPlayerVector].setTurn(j);
+            //    player.vplayer[indexOfPlayerVector].setTurn(j);
                 player.vplayer[indexOfPlayerVector].setPhase("turn");
                 player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
 
@@ -367,9 +371,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                 } else if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour() == 3) {//Moderate
 
 
-
-
-                player.vplayer[indexOfPlayerVector].setTurn(j);
+             //   player.vplayer[indexOfPlayerVector].setTurn(j);
                 player.vplayer[indexOfPlayerVector].setPhase("turn");
                 player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
                 moderatePlayer.redeployment(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
@@ -398,7 +400,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
 
 
-                player.vplayer[indexOfPlayerVector].setTurn(j);
+           //     player.vplayer[indexOfPlayerVector].setTurn(j);
                 player.vplayer[indexOfPlayerVector].setPhase("turn");
                 player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
                 randomPlayer.redeployment(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,

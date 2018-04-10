@@ -12,12 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="799aa2ed-8446-4442-a965-a7e485c58a12" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AggressivePlayer.h" afterPath="$PROJECT_DIR$/AggressivePlayer.h" />
       <change beforePath="$PROJECT_DIR$/Interraction.cpp" afterPath="$PROJECT_DIR$/Interraction.cpp" />
-      <change beforePath="$PROJECT_DIR$/Interraction.h" afterPath="$PROJECT_DIR$/Interraction.h" />
-      <change beforePath="$PROJECT_DIR$/ModeratePlayer.cpp" afterPath="$PROJECT_DIR$/ModeratePlayer.cpp" />
-      <change beforePath="$PROJECT_DIR$/ModeratePlayer.h" afterPath="$PROJECT_DIR$/ModeratePlayer.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +31,8 @@
       <file leaf-file-name="Interraction.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Interraction.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="435" column="16" lean-forward="false" selection-start-line="435" selection-start-column="16" selection-end-line="435" selection-end-column="16" />
+            <state relative-caret-position="2910">
+              <caret line="402" column="13" lean-forward="false" selection-start-line="402" selection-start-column="13" selection-end-line="402" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -501,12 +496,12 @@
       <workItem from="1523290084400" duration="599000" />
       <workItem from="1523290690145" duration="79000" />
       <workItem from="1523290794653" duration="2458000" />
-      <workItem from="1523305749609" duration="13065000" />
+      <workItem from="1523305749609" duration="14097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="553789000" />
+    <option name="totallyTimeSpent" value="554821000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1043,8 +1038,8 @@ void Tokens::menu() {
     </entry>
     <entry file="file://$PROJECT_DIR$/Interraction.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="435" column="16" lean-forward="false" selection-start-line="435" selection-start-column="16" selection-end-line="435" selection-end-column="16" />
+        <state relative-caret-position="2910">
+          <caret line="402" column="13" lean-forward="false" selection-start-line="402" selection-start-column="13" selection-end-line="402" selection-end-column="13" />
           <folding />
         </state>
       </provider>
