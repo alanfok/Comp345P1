@@ -41,25 +41,20 @@ public:
 
     vector <int> playercounter;
     vector <int> lostRegions;
-
-    string tempvrace ;
-    string tempsp;
     Player* player_pointer;
     PhaseObserver* po;
     StatisticsObserve* so;
-    int turn;
     int input;
-    int temp_population=2;//all region need at least 2 to occupied
     string maps_using ;//<~~~change
     int temp_id;
     void setplayer(string map, int nbplayer);
-    bool nextturn;//for turn2-10
+
     bool inputCheck;//for turn 2-10
     int raceSelection;
     int numberOfPopulation ;
     int victorycoin;
     int temp_index;
-
+    bool check;
     bool first_time_edge;
     bool edge_check;
     bool check=false;

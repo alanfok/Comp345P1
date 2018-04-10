@@ -138,7 +138,7 @@ void DefensivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *n
                     playerPopulation -= py.cost_of_population;//←set the lost tride to none after ocuppied the region
                     conquer_check = true;
                 } else {
-                    cout<<"The total is less than the region costes, so you cannot occupy the region"<<endl;
+                    cout<<"The total is less than the region costs, so you cannot occupy the region"<<endl;
                     conquer_check = true;
                 }
             }

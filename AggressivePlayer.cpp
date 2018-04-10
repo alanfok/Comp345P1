@@ -33,16 +33,11 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
     playerID=lp->getidPlayer();//get Player ID
     playerPopulation=lp->getpopulation();//get Player population
     do {//go to do loop to make sure the first region is from the edge of the map
-
-
-
-
-
         cout<<"please Enter the first region u want to occupy"<<endl;
-
         bool checkVaild=false;
 
         do {
+
         cin>>toWhichRegion;
         toWhichRegion-=1;
 
@@ -61,7 +56,6 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
                 cin.ignore(1);
             }
         }while (checkVaild==false);
-
         if (py.maploader.adjact[toWhichRegion].compare("y") != 0) {//←if the region is not an edge region
             Edgeoccupied=false;//no need to print out becuz it is a AI playing
             cout<<"The first entyr has to be from the edge."<<endl;
@@ -92,7 +86,7 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
     }while (Edgeoccupied==false);
     cout<<"------------------------The player selected "<<toWhichRegion+1<<"------------------------"<<endl;
     py.prints();//print out the map
-    cout<<"Update-->the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
+  //  cout<<"Update-->the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
 
 }
 
@@ -149,7 +143,7 @@ void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *
             py.invade_v2(playerID, toWhichRegion);//←set the matrix map to Player ID
             py.maploader.losttride[toWhichRegion] = "_none__";//←set the lost tride to none after ocuppied the region
             playerPopulation -= py.cost_of_population;//←the player  population minus player spent population on the region
-
+            cout<<"you ocuppied the region"<<toWhichRegion<<endl;
         }
         else if (py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1 &&
                  (((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") != 0 ||//←if the region is not a water region
@@ -168,6 +162,7 @@ void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *
                 lp->setpopulation(0);//set the Player object popluation to 0
                 py.maploader.losttride[toWhichRegion] = "_none__";//←set the matrix map to Player ID
                 playerPopulation -= py.cost_of_population;//←set the lost tride to none after ocuppied the region
+                cout<< "The dice number is " <<tempdice<<" and the total is "<<tempdice + playerPopulation<<endl;
                 conquer_check = true;
             } else {
                 cout<<"The total is less than the region costes, so you cannot occupy the region"<<endl;
@@ -177,7 +172,7 @@ void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *
 
     } while (conquer_check == false);
 
-    cout << "the Player " << lp->getidPlayer() << " and " << lp->getpopulation() << endl;
+  //  cout << "the Player " << lp->getidPlayer() << " and " << lp->getpopulation() << endl;
     py.prints();
 }
 
