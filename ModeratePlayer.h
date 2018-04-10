@@ -25,6 +25,10 @@ public: 
     bool conquer_check;
     bool Edgeoccupied;
     bool redeployment_check;
+
+    bool fromregion;
+    bool toregion;
+
     int redeploymentPopulation;
     int regionPopulation;
     int toWhichRegion;

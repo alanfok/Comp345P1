@@ -13,20 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="799aa2ed-8446-4442-a965-a7e485c58a12" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AggressivePlayer.cpp" afterPath="$PROJECT_DIR$/AggressivePlayer.cpp" />
-      <change beforePath="$PROJECT_DIR$/AggressivePlayer.h" afterPath="$PROJECT_DIR$/AggressivePlayer.h" />
-      <change beforePath="$PROJECT_DIR$/DefensivePlayer.cpp" afterPath="$PROJECT_DIR$/DefensivePlayer.cpp" />
-      <change beforePath="$PROJECT_DIR$/Interraction.h" afterPath="$PROJECT_DIR$/Interraction.h" />
       <change beforePath="$PROJECT_DIR$/ModeratePlayer.cpp" afterPath="$PROJECT_DIR$/ModeratePlayer.cpp" />
-      <change beforePath="$PROJECT_DIR$/RandomPlayer.cpp" afterPath="$PROJECT_DIR$/RandomPlayer.cpp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Interraction.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/main.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Comp345P1" afterPath="$PROJECT_DIR$/cmake-build-debug/Comp345P1" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change beforePath="$PROJECT_DIR$/ModeratePlayer.h" afterPath="$PROJECT_DIR$/ModeratePlayer.h" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,21 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ModeratePlayer.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ModeratePlayer.cpp">
+      <file leaf-file-name="AggressivePlayer.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AggressivePlayer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="132" column="16" lean-forward="false" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
+            <state relative-caret-position="343">
+              <caret line="174" column="19" lean-forward="false" selection-start-line="174" selection-start-column="19" selection-end-line="174" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AggressivePlayer.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AggressivePlayer.cpp">
+      <file leaf-file-name="ModeratePlayer.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ModeratePlayer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="126" column="11" lean-forward="false" selection-start-line="126" selection-start-column="11" selection-end-line="126" selection-end-column="11" />
+            <state relative-caret-position="126">
+              <caret line="158" column="37" lean-forward="false" selection-start-line="158" selection-start-column="37" selection-end-line="158" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -66,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
-              <caret line="44" column="13" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="44" selection-end-column="13" />
+              <caret line="44" column="13" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="44" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -132,16 +121,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Player.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2622">
-              <caret line="138" column="127" lean-forward="false" selection-start-line="138" selection-start-column="127" selection-end-line="138" selection-end-column="127" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -174,8 +153,8 @@
       <find>Do you want</find>
       <find>Do you want to</find>
       <find>try</find>
-      <find>From</find>
       <find>From whcih</find>
+      <find>From</find>
     </findStrings>
     <dirStrings>
       <dir>$USER_HOME$/Desktop/boost_1_66_0_2/boost/system/detail</dir>
@@ -238,7 +217,6 @@
         <option value="$PROJECT_DIR$/StatisticsObserver.cpp" />
         <option value="$PROJECT_DIR$/Player.cpp" />
         <option value="$PROJECT_DIR$/Subject.cpp" />
-        <option value="$PROJECT_DIR$/ModeratePlayer.h" />
         <option value="$PROJECT_DIR$/Interraction.cpp" />
         <option value="$PROJECT_DIR$/RandomPlayer.cpp" />
         <option value="$PROJECT_DIR$/AggressivePlayer.h" />
@@ -246,6 +224,7 @@
         <option value="$PROJECT_DIR$/AggressivePlayer.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/DefensivePlayer.cpp" />
+        <option value="$PROJECT_DIR$/ModeratePlayer.h" />
         <option value="$PROJECT_DIR$/ModeratePlayer.cpp" />
       </list>
     </option>
@@ -506,7 +485,7 @@
       <workItem from="1523290690145" duration="79000" />
       <workItem from="1523290794653" duration="2458000" />
       <workItem from="1523305749609" duration="14097000" />
-      <workItem from="1523384857469" duration="4035000" />
+      <workItem from="1523384857469" duration="4624000" />
     </task>
     <task id="LOCAL-00001" summary="Validation of char and string inputs... for each player type">
       <created>1523386596341</created>
@@ -515,11 +494,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523386596341</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added more try catches">
+      <created>1523389962809</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523389962809</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="558856000" />
+    <option name="totallyTimeSpent" value="559445000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -541,7 +527,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46311972" sideWeight="0.10359408" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.49815693" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3688029" sideWeight="0.89640594" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3688029" sideWeight="0.89640594" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.110362254" sideWeight="0.5056" order="0" side_tool="true" content_ui="tabs" />
@@ -553,26 +539,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20632738" sideWeight="0.401112" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26415095" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27235213" sideWeight="0.375695" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3480055" sideWeight="0.624305" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3113582" sideWeight="0.4944" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36643496" sideWeight="0.54725975" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.110362254" sideWeight="0.5056" order="0" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -583,7 +549,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch 'alan11' of https://github.com/alanfok/Comp345P1 into alan11&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Interraction.cpp&#10;#&#9;cmake-build-debug/CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/Comp345P1.dir/Interraction.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o&#10;#&#9;cmake-build-debug/CMakeFiles/Comp345P1.dir/main.cpp.o&#10;#&#9;cmake-build-debug/Comp345P1" />
     <MESSAGE value="Validation of char and string inputs... for each player type" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validation of char and string inputs... for each player type" />
+    <MESSAGE value="Added more try catches" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more try catches" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -917,14 +884,6 @@ void Tokens::menu() {
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ModeratePlayer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Maploader.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1031,7 +990,7 @@ void Tokens::menu() {
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
-          <caret line="44" column="13" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="44" selection-end-column="13" />
+          <caret line="44" column="13" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="44" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1044,18 +1003,26 @@ void Tokens::menu() {
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ModeratePlayer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AggressivePlayer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="126" column="11" lean-forward="false" selection-start-line="126" selection-start-column="11" selection-end-line="126" selection-end-column="11" />
+        <state relative-caret-position="343">
+          <caret line="174" column="19" lean-forward="false" selection-start-line="174" selection-start-column="19" selection-end-line="174" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ModeratePlayer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="132" column="16" lean-forward="false" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
+        <state relative-caret-position="126">
+          <caret line="158" column="37" lean-forward="false" selection-start-line="158" selection-start-column="37" selection-end-line="158" selection-end-column="37" />
           <folding />
         </state>
       </provider>

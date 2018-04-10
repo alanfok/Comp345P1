@@ -127,13 +127,64 @@ void ModeratePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr
                 playerID = lp->getidPlayer();//get Player ID
                 playerPopulation = lp->getpopulation();//get Player population
 
-                cout<<"From which region"<<endl;
-                cin>>fromWhichRegion;
+                /*cout<<"From which region"<<endl;
+                cin>>fromWhichRegion;*/
                 fromWhichRegion-=1;
-                
-                cout<<"To which region"<<endl;
-                cin>>toWhichRegion;
+
+                do{
+                    cout<<"From which region"<<endl;
+                    cin>>fromWhichRegion;
+
+                    try {
+                        if(cin.fail()) {
+                            cin.clear();
+                            throw fromWhichRegion;
+                            // if the input is not an integer, an error is thrown
+                            // claudia
+                        }
+                        else if (fromWhichRegion < 0 || fromWhichRegion > totalNumberOfRegion) {
+                            throw fromWhichRegion;
+                        }
+                        else{
+                            fromregion=true;
+                        }
+                    } catch (int fromWhichRegion) {
+                        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                        cout << "The input is invalid\nPlease enter again" << endl;
+                        cin.clear();
+                    }// claudia : Added error validation
+                }while(fromregion == false);
+
+                /*cout<<"To which region"<<endl;
+                cin>>toWhichRegion;*/
                 toWhichRegion-=1;
+
+                do{
+                    fromregion = true;
+                    cout<<"To which region"<<endl;
+                    cin>>toWhichRegion;
+
+                    try {
+                        if(cin.fail()) {
+                            cin.clear();
+                            throw toWhichRegion;
+                            // if the input is not an integer, an error is thrown
+                            // claudia
+                        }
+                        else if (toWhichRegion < 0 || toWhichRegion > totalNumberOfRegion) {
+                            throw toWhichRegion;
+                        }
+                        else{
+                            toregion=true;
+                        }
+                    } catch (int fromWhichRegion) {
+                        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                        cout << "The input is invalid\nPlease enter again" << endl;
+                        cin.clear();
+                    }// claudia : Added error validation
+
+
+                }while(toregion == false);
                 py.population_costv2(playerID,toWhichRegion);
                 if(py.maploader.maps.pt[fromWhichRegion][toWhichRegion]==0){
                     cout<<"they are not linking together"<<endl;
