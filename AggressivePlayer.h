@@ -13,7 +13,7 @@ public: 
     ~AggressivePlayer();
 
 
-    NodeRegion *nr_ptr;
+
     int totalNumberOfRegion;
     int playerID;
     int playerPopulation;

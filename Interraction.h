@@ -53,7 +53,7 @@ public:
     int raceSelection;
     int numberOfPopulation ;
     int victorycoin;
-    int temp_index;
+    int indexOfPlayerVector;
     bool check;
     bool first_time_edge;
     bool edge_check;
