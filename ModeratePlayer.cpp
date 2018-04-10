@@ -166,15 +166,56 @@ void ModeratePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr
 
 }
 void ModeratePlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr){
-    for (int i = 0; i < py.vnodeRegion.size(); ++i) {
-        if((*nr_vPtr)[i].getid_player()==lp->getidPlayer()){
-            if((*nr_vPtr)[i].getregion_population()>1){
-                (*nr_vPtr)[i].setregion_population((*nr_vPtr)[i].getregion_population()-1);
-                //   lp->setpopulation(lp->getpopulation()+1); leave 1 population on region and erase all remaining population
+
+
+    redeployment_check= false;
+    do{
+        cout<<"Do you want to redeploymen\nPress 1: Yes \nPress 2: NO"<<endl;
+
+        try {
+            cin>>input;
+            if(input<1||input>2){
+                throw input;
             }
+            if(input==2){
+                redeployment_check=true;
+            }else if(input==1){
+                py.redeploymentVeiw(lp,nr_vPtr);
+                cout<<"Which region you want to withdraw"<<endl;
+                cin>>fromWhichRegion;
+                fromWhichRegion-=1;
+                if(lp->getidPlayer()==(*nr_vPtr)[fromWhichRegion].getid_player()){
+                    regionPopulation=(*nr_vPtr)[fromWhichRegion].getregion_population();
+                    cout<<"How many population you want to withdraw?\n"
+                            "(if you take all of the population from region, you will loose the region)"<<endl;
+                    cin>>redeploymentPopulation;
+                    if(redeploymentPopulation>regionPopulation){
+                        cout<<"you cannot take more than Region has"<<endl;
+                    }else{
+                        (*nr_vPtr)[fromWhichRegion].setregion_population(regionPopulation-redeploymentPopulation);
+                        cout<<"Which region you want to put the population to"<<endl;
+                        cin>>toWhichRegion;
+                        toWhichRegion-=1;
+                        regionPopulation=(*nr_vPtr)[toWhichRegion].getregion_population();
+                        (*nr_vPtr)[toWhichRegion].setregion_population(regionPopulation+redeploymentPopulation);
+                    }
+                }
+            }
+        }catch(int input){
+            cout << "the input is invalid" << endl;
+        }catch (...){
+            cout<<"the type is not right"<<endl;
         }
-    }
-};
+
+
+    }while(redeployment_check== false);
+
+}
+
+
+
+
+
 void ModeratePlayer::scores(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
     for (int i = 0; i < py.vnodeRegion.size(); ++i) {
         if((*nr_vPtr)[i].getid_player()==lp->getidPlayer()){

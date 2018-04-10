@@ -34,6 +34,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
         //cin >> raceSelection;
         // claudia :commented out code
         //claudia
+        check=false;// alan u forget to reset
         do {
             cin >> raceSelection;
             try {
@@ -55,8 +56,8 @@ void Interraction ::setplayer(string map, int nbplayer) {
                 cin.clear();
             }
         }while(check==false);
-        // claudia
 
+        // claudia
         cout << "This race you picking us " << player.getvrace(raceSelection) << " "
              << player.getvspecialpower(raceSelection) << endl;
         victorycoin = 5;//start with 5 victory coin
@@ -66,8 +67,8 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
         //static array holding the coin
 
-        for (int i = 1; i < raceSelection; i++) {
-            race_coin[i] += 1;//put one coin into array
+        for (int j = 1; j < raceSelection; j++) {
+            race_coin[j] += 1;//put one coin into array
             victorycoin--;//minus the coin
         }
 
@@ -109,71 +110,143 @@ void Interraction ::setplayer(string map, int nbplayer) {
         do {
             cin >> input;
             try {
+
                 if (cin.fail()) {
                     cin.clear();
                     throw raceSelection;
                     // if the input is not an integer, an error is thrown
                     // claudia
                 }
-                    // claudia : Added if statement here
-                else if (input < 0 || input > 4) {
+
+
+                if (input < 0 || input > 4) {
                     throw input;
                 }
                 else if (input == 1) {
-
+                    player.vplayer[i].setPhase("turn");
                     player_pointer->notify(&player.vplayer[i]);
                     aggressivePlayer.pickupRaceNSp(&player.vplayer[i]);
-                    player_pointer->notify(&player.vplayer[i]);
                     br();
-
                     aggressivePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
                                                &player.vplayer);//change  <~~make sure the player is entry from edge
+
+                    veiwer.get_player_infomation(tempvplayerid,player);
                     veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
                     br();
+                    player.vplayer[i].setPhase("conquer");
+                    player_pointer->notify(&player.vplayer[i]);
 
                     aggressivePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
                                               &player.vplayer);//change <~~ occupied
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+
+                    br();
+                    player.vplayer[i].setPhase("coin");
+                    player_pointer->notify(&player.vplayer[i]);
                     aggressivePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion,
                                             &player.vplayer);
 
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
                     inputCheck=true;
                 } else if (input == 2) {
+                    player.vplayer[i].setPhase("turn");
+                    player_pointer->notify(&player.vplayer[i]);
                     defensePlayer.pickupRaceNSp(&player.vplayer[i]);
                     defensePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
                                             &player.vplayer);//change  <~~make sure the player is entry from edge
 //                    defensePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
 //                                           &player.vplayer);//change  <~~ occupied
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    br();
+
+
+                  //  player.vplayer[i].setPhase("conquer");
+                  //  player_pointer->notify(&player.vplayer[i]);
                     defensePlayer.redeployment(&player.vplayer[i], player, &player.vnodeRegion,
                                                &player.vplayer);
-                    defensePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
 
+
+                    br();
+                    player.vplayer[i].setPhase("coin");
+                    player_pointer->notify(&player.vplayer[i]);
+                    defensePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
                     inputCheck=true;
                 } else if (input == 3) {
+
+                    player.vplayer[i].setPhase("turn");
+                    player_pointer->notify(&player.vplayer[i]);
                     moderatePlayer.pickupRaceNSp(&player.vplayer[i]);
                     moderatePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
                                              &player.vplayer);//change  <~~make sure the player is entry from edge
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    br();
+                    player.vplayer[i].setPhase("conquer");
+                    player_pointer->notify(&player.vplayer[i]);
                     moderatePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
                                             &player.vplayer);//change   <~~ occupied
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    br();
+
+                    player.vplayer[i].setPhase("coin");
+                    player_pointer->notify(&player.vplayer[i]);
                     moderatePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
                     inputCheck=true;
                 } else if (input == 4) {
+
+
+
+
+
+                    player.vplayer[i].setPhase("turn");
+                    player_pointer->notify(&player.vplayer[i]);
                     randomPlayer.pickupRaceNSp(&player.vplayer[i]);
                     randomPlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
                                            &player.vplayer);//change  <~~make sure the player is entry from edge
+
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    br();
+
+
+                    player.vplayer[i].setPhase("conquer");
+                    player_pointer->notify(&player.vplayer[i]);
                     randomPlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
                                           &player.vplayer);//change   <~~ occupied
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    br();
+
+                    player.vplayer[i].setPhase("coin");
+                    player_pointer->notify(&player.vplayer[i]);
                     randomPlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
                     inputCheck=true;
                 }
 
             } catch (int input) {
                 cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                // claudia
+
+
                 cout << "the input is invalid \n"
                      "Enter again:"<< endl;
                 cin.clear();
-            }
 
+            }
+            catch (...){
+                cout<<"the type is not right"<<endl;
+            }
         }while(inputCheck==false);
 
         cout << "the Player " << player.vplayer[i].getidPlayer() << " and " << player.vplayer[i].getpopulation()
@@ -181,22 +254,23 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
     player.prints();
     }
-    player_pointer->notifyStatic(&player.vplayer,maploader.nbline);
+
+    player_pointer->notifyStatic(&player.vplayer,maploader.nbline);//so how many percentage that player occupied the map
     //turn 2-10
     player.token_sort();
-    //for (int j = 2; j <+10 ; ++j) {//2-10 loop
+    for (int j = 2; j <=10 ; ++j) {//2-10 loop
     for (int k = 0; k < player.sortbyvplayercoin.size(); ++k) {
         for (int l = 0; l < player.vplayer.size(); ++l) {
 
             if (player.vplayer[k].getidPlayer() == player.vplayer[l].getidPlayer()) {
                 temp_id = player.sortbyvplayercoin[k].getidPlayer();
-                 temp_index=temp_id-1;
+                 indexOfPlayerVector=temp_id-1;
             }
-            //player.vplayer[temp_id - 1].setTurn(j);  // To set the turn observer
+            player.vplayer[indexOfPlayerVector].setTurn(j);  // To set the turn observer
 
             //for decline <~~add to claudia computer
-            if (player.vplayer[temp_index].getDecline() == true &&
-                player.vplayer[temp_index].getdecline_lock()==0) {//for player object who select decline
+            if (player.vplayer[indexOfPlayerVector].getDecline() == true &&
+                player.vplayer[indexOfPlayerVector].getdecline_lock()==0) {//for player object who select decline
 
               //  for (int i = 0; i < nbplayer; ++i) {
                     player.setRace_population(0);
@@ -208,60 +282,168 @@ void Interraction ::setplayer(string map, int nbplayer) {
                          << player.getvspecialpower(raceSelection) << endl;
                     for (int i = 1; i < raceSelection; i++) {
                         race_coin[i] += 1;
-                        player.vplayer[temp_index].setvictoryCoins(
-                                player.vplayer[temp_index].getvictoryCoins() - 1);
+                        player.vplayer[indexOfPlayerVector].setvictoryCoins(
+                                player.vplayer[indexOfPlayerVector].getvictoryCoins() - 1);
                     }
-                    player.vplayer[temp_index].setvictoryCoins(
-                            player.vplayer[temp_index].getvictoryCoins() + race_coin[raceSelection]);
+                    player.vplayer[indexOfPlayerVector].setvictoryCoins(
+                            player.vplayer[indexOfPlayerVector].getvictoryCoins() + race_coin[raceSelection]);
                     race_coin[raceSelection] = 0;
                     player.race_population_determind(player.getvrace(raceSelection),
                                                      player.getvspecialpower(raceSelection));
                     numberOfPopulation = player.getRace_population();
                     cout << "You have " << numberOfPopulation << " poulation" << endl;
-                    player.pickupAfterDecline(&player.vplayer[temp_index],player.getvrace(raceSelection),player.getvspecialpower(raceSelection),numberOfPopulation);
+                    player.pickupAfterDecline(&player.vplayer[indexOfPlayerVector],player.getvrace(raceSelection),player.getvspecialpower(raceSelection),numberOfPopulation);
                    player.shift(raceSelection);
 
             //    }
-                } else if (player.vplayer[temp_id-1].getStrategyBehaviour()==1) {//Aggressive
-                    aggressivePlayer.redeployment(&player.vplayer[temp_index], player, &player.vnodeRegion,
+                }
+
+
+
+
+
+          if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour()==1) {//Aggressive
+
+
+
+                    //player.vplayer[indexOfPlayerVector].setTurn(j);
+                    player.vplayer[indexOfPlayerVector].setPhase("turn");
+                    player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+
+                    aggressivePlayer.redeployment(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                                   &player.vplayer);
-                    aggressivePlayer.conquers(&player.vplayer[temp_index], player, &player.vnodeRegion,
+
+                veiwer.get_player_infomation(tempvplayerid,player);
+                veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                br();
+
+
+                player.vplayer[indexOfPlayerVector].setPhase("conquer");
+                player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+
+                aggressivePlayer.conquers(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                               &player.vplayer);
 
-                    aggressivePlayer.scores(&player.vplayer[temp_index], player, &player.vnodeRegion,
+                veiwer.get_player_infomation(tempvplayerid,player);
+                veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                br();
+
+                player.vplayer[indexOfPlayerVector].setPhase("coin");
+                player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+
+                    aggressivePlayer.scores(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                             &player.vplayer);
+                veiwer.get_player_infomation(tempvplayerid,player);
+                veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
 
 
-            } else if (player.vplayer[temp_index].getStrategyBehaviour() == 2) {//Defensive
-                    defensePlayer.redeployment(&player.vplayer[temp_index], player, &player.vnodeRegion,
+            } else if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour() == 2) {//defensive
+
+
+            //    player.vplayer[indexOfPlayerVector].setTurn(j);
+                player.vplayer[indexOfPlayerVector].setPhase("turn");
+                player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+
+                defensePlayer.redeployment(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                                &player.vplayer);
-                    defensePlayer.conquers(&player.vplayer[temp_index], player, &player.vnodeRegion,
+                veiwer.get_player_infomation(tempvplayerid,player);
+                veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                br();
+
+
+                player.vplayer[indexOfPlayerVector].setPhase("conquer");
+                player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+                    defensePlayer.conquers(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                            &player.vplayer);
-                    defensePlayer.scores(&player.vplayer[temp_index], player, &player.vnodeRegion,
+                veiwer.get_player_infomation(tempvplayerid,player);
+                veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                br();
+
+
+                player.vplayer[indexOfPlayerVector].setPhase("coin");
+                player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+                    defensePlayer.scores(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                          &player.vplayer);
+                veiwer.get_player_infomation(tempvplayerid,player);
+                veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
 
 
-                } else if (player.vplayer[temp_index].getStrategyBehaviour() == 3) {//Moderate
-                moderatePlayer.conquers(&player.vplayer[temp_index], player, &player.vnodeRegion,
+                } else if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour() == 3) {//Moderate
+
+
+             //   player.vplayer[indexOfPlayerVector].setTurn(j);
+                player.vplayer[indexOfPlayerVector].setPhase("turn");
+                player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+                moderatePlayer.redeployment(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
+                                            &player.vplayer);
+                veiwer.get_player_infomation(tempvplayerid,player);
+                veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                br();
+
+
+                player.vplayer[indexOfPlayerVector].setPhase("conquer");
+                player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+                moderatePlayer.conquers(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                         &player.vplayer);//change   <~~ occupied
-                moderatePlayer.scores(&player.vplayer[temp_index], player, &player.vnodeRegion, &player.vplayer);
+                veiwer.get_player_infomation(tempvplayerid,player);
+                veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                br();
 
 
-                } else if (player.vplayer[temp_index].getStrategyBehaviour() == 4) {
-                randomPlayer.conquers(&player.vplayer[temp_index], player, &player.vnodeRegion,
+                player.vplayer[indexOfPlayerVector].setPhase("coin");
+                player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+                moderatePlayer.scores(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion, &player.vplayer);
+                veiwer.get_player_infomation(tempvplayerid,player);
+                veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                } else if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour() == 4) {
+
+
+
+
+           //     player.vplayer[indexOfPlayerVector].setTurn(j);
+                player.vplayer[indexOfPlayerVector].setPhase("turn");
+                player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+                randomPlayer.redeployment(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
+                                            &player.vplayer);
+                veiwer.get_player_infomation(tempvplayerid,player);
+                veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                br();
+
+
+
+                player.vplayer[indexOfPlayerVector].setPhase("conquer");
+                player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+                randomPlayer.conquers(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                         &player.vplayer);//change   <~~ occupied
-                randomPlayer.scores(&player.vplayer[temp_index], player, &player.vnodeRegion, &player.vplayer);
+
+                veiwer.get_player_infomation(tempvplayerid,player);
+                veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                br();
+
+
+                player.vplayer[indexOfPlayerVector].setPhase("coin");
+                player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+                randomPlayer.scores(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion, &player.vplayer);
+
+                veiwer.get_player_infomation(tempvplayerid,player);
+                veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+
+
+
+
+
+
             }
-                cout << "the Player " << player.vplayer[temp_index].getidPlayer() << " and "
-                     << player.vplayer[temp_index].getpopulation()
+                cout << "the Player " << player.vplayer[indexOfPlayerVector].getidPlayer() << " and "
+                     << player.vplayer[indexOfPlayerVector].getpopulation()
                      << endl;
             }
 
 
         }
     player_pointer->notifyStatic(&player.vplayer,maploader.nbline);
-// }//turn 2-10 endloop
-    player_pointer->notifyStatic(&player.vplayer,maploader.nbline);
+ }//turn 2-10 endloop
+
         //hod = new HandsObserverDecorator(PhaseObserver());
         //player_pointer->attach(hod);
         player.declare_winner(); //declare who is winner
