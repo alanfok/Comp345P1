@@ -26,12 +26,35 @@ void RandomPlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_
     playerPopulation=lp->getpopulation();//get Player population
     do {//go to do loop to make sure the first region is from the edge of the map
         cout<<"please Enter the first region u want to occupy"<<endl;
+
         cin>>toWhichRegion;
         toWhichRegion-=1;
 
+        try {
+            if(cin.fail()) {
+                cin.clear();
+                throw toWhichRegion;
+                // if the input is not an integer, an error is thrown
+                // claudia
+            }
+            else if (toWhichRegion < 0 || toWhichRegion > totalNumberOfRegion) {
+                throw toWhichRegion;
+            }
+            else{
+                Edgeoccupied=true;
+            }
+            /*if (!cin) {
+                toWhichRegion;
+            }*/
+        } catch (int toWhichRegion) {
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cout << "The input is invalid\nPlease enter again" << endl;
+            cin.clear();
+        }// claudia : Added error validation
+
         if (py.maploader.adjact[toWhichRegion].compare("y") != 0) {//←if the region is not an edge region
             Edgeoccupied=false;//no need to print out becuz it is a AI playing
-            cout<<"The first entyr has to be from the edge."<<endl;
+            cout<<"The first entry has to be from the edge."<<endl;
         }else{
             if (py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") == 0 && //←if the region is a water region
                 lp->getspecialPower().compare("Seafaring") != 0){//←and the player special power is no Seafaring

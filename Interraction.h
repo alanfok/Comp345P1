@@ -54,7 +54,7 @@ public:
     int numberOfPopulation ;
     int victorycoin;
     int indexOfPlayerVector;
-    bool check;
+    //bool check;
     bool first_time_edge;
     bool edge_check;
     bool check=false;

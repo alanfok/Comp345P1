@@ -89,7 +89,6 @@ int main() {
             cout<<"The Entry is Invalid, Please try again."<<endl;
             // claudia : Fixed Grammar and made it easier to understand
             cin.clear();
-            //cin.ignore(1);
             // getting rid of the error flag
             // claudia
         }

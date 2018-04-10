@@ -19,6 +19,10 @@ public: 
     int playerPopulation;
     bool conquer_check;
     bool Edgeoccupied;
+
+    bool fromregion;
+    bool toregion;
+
     int fromWhichRegion;
     int toWhichRegion;
     //inherate in PlayerType Class
