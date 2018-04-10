@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/fokpoonkai/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/CLion.app/Contents/bin/cmake/bin/cmake"
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = "/Users/fokpoonkai/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/fokpoonkai/CLionProjects/Comp345P1
+CMAKE_SOURCE_DIR = /Users/cfeochari/CLionProjects/Comp345Pizza
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Comp345P1.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Comp345P1.dir/flags.make
 
 CMakeFiles/Comp345P1.dir/main.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Comp345P1.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/main.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Comp345P1.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/main.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/main.cpp
 
 CMakeFiles/Comp345P1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/main.cpp > CMakeFiles/Comp345P1.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/main.cpp > CMakeFiles/Comp345P1.dir/main.cpp.i
 
 CMakeFiles/Comp345P1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/main.cpp -o CMakeFiles/Comp345P1.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/main.cpp -o CMakeFiles/Comp345P1.dir/main.cpp.s
 
 CMakeFiles/Comp345P1.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Comp345P1.dir/main.cpp.o.provides.build: CMakeFiles/Comp345P1.dir/mai
 
 CMakeFiles/Comp345P1.dir/Die.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/Die.cpp.o: ../Die.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Comp345P1.dir/Die.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Die.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/Die.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Comp345P1.dir/Die.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Die.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/Die.cpp
 
 CMakeFiles/Comp345P1.dir/Die.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/Die.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/Die.cpp > CMakeFiles/Comp345P1.dir/Die.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/Die.cpp > CMakeFiles/Comp345P1.dir/Die.cpp.i
 
 CMakeFiles/Comp345P1.dir/Die.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/Die.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/Die.cpp -o CMakeFiles/Comp345P1.dir/Die.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/Die.cpp -o CMakeFiles/Comp345P1.dir/Die.cpp.s
 
 CMakeFiles/Comp345P1.dir/Die.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Comp345P1.dir/Die.cpp.o.provides.build: CMakeFiles/Comp345P1.dir/Die.
 
 CMakeFiles/Comp345P1.dir/Maps.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/Maps.cpp.o: ../Maps.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Comp345P1.dir/Maps.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Maps.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/Maps.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Comp345P1.dir/Maps.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Maps.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/Maps.cpp
 
 CMakeFiles/Comp345P1.dir/Maps.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/Maps.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/Maps.cpp > CMakeFiles/Comp345P1.dir/Maps.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/Maps.cpp > CMakeFiles/Comp345P1.dir/Maps.cpp.i
 
 CMakeFiles/Comp345P1.dir/Maps.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/Maps.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/Maps.cpp -o CMakeFiles/Comp345P1.dir/Maps.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/Maps.cpp -o CMakeFiles/Comp345P1.dir/Maps.cpp.s
 
 CMakeFiles/Comp345P1.dir/Maps.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Comp345P1.dir/Maps.cpp.o.provides.build: CMakeFiles/Comp345P1.dir/Map
 
 CMakeFiles/Comp345P1.dir/Maploader.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/Maploader.cpp.o: ../Maploader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Comp345P1.dir/Maploader.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Maploader.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/Maploader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Comp345P1.dir/Maploader.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Maploader.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/Maploader.cpp
 
 CMakeFiles/Comp345P1.dir/Maploader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/Maploader.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/Maploader.cpp > CMakeFiles/Comp345P1.dir/Maploader.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/Maploader.cpp > CMakeFiles/Comp345P1.dir/Maploader.cpp.i
 
 CMakeFiles/Comp345P1.dir/Maploader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/Maploader.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/Maploader.cpp -o CMakeFiles/Comp345P1.dir/Maploader.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/Maploader.cpp -o CMakeFiles/Comp345P1.dir/Maploader.cpp.s
 
 CMakeFiles/Comp345P1.dir/Maploader.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/Comp345P1.dir/Maploader.cpp.o.provides.build: CMakeFiles/Comp345P1.di
 
 CMakeFiles/Comp345P1.dir/Player.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/Player.cpp.o: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Comp345P1.dir/Player.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Player.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Comp345P1.dir/Player.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Player.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/Player.cpp
 
 CMakeFiles/Comp345P1.dir/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/Player.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/Player.cpp > CMakeFiles/Comp345P1.dir/Player.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/Player.cpp > CMakeFiles/Comp345P1.dir/Player.cpp.i
 
 CMakeFiles/Comp345P1.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/Player.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/Player.cpp -o CMakeFiles/Comp345P1.dir/Player.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/Player.cpp -o CMakeFiles/Comp345P1.dir/Player.cpp.s
 
 CMakeFiles/Comp345P1.dir/Player.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/Comp345P1.dir/Player.cpp.o.provides.build: CMakeFiles/Comp345P1.dir/P
 
 CMakeFiles/Comp345P1.dir/Tokens.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/Tokens.cpp.o: ../Tokens.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Comp345P1.dir/Tokens.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Tokens.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Comp345P1.dir/Tokens.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Tokens.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/Tokens.cpp
 
 CMakeFiles/Comp345P1.dir/Tokens.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/Tokens.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.cpp > CMakeFiles/Comp345P1.dir/Tokens.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/Tokens.cpp > CMakeFiles/Comp345P1.dir/Tokens.cpp.i
 
 CMakeFiles/Comp345P1.dir/Tokens.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/Tokens.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.cpp -o CMakeFiles/Comp345P1.dir/Tokens.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/Tokens.cpp -o CMakeFiles/Comp345P1.dir/Tokens.cpp.s
 
 CMakeFiles/Comp345P1.dir/Tokens.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/Comp345P1.dir/Tokens.cpp.o.provides.build: CMakeFiles/Comp345P1.dir/T
 
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o: ../Interraction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Comp345P1.dir/Interraction.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Interraction.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/Interraction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Comp345P1.dir/Interraction.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Interraction.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/Interraction.cpp
 
 CMakeFiles/Comp345P1.dir/Interraction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/Interraction.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/Interraction.cpp > CMakeFiles/Comp345P1.dir/Interraction.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/Interraction.cpp > CMakeFiles/Comp345P1.dir/Interraction.cpp.i
 
 CMakeFiles/Comp345P1.dir/Interraction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/Interraction.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/Interraction.cpp -o CMakeFiles/Comp345P1.dir/Interraction.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/Interraction.cpp -o CMakeFiles/Comp345P1.dir/Interraction.cpp.s
 
 CMakeFiles/Comp345P1.dir/Interraction.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/Comp345P1.dir/Interraction.cpp.o.provides.build: CMakeFiles/Comp345P1
 
 CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o: ../ListofPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.cpp
 
 CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.cpp > CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.cpp > CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.i
 
 CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.cpp -o CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.cpp -o CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.s
 
 CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o.provides.build: CMakeFiles/Comp345P1
 
 CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o: ../NodeRegion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/NodeRegion.cpp
 
 CMakeFiles/Comp345P1.dir/NodeRegion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/NodeRegion.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.cpp > CMakeFiles/Comp345P1.dir/NodeRegion.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/NodeRegion.cpp > CMakeFiles/Comp345P1.dir/NodeRegion.cpp.i
 
 CMakeFiles/Comp345P1.dir/NodeRegion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/NodeRegion.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.cpp -o CMakeFiles/Comp345P1.dir/NodeRegion.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/NodeRegion.cpp -o CMakeFiles/Comp345P1.dir/NodeRegion.cpp.s
 
 CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o.provides.build: CMakeFiles/Comp345P1.d
 
 CMakeFiles/Comp345P1.dir/Veiwer.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/Veiwer.cpp.o: ../Veiwer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Comp345P1.dir/Veiwer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Veiwer.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Comp345P1.dir/Veiwer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Veiwer.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/Veiwer.cpp
 
 CMakeFiles/Comp345P1.dir/Veiwer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/Veiwer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.cpp > CMakeFiles/Comp345P1.dir/Veiwer.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/Veiwer.cpp > CMakeFiles/Comp345P1.dir/Veiwer.cpp.i
 
 CMakeFiles/Comp345P1.dir/Veiwer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/Veiwer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.cpp -o CMakeFiles/Comp345P1.dir/Veiwer.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/Veiwer.cpp -o CMakeFiles/Comp345P1.dir/Veiwer.cpp.s
 
 CMakeFiles/Comp345P1.dir/Veiwer.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/Comp345P1.dir/Veiwer.cpp.o.provides.build: CMakeFiles/Comp345P1.dir/V
 
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../AggressivePlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/AggressivePlayer.cpp
 
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.cpp > CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/AggressivePlayer.cpp > CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.i
 
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.cpp -o CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/AggressivePlayer.cpp -o CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.s
 
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o.provides.build: CMakeFiles/Comp3
 
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../DefensivePlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/DefensivePlayer.cpp
 
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.cpp > CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/DefensivePlayer.cpp > CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.i
 
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.cpp -o CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/DefensivePlayer.cpp -o CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.s
 
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o.provides.build: CMakeFiles/Comp34
 
 CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: ../ModeratePlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/ModeratePlayer.cpp
 
 CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.cpp > CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/ModeratePlayer.cpp > CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.i
 
 CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.cpp -o CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/ModeratePlayer.cpp -o CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.s
 
 CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o.provides.build: CMakeFiles/Comp345
 
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../RandomPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/RandomPlayer.cpp
 
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.cpp > CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/RandomPlayer.cpp > CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.i
 
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.cpp -o CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/RandomPlayer.cpp -o CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.s
 
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o.provides.build: CMakeFiles/Comp345P1
 
 CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o: ../PhaseObserver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/PhaseObserver.cpp
 
 CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.cpp > CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/PhaseObserver.cpp > CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.i
 
 CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.cpp -o CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/PhaseObserver.cpp -o CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.s
 
 CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o.provides.build: CMakeFiles/Comp345P
 
 CMakeFiles/Comp345P1.dir/Subject.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/Subject.cpp.o: ../Subject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Comp345P1.dir/Subject.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Subject.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Comp345P1.dir/Subject.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/Subject.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/Subject.cpp
 
 CMakeFiles/Comp345P1.dir/Subject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/Subject.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.cpp > CMakeFiles/Comp345P1.dir/Subject.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/Subject.cpp > CMakeFiles/Comp345P1.dir/Subject.cpp.i
 
 CMakeFiles/Comp345P1.dir/Subject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/Subject.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.cpp -o CMakeFiles/Comp345P1.dir/Subject.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/Subject.cpp -o CMakeFiles/Comp345P1.dir/Subject.cpp.s
 
 CMakeFiles/Comp345P1.dir/Subject.cpp.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/Comp345P1.dir/Subject.cpp.o.provides.build: CMakeFiles/Comp345P1.dir/
 
 CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o: ../StatisticsObserver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/StatisticsObserver.cpp
 
 CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.cpp > CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/StatisticsObserver.cpp > CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.i
 
 CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.cpp -o CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/StatisticsObserver.cpp -o CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.s
 
 CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o.provides.build: CMakeFiles/Com
 
 CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o: ../DominationObserverDecorator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/DominationObserverDecorator.cpp
 
 CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.cpp > CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/DominationObserverDecorator.cpp > CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.i
 
 CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.cpp -o CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/DominationObserverDecorator.cpp -o CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.s
 
 CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o.requires:
 
@@ -491,16 +491,16 @@ CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o.provides.build: CMake
 
 CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o: ../VictoryCoinsObserverDecorator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/VictoryCoinsObserverDecorator.cpp
 
 CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.cpp > CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/VictoryCoinsObserverDecorator.cpp > CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.i
 
 CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.cpp -o CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/VictoryCoinsObserverDecorator.cpp -o CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.s
 
 CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o.requires:
 
@@ -515,16 +515,16 @@ CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o.provides.build: CMa
 
 CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o: CMakeFiles/Comp345P1.dir/flags.make
 CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o: ../HandsObserverDecorator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o -c /Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o -c /Users/cfeochari/CLionProjects/Comp345Pizza/HandsObserverDecorator.cpp
 
 CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.cpp > CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/cfeochari/CLionProjects/Comp345Pizza/HandsObserverDecorator.cpp > CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.i
 
 CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.cpp -o CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/cfeochari/CLionProjects/Comp345Pizza/HandsObserverDecorator.cpp -o CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.s
 
 CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o.requires:
 
@@ -585,7 +585,7 @@ Comp345P1: CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o
 Comp345P1: CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o
 Comp345P1: CMakeFiles/Comp345P1.dir/build.make
 Comp345P1: CMakeFiles/Comp345P1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable Comp345P1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable Comp345P1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Comp345P1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -621,6 +621,6 @@ CMakeFiles/Comp345P1.dir/clean:
 .PHONY : CMakeFiles/Comp345P1.dir/clean
 
 CMakeFiles/Comp345P1.dir/depend:
-	cd /Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/fokpoonkai/CLionProjects/Comp345P1 /Users/fokpoonkai/CLionProjects/Comp345P1 /Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug /Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug /Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles/Comp345P1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/cfeochari/CLionProjects/Comp345Pizza /Users/cfeochari/CLionProjects/Comp345Pizza /Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug /Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug /Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles/Comp345P1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Comp345P1.dir/depend
 

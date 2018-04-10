@@ -7,7 +7,6 @@
 #include "Die.h"
 #include "Tokens.h"
 #include <exception>
-#include <typeinfo>
 using namespace std;
 int main() {
 
@@ -15,47 +14,40 @@ int main() {
     int z;
     int input;
     int race_randam_picking;
-    string race_banner[6];
-    string map = "";
-    bool check = false;
-    bool firstplay = true;
+    string race_banner [6];
+    string map="";
+    bool check=false;
+    bool firstplay=true;
     Maploader maploader;
     Tokens tokens;
     Interraction interraction;
     Maps maps;
-    cout << "  ▉▉▉▉   ▉▉▉ ▉▉▉  ▉▉▉▉▉▉  ▉▉  ▉▉     ▉▉   ▉▉   ▉▉   ▉▉▉▉▉   ▉▉     ▉▉     ▉▉\n" <<
-         " ▉▉      ▉▉ ▉ ▉▉  ▉▉  ▉▉  ▉▉  ▉▉      ▉▉  ▉▉  ▉▉   ▉▉   ▉▉  ▉▉▉▉▉  ▉▉     ▉▉\n" <<
-         "  ▉▉▉▉   ▉▉ ▉ ▉▉  ▉▉  ▉▉  ▉▉  ▉▉       ▉  ▉▉  ▉    ▉▉   ▉▉  ▉▉     ▉▉   ▉▉▉▉\n" <<
-         "     ▉▉  ▉▉   ▉▉  ▉▉  ▉▉  ▉▉  ▉▉        ▉ ▉▉ ▉     ▉▉   ▉▉  ▉▉     ▉▉   ▉  ▉\n" <<
-         "  ▉▉▉▉   ▉▉   ▉▉  ▉▉▉▉▉▉▉ ▉▉  ▉▉         ▉  ▉       ▉▉▉▉▉   ▉▉     ▉▉   ▉▉▉▉  " << endl;
+    cout<<"  ▉▉▉▉   ▉▉▉ ▉▉▉  ▉▉▉▉▉▉  ▉▉  ▉▉     ▉▉   ▉▉   ▉▉   ▉▉▉▉▉   ▉▉     ▉▉     ▉▉\n"<<
+          " ▉▉      ▉▉ ▉ ▉▉  ▉▉  ▉▉  ▉▉  ▉▉      ▉▉  ▉▉  ▉▉   ▉▉   ▉▉  ▉▉▉▉▉  ▉▉     ▉▉\n"<<
+          "  ▉▉▉▉   ▉▉ ▉ ▉▉  ▉▉  ▉▉  ▉▉  ▉▉       ▉  ▉▉  ▉    ▉▉   ▉▉  ▉▉     ▉▉   ▉▉▉▉\n"<<
+          "     ▉▉  ▉▉   ▉▉  ▉▉  ▉▉  ▉▉  ▉▉        ▉ ▉▉ ▉     ▉▉   ▉▉  ▉▉     ▉▉   ▉  ▉\n"<<
+          "  ▉▉▉▉   ▉▉   ▉▉  ▉▉▉▉▉▉▉ ▉▉  ▉▉         ▉  ▉       ▉▉▉▉▉   ▉▉     ▉▉   ▉▉▉▉  "<<endl;
 
 
-    cout << "how many people play the game" << endl;
-    cin >> nbPlayer;
 
+    cout<< "how many people play the game"<<endl;
+    //cin>>nbPlayer;
 
-    /*if (cin.fail()) {
-        cout << "NOT INT"<<endl;
-    } else{
-        cin>>nbPlayer;
-    }*/
-// TO DO :FIX CHAR ERRRO
     do{
         cin>>nbPlayer;
-
+        //cout << nbPlayer;
         try {
-            if(nbPlayer>5||nbPlayer<2){
+            if(cin.fail()) {
+                cin.clear();
+                throw nbPlayer;
+                // if the input is not an integer, an error is thrown
+                // claudia
+            }
+            else if((nbPlayer>5||nbPlayer<2) && cin.fail() == false){
+
                 throw nbPlayer;
                 // throws an error if the number of players is greater than
                 // 5 or less than 2.
-                // claudia
-            }
-            else if(cin.fail()){
-                break;
-                cout << "ASDFAS" << endl;
-                throw nbPlayer;
-
-                // if the input is not an integer, an error is thrown
                 // claudia
             }
             else if(nbPlayer == 2){map= "2map.txt";
@@ -87,28 +79,21 @@ int main() {
                 // claudia
             }
             // claudia : fixed position of the code
-            else{
-                cout << "ASDF";
+            /*else{
                 throw nbPlayer;
 
-            }
+            }*/
 
         }catch (int nbplayer){
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             cout<<"The Entry is Invalid, Please try again."<<endl;
             // claudia : Fixed Grammar and made it easier to understand
-
             cin.clear();
-            cin.ignore(1);
-            //check = true;
-            //break;
-
+            //cin.ignore(1);
             // getting rid of the error flag
             // claudia
         }
-        catch (char nbplayer)
-        {
-            // all others
-        }
+
 
 
     }while(check==false);
