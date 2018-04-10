@@ -31,7 +31,32 @@ void Interraction ::setplayer(string map, int nbplayer) {
         numberOfPopulation = 0;
         player.vrace_vspecialpower_print();
         cout << "pick race" << endl;
-        cin >> raceSelection;
+        //cin >> raceSelection;
+        // claudia :commented out code
+        //claudia
+        do {
+            cin >> raceSelection;
+            try {
+                if (cin.fail()) {
+                    cin.clear();
+                    throw raceSelection;
+                    // if the input is not an integer, an error is thrown
+                    // claudia
+                } else if (raceSelection > 6 || raceSelection < 1) {
+                    throw raceSelection;
+                } else{
+                    check=true;
+                }
+            }
+            catch (int raceSelection) {
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                cout << "The Entry is Invalid, Please try again." << endl;
+                // claudia : Fixed Grammar and made it easier to understand
+                cin.clear();
+            }
+        }while(check==false);
+
+        // claudia
         cout << "This race you picking us " << player.getvrace(raceSelection) << " "
              << player.getvspecialpower(raceSelection) << endl;
         victorycoin = 5;//start with 5 victory coin
@@ -135,6 +160,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                 }
 
             } catch (int input) {
+                //cout << "ASDFASFAS" << endl;
                 cout << "the input is invalid \n"
                      "Enter again:"<< endl;
                 cin.clear();

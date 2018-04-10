@@ -62,6 +62,7 @@ public:
 
     bool first_time_edge;
     bool edge_check;
+    bool check=false;
     int race_coin  [6] ={0,0,0,0,0,0};
 
     void br();
