@@ -24,7 +24,8 @@ void Subject::attachStatic(Observer *obs) {
 
 
 void Subject::notifyStatic(vector<ListofPlayer> *lp_vPtr, int numberOfRegion) {
-    for (int i = 0; i <observer.size() ; ++i) {
-        observer[i]->update(lp_vPtr,numberOfRegion);
+    for (int i = 0; i <staticObserver.size() ; ++i) {
+//        cout<<"StaticTest"<<endl;
+        staticObserver[i]->update(lp_vPtr,numberOfRegion);
     }
 }

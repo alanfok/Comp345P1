@@ -36,9 +36,10 @@ int main() {
     do{
         cin>>nbPlayer;
         try {
-            if(nbPlayer>5||nbPlayer<2){
+            if(nbPlayer>5||nbPlayer<2 && cin.fail() == false){
                 throw nbPlayer;
-            }else if(!cin){
+            }else if(cin.fail()){
+                cin.clear();
                 throw nbPlayer;
             }
             else if(nbPlayer == 5){map= "5map.txt";
@@ -51,9 +52,10 @@ int main() {
             check=true;
             }
         }catch (int nbplayer){
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             cout<<"invalid enter,Please enter again."<<endl;
             cin.clear();
-            cin.ignore(1);
+
         }
     }while(check==false);
 

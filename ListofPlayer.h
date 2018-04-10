@@ -27,7 +27,7 @@ public:
     string getspecialPower();
     string getrace();
     int getdecline_lock();
-    int getNumberOfOccupiedRegion() const;
+    int getNumberOfOccupiedRegion() ;
     int getStrategyBehaviour();
     int getTurn() const;
     bool getDecline();

@@ -123,7 +123,7 @@ bool ListofPlayer::getDecline(){
     return decline;
 }
 
-int ListofPlayer::getNumberOfOccupiedRegion() const {
+int ListofPlayer::getNumberOfOccupiedRegion() {
     return numberOfOccupiedRegion;
 }
 

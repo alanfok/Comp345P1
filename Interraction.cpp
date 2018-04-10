@@ -31,7 +31,33 @@ void Interraction ::setplayer(string map, int nbplayer) {
         numberOfPopulation = 0;
         player.vrace_vspecialpower_print();
         cout << "pick race" << endl;
-        cin >> raceSelection;
+        //cin >> raceSelection;
+        // claudia :commented out code
+        //claudia
+        check=false;// alan u forget to reset
+        do {
+            cin >> raceSelection;
+            try {
+                if (cin.fail()) {
+                    cin.clear();
+                    throw raceSelection;
+                    // if the input is not an integer, an error is thrown
+                    // claudia
+                } else if (raceSelection > 6 || raceSelection < 1) {
+                    throw raceSelection;
+                } else{
+                    check=true;
+                }
+            }
+            catch (int raceSelection) {
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                cout << "The Entry is Invalid, Please try again." << endl;
+                // claudia : Fixed Grammar and made it easier to understand
+                cin.clear();
+            }
+        }while(check==false);
+
+        // claudia
         cout << "This race you picking us " << player.getvrace(raceSelection) << " "
              << player.getvspecialpower(raceSelection) << endl;
         victorycoin = 5;//start with 5 victory coin
@@ -41,8 +67,8 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
         //static array holding the coin
 
-        for (int i = 1; i < raceSelection; i++) {
-            race_coin[i] += 1;//put one coin into array
+        for (int j = 1; j < raceSelection; j++) {
+            race_coin[j] += 1;//put one coin into array
             victorycoin--;//minus the coin
         }
 
@@ -84,6 +110,15 @@ void Interraction ::setplayer(string map, int nbplayer) {
         do {
             cin >> input;
             try {
+
+                if (cin.fail()) {
+                    cin.clear();
+                    throw raceSelection;
+                    // if the input is not an integer, an error is thrown
+                    // claudia
+                }
+
+
                 if (input < 0 || input > 4) {
                     throw input;
                 }
@@ -91,30 +126,57 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
                     player_pointer->notify(&player.vplayer[i]);
                     aggressivePlayer.pickupRaceNSp(&player.vplayer[i]);
-                    player_pointer->notify(&player.vplayer[i]);
-                    br();
 
+                    br();
                     aggressivePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
                                                &player.vplayer);//change  <~~make sure the player is entry from edge
+
+                    veiwer.get_player_infomation(tempvplayerid,player);
                     veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+
                     br();
+                    player.vplayer[i].setPhase("conquer");
+                    player_pointer->notify(&player.vplayer[i]);
 
                     aggressivePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
                                               &player.vplayer);//change <~~ occupied
+
+
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+
+
+
+                    br(); player.vplayer[i].setPhase("coin");
+                    player_pointer->notify(&player.vplayer[i]);
                     aggressivePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion,
                                             &player.vplayer);
 
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
                     inputCheck=true;
                 } else if (input == 2) {
+                    player_pointer->notify(&player.vplayer[i]);
                     defensePlayer.pickupRaceNSp(&player.vplayer[i]);
+                    player_pointer->notify(&player.vplayer[i]);
                     defensePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
                                             &player.vplayer);//change  <~~make sure the player is entry from edge
 //                    defensePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
 //                                           &player.vplayer);//change  <~~ occupied
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    player.vplayer[i].setPhase("conquer");
+                    player_pointer->notify(&player.vplayer[i]);
+
                     defensePlayer.redeployment(&player.vplayer[i], player, &player.vnodeRegion,
                                                &player.vplayer);
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    br(); player.vplayer[i].setPhase("coin");
+                    player_pointer->notify(&player.vplayer[i]);
                     defensePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
-
+                    veiwer.get_player_infomation(tempvplayerid,player);
+                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
                     inputCheck=true;
                 } else if (input == 3) {
                     moderatePlayer.pickupRaceNSp(&player.vplayer[i]);
@@ -135,10 +197,13 @@ void Interraction ::setplayer(string map, int nbplayer) {
                 }
 
             } catch (int input) {
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+
                 cout << "the input is invalid \n"
                      "Enter again:"<< endl;
                 cin.clear();
-                cin.ignore(1);
+                
             }
             catch (...){
                 cout<<"the type is not right"<<endl;
@@ -150,6 +215,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
     player.prints();
     }
+
     player_pointer->notifyStatic(&player.vplayer,maploader.nbline);
     //turn 2-10
     player.token_sort();
@@ -228,9 +294,10 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
 
         }
-    player_pointer->notifyStatic(&player.vplayer,maploader.nbline);
+    cout<<"fdsafa"<<endl;
+  //  player_pointer->notifyStatic(&player.vplayer,maploader.nbline);
 // }//turn 2-10 endloop
-    player_pointer->notifyStatic(&player.vplayer,maploader.nbline);
+
         //hod = new HandsObserverDecorator(PhaseObserver());
         //player_pointer->attach(hod);
         player.declare_winner(); //declare who is winner

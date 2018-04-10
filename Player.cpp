@@ -131,26 +131,15 @@ void Player::population_costv2(int playerid,int regionid){
     }
 }
 
-//
-//void Player::conquers_v3(int player_population,ListofPlayer *lp, NodeRegion *nr
-//        , int region ,int invade_region) {
-//
-//    occupied(region, lp->getidPlayer(), invade_region);
-//    int temp = player_population;
-//    lp->setpopulation(lp->getpopulation() -temp);
-//    nr->setregion_population(temp);
-//    nr->setid_player(lp->getidPlayer());
-//
-//
-//}
-
 
 void Player::conquers_v4(ListofPlayer *lp,vector <NodeRegion> *nr_vPtr,int pop,int regionid){
     (*nr_vPtr)[regionid].setregion_population(pop);//←reset the regional object to new population
     (*nr_vPtr)[regionid].setid_player(lp->getidPlayer());//←reset the regional object to new Player ID
     (*nr_vPtr)[regionid].setplayer_race(lp->getrace());//←reset the regional object to new Player population
     (*nr_vPtr)[regionid].setplayer_specialpower(lp->getspecialPower());//←reset the regional object to new Player special power
-    lp->setNumberOfOccupiedRegion(lp->getNumberOfOccupiedRegion()+1);
+    cout<<lp->getNumberOfOccupiedRegion()<<endl;
+   lp->setNumberOfOccupiedRegion(lp->getNumberOfOccupiedRegion()+1);
+
 }
 
 

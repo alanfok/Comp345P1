@@ -9,6 +9,7 @@
 //#include "PhaseObserver.h"
 #include <vector>
 #include "ListofPlayer.h"
+#include <iostream>
 using namespace std;
 /**
  * Interface for the Subject
