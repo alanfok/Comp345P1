@@ -13,59 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="799aa2ed-8446-4442-a965-a7e485c58a12" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeCCompiler.cmake" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeCXXCompiler.cmake" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeDetermineCompilerABI_C.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CMakeSystem.cmake" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/a.out" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Die.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Die.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/DominationObserverDecorator.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/HandsObserverDecorator.cpp.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Interraction.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Interraction.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/ListofPlayer.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Maploader.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Maploader.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Maps.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Maps.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/PhaseObserver.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Player.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Player.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Subject.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Subject.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Tokens.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Tokens.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Veiwer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/Veiwer.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/VictoryCoinsObserverDecorator.cpp.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/cmake_clean.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/depend.internal" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/link.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/main.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Comp345P1.dir/main.cpp.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Comp345P1" afterPath="$PROJECT_DIR$/cmake-build-debug/Comp345P1" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Comp345P1.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/Comp345P1.cbp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="91" column="14" lean-forward="false" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+            <state relative-caret-position="-486">
+              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -93,82 +43,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AggressivePlayer.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AggressivePlayer.cpp">
+      <file leaf-file-name="Interraction.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Interraction.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="49" column="55" lean-forward="false" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
+            <state relative-caret-position="170">
+              <caret line="173" column="28" lean-forward="false" selection-start-line="173" selection-start-column="28" selection-end-line="173" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2map.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/2map.txt">
+      <file leaf-file-name="Interraction.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Interraction.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="3map.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/3map.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="4map.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/4map.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="5map.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/5map.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="8" column="155" lean-forward="false" selection-start-line="8" selection-start-column="155" selection-end-line="8" selection-end-column="155" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AggressivePlayer.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AggressivePlayer.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Maploader.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Maploader.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1216">
-              <caret line="64" column="1" lean-forward="false" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListofPlayer.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ListofPlayer.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="74" column="31" lean-forward="false" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="290">
+              <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+              <folding>
+                <element signature="e#116#135#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,10 +69,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>player</find>
-      <find>cout</find>
-      <find>tokens</find>
-      <find>v</find>
       <find>picks_Race</find>
       <find>picks_race</find>
       <find>picks_rac</find>
@@ -207,6 +95,10 @@
       <find>coin_status</find>
       <find>observer.update</find>
       <find>update_conquer</find>
+      <find>try</find>
+      <find>bool</find>
+      <find>This race you</find>
+      <find>check</find>
     </findStrings>
     <dirStrings>
       <dir>$USER_HOME$/Desktop/boost_1_66_0_2/boost/system/detail</dir>
@@ -266,13 +158,13 @@
         <option value="$PROJECT_DIR$/Player.cpp" />
         <option value="$PROJECT_DIR$/Player.h" />
         <option value="$PROJECT_DIR$/ObserverDecorator.h" />
-        <option value="$PROJECT_DIR$/Interraction.h" />
-        <option value="$PROJECT_DIR$/Interraction.cpp" />
         <option value="$PROJECT_DIR$/DefensivePlayer.h" />
         <option value="$PROJECT_DIR$/ListofPlayer.h" />
         <option value="$PROJECT_DIR$/ListofPlayer.cpp" />
         <option value="$PROJECT_DIR$/AggressivePlayer.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Interraction.h" />
+        <option value="$PROJECT_DIR$/Interraction.cpp" />
       </list>
     </option>
   </component>
@@ -286,7 +178,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1397" />
-    <option name="height" value="821" />
+    <option name="height" value="811" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -527,7 +419,7 @@
       <workItem from="1523143178893" duration="12424000" />
       <workItem from="1523191176547" duration="2257000" />
       <workItem from="1523216743732" duration="13689000" />
-      <workItem from="1523322041652" duration="3561000" />
+      <workItem from="1523322041652" duration="6057000" />
     </task>
     <task id="LOCAL-00001" summary="added comments and fixed bugs">
       <created>1523323695326</created>
@@ -536,11 +428,32 @@
       <option name="project" value="LOCAL" />
       <updated>1523323695326</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed infinite loop error with try catch in main">
+      <created>1523325857988</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523325857988</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added try catch block exception handling when race picking is done">
+      <created>1523327268668</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523327268669</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added try catch block exception handling when race picking is done">
+      <created>1523327706814</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523327706814</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="539356000" />
+    <option name="totallyTimeSpent" value="541852000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,15 +465,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1397" height="821" extended-state="0" />
+    <frame x="0" y="23" width="1397" height="811" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32049417" sideWeight="0.4944" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37052342" sideWeight="0.401112" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42975205" sideWeight="0.401112" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26415095" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27235213" sideWeight="0.375695" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4201102" sideWeight="0.624305" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3278237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42597765" sideWeight="0.624305" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.110362254" sideWeight="0.5056" order="0" side_tool="true" content_ui="tabs" />
@@ -602,7 +515,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added comments and fixed bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comments and fixed bugs" />
+    <MESSAGE value="Fixed infinite loop error with try catch in main" />
+    <MESSAGE value="Added try catch block exception handling when race picking is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added try catch block exception handling when race picking is done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -858,6 +773,7 @@ void Tokens::menu() {
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="18" column="22" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="21" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -980,14 +896,6 @@ void Tokens::menu() {
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Interraction.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="233" column="10" lean-forward="false" selection-start-line="233" selection-start-column="10" selection-end-line="233" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DominationObserverDecorator.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1074,26 +982,18 @@ void Tokens::menu() {
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AggressivePlayer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="49" column="55" lean-forward="false" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interraction.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ListofPlayer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="74" column="31" lean-forward="false" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AggressivePlayer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="55" lean-forward="false" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1106,13 +1006,31 @@ void Tokens::menu() {
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Interraction.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+          <folding>
+            <element signature="e#116#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="91" column="14" lean-forward="false" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+        <state relative-caret-position="-486">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interraction.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="173" column="28" lean-forward="false" selection-start-line="173" selection-start-column="28" selection-end-line="173" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
