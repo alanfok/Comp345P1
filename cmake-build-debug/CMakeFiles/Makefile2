@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = "/Users/fokpoonkai/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/CLion.app/Contents/bin/cmake/bin/cmake"
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = "/Users/fokpoonkai/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.3727.114/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/cfeochari/CLionProjects/Comp345Pizza
+CMAKE_SOURCE_DIR = /Users/fokpoonkai/CLionProjects/Comp345P1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/Comp345P1.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug
 CMakeFiles/Comp345P1.dir/all:
 	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/depend
 	$(MAKE) -f CMakeFiles/Comp345P1.dir/build.make CMakeFiles/Comp345P1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target Comp345P1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target Comp345P1"
 .PHONY : CMakeFiles/Comp345P1.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/Comp345P1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Comp345P1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles 21
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Comp345P1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Comp345P1.dir/rule
 
 # Convenience name for target.

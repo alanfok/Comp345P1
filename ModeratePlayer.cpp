@@ -3,6 +3,8 @@
 //
 
 #include "ModeratePlayer.h"
+
+#include "ModeratePlayer.h"
 ModeratePlayer::ModeratePlayer() {}
 ModeratePlayer::~ModeratePlayer() {}
 /*pass thus (pointer of Player Object, Player class for Player class method, pointer of vector which holding the region

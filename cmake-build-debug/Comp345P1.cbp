@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug"/>
+				<Option working_dir="/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug"/>
+				<Option working_dir="/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug"/>
+				<Option working_dir="/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Comp345P1">
-				<Option output="/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Comp345P1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug"/>
+				<Option output="/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Comp345P1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -48,20 +48,19 @@
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 Comp345P1"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Comp345P1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Comp345P1/fast">
-				<Option output="/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Comp345P1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug"/>
+				<Option output="/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Comp345P1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -70,145 +69,144 @@
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 Comp345P1/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/cfeochari/CLionProjects/Comp345Pizza/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Comp345P1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/fokpoonkai/CLionProjects/Comp345P1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/AggressivePlayer.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/AggressivePlayer.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/DefensivePlayer.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/DefensivePlayer.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Die.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Die.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Die.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Die.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/DominationObserverDecorator.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/DominationObserverDecorator.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/HandsObserverDecorator.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/HandsObserverDecorator.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Interraction.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Interraction.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Interraction.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Interraction.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Maploader.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Maploader.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Maploader.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Maploader.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Maps.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Maps.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Maps.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Maps.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/ModeratePlayer.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/ModeratePlayer.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/NodeRegion.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/NodeRegion.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Observer.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/ObserverDecorator.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/ObserverDecorator.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/PhaseObserver.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/PhaseObserver.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Player.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Player.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Player.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Player.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/PlayerType.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/RandomPlayer.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/RandomPlayer.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/StatisticsObserver.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/StatisticsObserver.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Subject.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Subject.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Subject.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Tokens.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Tokens.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Veiwer.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/Veiwer.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/VictoryCoinsObserverDecorator.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/VictoryCoinsObserverDecorator.h">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.h">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/main.cpp">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/main.cpp">
 			<Option target="Comp345P1"/>
 		</Unit>
-		<Unit filename="/Users/cfeochari/CLionProjects/Comp345Pizza/CMakeLists.txt">
+		<Unit filename="/Users/fokpoonkai/CLionProjects/Comp345P1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

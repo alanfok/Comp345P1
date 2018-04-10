@@ -5,6 +5,8 @@
 #ifndef COMP345P1_MODERATEPLAYER_H
 #define COMP345P1_MODERATEPLAYER_H
 
+
+
 #include "PlayerType.h"
 class ModeratePlayer:public PlayerType{
 public: 

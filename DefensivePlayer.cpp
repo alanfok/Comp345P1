@@ -34,6 +34,29 @@ void DefensivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *
     do {//go to do loop to make sure the first region is from the edge of the map
         cout<<"please Enter the first region u want to occupy"<<endl;
         cin>>toWhichRegion;
+
+
+        try {
+            if(cin.fail()) {
+                cin.clear();
+                throw toWhichRegion;
+                // if the input is not an integer, an error is thrown
+                // claudia
+            }
+            else if (toWhichRegion < 0 || toWhichRegion > totalNumberOfRegion) {
+                throw toWhichRegion;
+            }
+            else{
+                Edgeoccupied=true;
+            }
+
+        } catch (int toWhichRegion) {
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cout << "The input is invalid\nPlease enter again" << endl;
+            cin.clear();
+        }// claudia : Added error validatio
+
+
         toWhichRegion-=1;
 
         if (py.maploader.adjact[toWhichRegion].compare("y") != 0) {//←if the region is not an edge region
@@ -84,11 +107,9 @@ void DefensivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *n
     cout << py.vnodeRegion[toWhichRegion].getid_player() << "get " << py.vnodeRegion[toWhichRegion].getregion_status()
          << endl;
     conquer_check = false;//get conquer_check to false to do-while loop purpose
-   // if (firstLock==1){
-     //   firstLock=0;
- //   }
-   // else{
+
         do {
+
             cout<<"From which region"<<endl;
             cin>>fromWhichRegion;
             fromWhichRegion-=1;
@@ -138,7 +159,7 @@ void DefensivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *n
                     playerPopulation -= py.cost_of_population;//←set the lost tride to none after ocuppied the region
                     conquer_check = true;
                 } else {
-                    cout<<"The total is less than the region costs, so you cannot occupy the region"<<endl;
+                    cout<<"The total is less than the region costes, so you cannot occupy the region"<<endl;
                     conquer_check = true;
                 }
             }

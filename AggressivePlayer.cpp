@@ -33,7 +33,13 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
     playerID=lp->getidPlayer();//get Player ID
     playerPopulation=lp->getpopulation();//get Player population
     do {//go to do loop to make sure the first region is from the edge of the map
+
+
+
+
+
         cout<<"please Enter the first region u want to occupy"<<endl;
+
         bool checkVaild=false;
 
         do {
@@ -42,20 +48,28 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
         toWhichRegion-=1;
 
             try {
-                if (toWhichRegion < 0 || toWhichRegion > totalNumberOfRegion) {
+                if(cin.fail()) {
+                    cin.clear();
+                    throw toWhichRegion;
+                    // if the input is not an integer, an error is thrown
+                    // claudia
+                }
+                else if (toWhichRegion < 0 || toWhichRegion > totalNumberOfRegion) {
                     throw toWhichRegion;
                 }
-                if (!cin) {
-                    toWhichRegion;
-                }else{
+                else{
                     checkVaild=true;
                 }
+                /*if (!cin) {
+                    toWhichRegion;
+                }*/
             } catch (int toWhichRegion) {
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 cout << "The input is invalid\nPlease enter again" << endl;
                 cin.clear();
-                cin.ignore(1);
-            }
+            }// claudia : Added error validation
         }while (checkVaild==false);
+
         if (py.maploader.adjact[toWhichRegion].compare("y") != 0) {//←if the region is not an edge region
             Edgeoccupied=false;//no need to print out becuz it is a AI playing
             cout<<"The first entyr has to be from the edge."<<endl;
@@ -86,7 +100,7 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
     }while (Edgeoccupied==false);
     cout<<"------------------------The player selected "<<toWhichRegion+1<<"------------------------"<<endl;
     py.prints();//print out the map
-  //  cout<<"Update-->the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
+    cout<<"Update-->the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
 
 }
 
@@ -109,14 +123,67 @@ void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *
     cout << py.vnodeRegion[toWhichRegion].getid_player() << "get " << py.vnodeRegion[toWhichRegion].getregion_status()
          << endl;
     conquer_check = false;//get conquer_check to false to do-while loop purpose
+    fromregion= false;
+    toregion=false;
 
     do {
-        cout<<"From which region"<<endl;
-        cin>>fromWhichRegion;
+
+        do{
+            cout<<"From which region"<<endl;
+            cin>>fromWhichRegion;
+            try {
+                if(cin.fail()) {
+                    cin.clear();
+                    throw fromWhichRegion;
+                    // if the input is not an integer, an error is thrown
+                    // claudia
+                }
+                else if (fromWhichRegion < 0 || fromWhichRegion > totalNumberOfRegion) {
+                    throw fromWhichRegion;
+                }
+                else{
+                    fromregion=true;
+                }
+            } catch (int fromWhichRegion) {
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                cout << "The input is invalid\nPlease enter again" << endl;
+                cin.clear();
+            }// claudia : Added error validation
+        }while(fromregion == false);
         fromWhichRegion-=1;
-        cout<<"To which region"<<endl;
-        cin>>toWhichRegion;
+
+
+        do{
+            toregion = true;
+            cout<<"To which region"<<endl;
+            cin>>toWhichRegion;
+
+            try {
+                if(cin.fail()) {
+                    cin.clear();
+                    throw toWhichRegion;
+                    // if the input is not an integer, an error is thrown
+                    // claudia
+                }
+                else if (toWhichRegion < 0 || toWhichRegion > totalNumberOfRegion) {
+                    throw toWhichRegion;
+                }
+                else{
+                    toregion=true;
+                }
+            } catch (int fromWhichRegion) {
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                cout << "The input is invalid\nPlease enter again" << endl;
+                cin.clear();
+            }// claudia : Added error validation
+
+
+        }while(toregion == false);
+
+
+
         toWhichRegion-=1;
+
         py.population_costv2(playerID,toWhichRegion);
 
         if(py.maploader.maps.pt[fromWhichRegion][toWhichRegion]==0){
@@ -172,7 +239,7 @@ void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *
 
     } while (conquer_check == false);
 
-  //  cout << "the Player " << lp->getidPlayer() << " and " << lp->getpopulation() << endl;
+    cout << "the Player " << lp->getidPlayer() << " and " << lp->getpopulation() << endl;
     py.prints();
 }
 

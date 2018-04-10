@@ -1,7 +1,6 @@
 //
 // Created by fok poon kai on 2018-03-09.
 //
-
 #ifndef COMP345P1_INTERRACTION_H
 #define COMP345P1_INTERRACTION_H
 
@@ -57,7 +56,7 @@ public:
     bool check;
     bool first_time_edge;
     bool edge_check;
-    bool check=false;
+
     int race_coin  [6] ={0,0,0,0,0,0};
 
     void br();

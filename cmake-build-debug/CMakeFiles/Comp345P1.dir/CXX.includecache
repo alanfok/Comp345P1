@@ -6,27 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/AggressivePlayer.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.cpp
 AggressivePlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/AggressivePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/AggressivePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.h
 PlayerType.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/PlayerType.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/DefensivePlayer.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.cpp
 DefensivePlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/DefensivePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/DefensivePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.h
 PlayerType.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/PlayerType.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Die.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/Die.cpp
 Die.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Die.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Die.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Die.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Die.h
 iostream
 -
 stdlib.h
@@ -34,87 +34,87 @@ stdlib.h
 time.h
 -
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/DominationObserverDecorator.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.cpp
 DominationObserverDecorator.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/DominationObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/DominationObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/DominationObserverDecorator.h
 ObserverDecorator.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ObserverDecorator.h
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 iostream
 -
 vector
 -
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/HandsObserverDecorator.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.cpp
 HandsObserverDecorator.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/HandsObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/HandsObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.h
 ObserverDecorator.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ObserverDecorator.h
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 iostream
 -
 vector
 -
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Interraction.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/Interraction.cpp
 Interraction.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Interraction.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Interraction.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Interraction.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Interraction.h
 Player.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Player.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Player.h
 Tokens.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Tokens.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h
 Maploader.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Maploader.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Maploader.h
 Maps.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Maps.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Maps.h
 vector
 -
 iostream
 -
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 Veiwer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Veiwer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h
 PhaseObserver.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/PhaseObserver.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.h
 StatisticsObserver.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/StatisticsObserver.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.h
 AggressivePlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/AggressivePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/AggressivePlayer.h
 DefensivePlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/DefensivePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.h
 ModeratePlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ModeratePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.h
 RandomPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/RandomPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h
 HandsObserverDecorator.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/HandsObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/HandsObserverDecorator.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.cpp
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 string
 -
 list
-/Users/cfeochari/CLionProjects/Comp345Pizza/list
+/Users/fokpoonkai/CLionProjects/Comp345P1/list
 Subject.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Subject.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Maploader.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/Maploader.cpp
 Maploader.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Maploader.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Maploader.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Maploader.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Maploader.h
 iostream
 -
 fstream
@@ -124,139 +124,141 @@ string
 vector
 -
 Maps.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Maps.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Maps.h
 NodeRegion.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/NodeRegion.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Maps.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/Maps.cpp
 Maps.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Maps.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Maps.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Maps.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Maps.h
 iostream
 -
 vector
 -
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/ModeratePlayer.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.cpp
 ModeratePlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ModeratePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.h
+ModeratePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/ModeratePlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ModeratePlayer.h
 PlayerType.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/PlayerType.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/NodeRegion.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.cpp
 NodeRegion.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/NodeRegion.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.h
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 NodeRegion.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/NodeRegion.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.h
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/NodeRegion.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.h
 iostream
 -
 string
 -
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Observer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
 vector
 -
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/ObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ObserverDecorator.h
 Observer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Observer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/PhaseObserver.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.cpp
 PhaseObserver.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/PhaseObserver.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/PhaseObserver.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PhaseObserver.h
 Observer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Observer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 iostream
 -
 vector
 -
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Player.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/Player.cpp
 Player.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Player.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Player.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Player.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Player.h
 string
 -
 Tokens.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Tokens.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h
 Die.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Die.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Die.h
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 vector
 -
 algorithm
 -
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/PlayerType.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
 stdio.h
 -
 Player.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Player.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Player.h
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 iostream
 -
 vector
 -
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/RandomPlayer.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.cpp
 RandomPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/RandomPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/RandomPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h
 PlayerType.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/PlayerType.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/StatisticsObserver.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.cpp
 StatisticsObserver.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/StatisticsObserver.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/StatisticsObserver.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/StatisticsObserver.h
 Observer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Observer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 iostream
 -
 vector
 -
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Subject.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/Subject.cpp
 Subject.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Subject.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Subject.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
 Observer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Observer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h
 vector
 -
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 iostream
 -
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Tokens.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.cpp
 Tokens.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Tokens.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h
 ctime
 -
 cstdlib
@@ -266,57 +268,55 @@ stdlib.h
 stdio.h
 -
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Tokens.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h
 iostream
 -
 Maploader.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Maploader.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Maploader.h
 vector
 -
 algorithm
 -
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Veiwer.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.cpp
 Veiwer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Veiwer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/Veiwer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h
 Player.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Player.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Player.h
 iostream
 -
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/VictoryCoinsObserverDecorator.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.cpp
 VictoryCoinsObserverDecorator.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/VictoryCoinsObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.h
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/VictoryCoinsObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/VictoryCoinsObserverDecorator.h
 ObserverDecorator.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ObserverDecorator.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ObserverDecorator.h
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 iostream
 -
 vector
 -
 
-/Users/cfeochari/CLionProjects/Comp345Pizza/main.cpp
+/Users/fokpoonkai/CLionProjects/Comp345P1/main.cpp
 iostream
 -
 Maps.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Maps.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Maps.h
 Maploader.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Maploader.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Maploader.h
 Player.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Player.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Player.h
 Interraction.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Interraction.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Interraction.h
 ListofPlayer.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/ListofPlayer.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
 Die.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Die.h
+/Users/fokpoonkai/CLionProjects/Comp345P1/Die.h
 Tokens.h
-/Users/cfeochari/CLionProjects/Comp345Pizza/Tokens.h
-exception
--
+/Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h
 

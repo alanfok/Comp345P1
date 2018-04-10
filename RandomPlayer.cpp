@@ -1,7 +1,6 @@
 //
 // Created by fok poon kai on 2018-04-06.
 //
-
 #include "RandomPlayer.h"
 
 RandomPlayer::RandomPlayer() {} 

@@ -13,7 +13,7 @@ public: 
     ~AggressivePlayer();
 
 
-
+    NodeRegion *nr_ptr;
     int totalNumberOfRegion;
     int playerID;
     int playerPopulation;
@@ -21,6 +21,8 @@ public: 
     bool Edgeoccupied;
     int fromWhichRegion;
     int toWhichRegion;
+    bool  fromregion;
+    bool toregion;
     //inherate in PlayerType Class
     virtual void pickupRaceNSp(ListofPlayer *x);
     virtual  void conquers(ListofPlayer *x,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vtr);
