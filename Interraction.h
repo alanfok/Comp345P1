@@ -37,7 +37,7 @@ public:
     int tempvplayerid;
     int tempvplayerpop;
     HandsObserverDecorator *hod;
-
+    vector <int> tempStorage;
     vector <int> playercounter;
     vector <int> lostRegions;
     Player* player_pointer;

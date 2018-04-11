@@ -32,5 +32,7 @@ public:
     int regionPopulation;
     int input;
     int firstLock;
+    int putRedeploymentPopulation;
+    int getRedeploymentPopulation;
 };
 #endif //COMP345P1_RANDOMPLAYER_H

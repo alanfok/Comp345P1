@@ -67,17 +67,23 @@ void Player::token_sort() {    // sorting ny players coin
 }
 
 void Player::declare_winner(){
-    for(int i=300;i>=0;i--){
+    bool lock =false;
         for (int i = 300; i >= 0; i--) {
+            if(lock==true){
+                break;
+            }
             for(int j=0 ; j<vplayer.size();j++) {
+                if(lock==true){
+                    break;
+                }
                 if(vplayer[j].getvictoryCoins()==i){
                     cout <<vplayer[j].getidPlayer()<<"is winner"<<endl;
+                    lock=true;
                     break;
                 }
             }
         }
 
-    }
 
 }
 

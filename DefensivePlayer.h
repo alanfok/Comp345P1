@@ -32,9 +32,11 @@ public: 
     int fromWhichRegion;
     bool redeployment_check;
     int input;
-    int getRedeploymentPopulation;
+    bool  fromregion;
+    bool toregion;
     int regionPopulation;
     bool input_check;
     int putRedeploymentPopulation;
+    int getRedeploymentPopulation;
 };
 #endif //COMP345P1_DEFENSIVEPLAYER_H

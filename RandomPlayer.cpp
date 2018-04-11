@@ -25,9 +25,34 @@ void RandomPlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_
     playerPopulation=lp->getpopulation();//get Player population
     do {//go to do loop to make sure the first region is from the edge of the map
         cout<<"please Enter the first region u want to occupy"<<endl;
-        cin>>toWhichRegion;
-        toWhichRegion-=1;
+        bool checkVaild=false;
 
+        do {
+
+            cin>>toWhichRegion;
+
+            try {
+                if(cin.fail()) {
+                    cin.clear();
+                    throw toWhichRegion;
+                    // if the input is not an integer, an error is thrown
+                    // claudia
+                }
+                else if (toWhichRegion < 0 || toWhichRegion > totalNumberOfRegion-1) {
+                    throw toWhichRegion;
+                }
+                else{
+                    checkVaild=true;
+                }
+
+            } catch (int toWhichRegion) {
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                cout << "The input is invalid\nPlease enter again" << endl;
+                cin.clear();
+            }// claudia : Added error validation
+        }while (checkVaild==false);
+
+        toWhichRegion-=1;
         if (py.maploader.adjact[toWhichRegion].compare("y") != 0) {//←if the region is not an edge region
             Edgeoccupied=false;//no need to print out becuz it is a AI playing
             cout<<"The first entyr has to be from the edge."<<endl;
@@ -66,7 +91,7 @@ void RandomPlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_
 void RandomPlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
     srand(time(NULL));
     randomnumberV2 = (rand()) % 3;// randomnumber will be 0 , 1 and 2
-    if(lp->getDecline()==true){// it already decline
+    if(lp->getDecline()==true){// player already already decline
 /* if the player already decline before, we will follow the aggressive player occupied method
  * */ srand(time(NULL));
         randomnumberV2 = (rand()) % 2;
@@ -75,9 +100,8 @@ void RandomPlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_v
 //same with aggessive occiped method, explanation in above
     if(randomnumberV2==0){
         py.prints();
-        cout<<"------------------------first entry to the map------------------------"<<endl;
         cout<<"the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<" population(token)"<<endl;
-
+        cout<<"As Player choose the aggressive Behavier , you only can occpily one region"<< endl;
         totalNumberOfRegion=py.maploader.nbline;// get how many region
         playerID=lp->getidPlayer();//get Player ID
         playerPopulation=lp->getpopulation();//get Player population
@@ -133,10 +157,7 @@ void RandomPlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_v
         cout << py.vnodeRegion[toWhichRegion].getid_player() << "get " << py.vnodeRegion[toWhichRegion].getregion_status()
              << endl;
         conquer_check = false;//get conquer_check to false to do-while loop purpose
-        if (firstLock==1){
-            firstLock=0;
-        }
-        else{
+
             do {
                 cout<<"From which region"<<endl;
                 cin>>fromWhichRegion;
@@ -198,7 +219,7 @@ void RandomPlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_v
 
         }
 
-    }else if(randomnumberV2==2){
+    else if(randomnumberV2==2){
         //decline method, same with the moderate class
         cout<<"We will be decline"<<endl;
         lp->setDecline(true);
@@ -207,74 +228,64 @@ void RandomPlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_v
     }
 
 }
-void RandomPlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr){
+void RandomPlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
 
-    if(randomnumberV2==0){//we selected aggressive occupied meth
+    if (randomnumberV2 == 0) {//we selected aggressive occupied meth
 
-        cout<<"Because Player selected the Aggresssive behavior, it will stay 1 popluation(token) on the re"<<endl;
+        cout << "Because Player selected the Aggresssive behavior, it will stay 1 popluation(token) on the re" << endl;
         for (int i = 0; i < py.vnodeRegion.size(); ++i) {
-            if((*nr_vPtr)[i].getid_player()==lp->getidPlayer()){
-                if((*nr_vPtr)[i].getregion_population()>1){
-                    (*nr_vPtr)[i].setregion_population((*nr_vPtr)[i].getregion_population()-1);
-                    lp->setpopulation(lp->getpopulation()+1);
+            if ((*nr_vPtr)[i].getid_player() == lp->getidPlayer()) {
+                if ((*nr_vPtr)[i].getregion_population() > 1) {
+                    (*nr_vPtr)[i].setregion_population((*nr_vPtr)[i].getregion_population() - 1);
+                    lp->setpopulation(lp->getpopulation() + 1);
                 }
             }
         }
 
+    } else if (randomnumberV2 == 1) {//we selected decline
 
-    }else if(randomnumberV2==1){//we selected decline
+        cout << " you choose the Defensive, you can redeploy the population to defense your region" << endl;
+        redeployment_check = false;
+        do {
+            cout << "Do you want to redeploymen\nPress 1: Yes \nPress 2: NO" << endl;
+            cin >> input;
+            if (input == 2) {
+                redeployment_check = true;
+            } else if (input == 1) {
+                py.redeploymentVeiw(lp, nr_vPtr);
+                cout << "Which region you want to withdraw" << endl;
+                cin >> fromWhichRegion;
+                fromWhichRegion -= 1;
+                if (lp->getidPlayer() == (*nr_vPtr)[fromWhichRegion].getid_player()) {
+                    regionPopulation = (*nr_vPtr)[fromWhichRegion].getregion_population();
+                    cout << "How many population you want to withdraw?\n"
+                            "(if you take all of the population from region, you will loose the region)" << endl;
+                    cin >> redeploymentPopulation;
+                    if (redeploymentPopulation > regionPopulation) {
+                        cout << "you cannot take more than Region has" << endl;
+                    } else {
 
-        cout<<"because you choose the Defensive, you can redeploy the population to defense your region"<<endl;
-
-
-        redeployment_check= false;
-        do{
-            cout<<"Do you want to redeploymen\nPress 1: Yes \nPress 2: NO"<<endl;
-            cin>>input;
-            if(input==2){
-                redeployment_check=true;
-            }else if(input==1){
-                py.redeploymentVeiw(lp,nr_vPtr);
-                cout<<"Which region you want to withdraw"<<endl;
-                cin>>fromWhichRegion;
-                fromWhichRegion-=1;
-                if(lp->getidPlayer()==(*nr_vPtr)[fromWhichRegion].getid_player()){
-                    regionPopulation=(*nr_vPtr)[fromWhichRegion].getregion_population();
-                    cout<<"How many population you want to withdraw?\n"
-                            "(if you take all of the population from region, you will loose the region)"<<endl;
-                    cin>>redeploymentPopulation;
-                    if(redeploymentPopulation>regionPopulation){
-                        cout<<"you cannot take more than Region has"<<endl;
-                    }else{
-                        (*nr_vPtr)[fromWhichRegion].setregion_population(regionPopulation-redeploymentPopulation);
-                        cout<<"Which region you want to put the population to"<<endl;
-                        cin>>toWhichRegion;
-                        toWhichRegion-=1;
-                        regionPopulation=(*nr_vPtr)[toWhichRegion].getregion_population();
-                        (*nr_vPtr)[toWhichRegion].setregion_population(regionPopulation+redeploymentPopulation);
+                        (*nr_vPtr)[fromWhichRegion].setregion_population(regionPopulation - redeploymentPopulation);
+                        lp->setpopulation(lp->getpopulation() + getRedeploymentPopulation);
+                        cout << "Which region you want to put the population to" << endl;
+                        cin >> toWhichRegion;
+                        toWhichRegion -= 1;
+                        cout << "How many population you want to put on region?\n" << endl;
+                        cin >> putRedeploymentPopulation;
+                        if (putRedeploymentPopulation > lp->getpopulation()) {
+                            cout << "you can't put more than you have" << endl;
+                        }
+                        regionPopulation = (*nr_vPtr)[toWhichRegion].getregion_population();
+                        (*nr_vPtr)[toWhichRegion].setregion_population(regionPopulation + redeploymentPopulation);
                     }
                 }
             }
+        } while (redeployment_check == false);
+
+    }// we do need else for randomnumberV2 ==2 , because we already decline
 
 
-
-
-
-        }while(redeployment_check== false);
-
-
-
-
-    }
-
-
-
-
-
-
-
-
-};
+}
 void RandomPlayer::scores(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
 
 

@@ -8,25 +8,6 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-
-void Tokens ::occupied(int region, int idOfplayer ,int invade_region) {
-
-    // cout<<maploader.maps.pt[0][1]<<endl;
-
-    if(maploader.maps.pt[region][region]==0){
-        maploader.maps.pt[region][region]=idOfplayer;
-    }
-    else if(maploader.maps.pt[region][region]!=0){
-
-        invade(region, idOfplayer ,invade_region);
-
-
-    }
-    else{
-        cout<<"the region is occupied by other player"<<endl;
-    }
-
-};
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////

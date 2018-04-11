@@ -33,7 +33,35 @@ void ModeratePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *n
     playerPopulation=lp->getpopulation();//get Player population
     do {//go to do loop to make sure the first region is from the edge of the map
         cout<<"please Enter the first region u want to occupy"<<endl;
-        cin>>toWhichRegion;
+        bool checkVaild=false;
+
+        do {
+
+            cin>>toWhichRegion;
+
+            try {
+                if(cin.fail()) {
+                    cin.clear();
+                    throw toWhichRegion;
+                    // if the input is not an integer, an error is thrown
+                    // claudia
+                }
+                else if (toWhichRegion < 0 || toWhichRegion > totalNumberOfRegion-1) {
+                    throw toWhichRegion;
+                }
+                else{
+                    checkVaild=true;
+                }
+                /*if (!cin) {
+                    toWhichRegion;
+                }*/
+            } catch (int toWhichRegion) {
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                cout << "The input is invalid\nPlease enter again" << endl;
+                cin.clear();
+            }// claudia : Added error validation
+        }while (checkVaild==false);
+
         toWhichRegion-=1;
 
         if (py.maploader.adjact[toWhichRegion].compare("y") != 0) {//←if the region is not an edge region
@@ -80,6 +108,17 @@ void ModeratePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr
     do{
         cout<<"Do you want to decline \nPress 1: yes\nPress 2: No"<<endl;
         cin>>input;
+        try{
+
+            if(cin.fail()) {
+                cin.clear();
+                throw input;
+                // if the input is not an integer, an error is thrown
+                // claudia
+            }
+            else if(input<1||input>2){
+                throw input;
+            }
         if(input==1) {
             if (lp->getDecline() == true) {
                 cout << "you already declined once" << endl;
@@ -153,7 +192,11 @@ void ModeratePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr
 
 
         }
-
+        }catch (int input){
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cout << "The input is invalid\nPlease enter again" << endl;
+            cin.clear();
+        }
     }while(conquer_check==false);
 
 
@@ -173,13 +216,18 @@ void ModeratePlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion>
     redeployment_check= false;
     do{
         cout<<"Do you want to redeploymen\nPress 1: Yes \nPress 2: NO"<<endl;
-
+        cin>>input;
         try {
-            cin>>input;
-            if(input<1||input>2){
+            if(cin.fail()) {
+                cin.clear();
+                throw input;
+                // if the input is not an integer, an error is thrown
+                // claudia
+            }
+            else if(input<1||input>2){
                 throw input;
             }
-            if(input==2){
+            else if(input==2){
                 redeployment_check=true;
             }else if(input==1){
                 py.redeploymentVeiw(lp,nr_vPtr);
@@ -195,11 +243,20 @@ void ModeratePlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion>
                         cout<<"you cannot take more than Region has"<<endl;
                     }else{
                         (*nr_vPtr)[fromWhichRegion].setregion_population(regionPopulation-redeploymentPopulation);
+                        lp->setpopulation(lp->getpopulation()+getRedeploymentPopulation);
                         cout<<"Which region you want to put the population to"<<endl;
                         cin>>toWhichRegion;
                         toWhichRegion-=1;
+                        cout<<"How many population you want to put on region?\n" <<endl;
+                        cin>>putRedeploymentPopulation;
+                        if(putRedeploymentPopulation>lp->getpopulation()){
+                            cout<<"you can't put more than you have"<<endl;
+                        }
                         regionPopulation=(*nr_vPtr)[toWhichRegion].getregion_population();
                         (*nr_vPtr)[toWhichRegion].setregion_population(regionPopulation+redeploymentPopulation);
+                        regionPopulation=(*nr_vPtr)[toWhichRegion].getregion_population();
+                        (*nr_vPtr)[toWhichRegion].setregion_population(regionPopulation+putRedeploymentPopulation);
+                        lp->setpopulation(lp->getpopulation()-putRedeploymentPopulation);
                     }
                 }
             }

@@ -109,14 +109,58 @@ void DefensivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *n
 
         do {
 
-            cout<<"From which region"<<endl;
-            cin>>fromWhichRegion;
+            fromregion=false;
+            do{
+                cout<<"From which region"<<endl;
+                cin>>fromWhichRegion;
+                try {
+                    if(cin.fail()) {
+                        cin.clear();
+                        throw fromWhichRegion;
+                        // if the input is not an integer, an error is thrown
+                        // claudia
+                    }
+                    else if (fromWhichRegion < 0 || fromWhichRegion > totalNumberOfRegion) {
+                        throw fromWhichRegion;
+                    }
+                    else{
+                        fromregion=true;
+                    }
+                } catch (int fromWhichRegion) {
+                    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                    cout << "The input is invalid\nPlease enter again" << endl;
+                    cin.clear();
+                }
+            }while(fromregion == false);
             fromWhichRegion-=1;
-            cout<<"To which region"<<endl;
-            cin>>toWhichRegion;
+
+            toregion = false;
+            do{
+                cout<<"To which region"<<endl;
+                cin>>toWhichRegion;
+
+                try {
+                    if(cin.fail()) {
+                        cin.clear();
+                        throw toWhichRegion;
+                        // if the input is not an integer, an error is thrown
+                        // claudia
+                    }
+                    else if (toWhichRegion < 0 || toWhichRegion > totalNumberOfRegion) {
+                        throw toWhichRegion;
+                    }
+                    else{
+                        toregion=true;
+                    }
+                } catch (int fromWhichRegion) {
+                    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                    cout << "The input is invalid\nPlease enter again" << endl;
+                    cin.clear();
+                }// claudia : Added error validation
+            }while(toregion == false);
             toWhichRegion-=1;
             py.population_costv2(playerID,toWhichRegion);
-
+            cout<< "the region cost "<<py.cost_of_population<<endl;
             if(py.maploader.maps.pt[fromWhichRegion][toWhichRegion]==0){
                 cout<<"they are not linking together"<<endl;
             }else if((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") == 0 &&
@@ -137,7 +181,6 @@ void DefensivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *n
                 py.maploader.losttride[toWhichRegion] = "_none__";//←set the lost tride to none after ocuppied the region
                 playerPopulation -= py.cost_of_population;//←the player  population minus player spent population on the region
                 conquer_check= true;
-
             }
             else if (py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1 &&
                      (((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") != 0 ||//←if the region is not a water region
@@ -179,16 +222,26 @@ void DefensivePlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion
 
     redeployment_check= false;
     do{
-        cout<<"Do you want to redeploymen\nPress 1: Yes \nPress 2: NO"<<endl;
-
+        cout<<"Do you want to redeployment\nPress 1: Yes \nPress 2: NO"<<endl;
+        cin>>input;
         try {
-            cin>>input;
-            if(input<1||input>2){
+
+
+            if(cin.fail()) {
+                cin.clear();
+                throw input;
+                // if the input is not an integer, an error is thrown
+                // claudia
+            }
+
+            else if(input<1||input>2){
                 throw input;
             }
-            if(input==2){
+            else if(input==2){
                 redeployment_check=true;
-            }else if(input==1){
+                cout<<"we move to next step"<<endl;
+            }
+            else if(input==1){
                 py.redeploymentVeiw(lp,nr_vPtr);
                 cout<<"Which region you want to withdraw"<<endl;
                 cin>>fromWhichRegion;
@@ -207,8 +260,7 @@ void DefensivePlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion
                         cout<<"Which region you want to put the population to"<<endl;
                         cin>>toWhichRegion;
                         toWhichRegion-=1;
-                        cout<<"How many population you want to put onregion?\n"
-                                "(if you take all of the population from region, you will loose the region)"<<endl;
+                        cout<<"How many population you want to put on region?\n" <<endl;
                         cin>>putRedeploymentPopulation;
                         if(putRedeploymentPopulation>lp->getpopulation()){
                             cout<<"you can't put more than you have"<<endl;
@@ -220,7 +272,9 @@ void DefensivePlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion
                 }
             }
         }catch(int input){
-            cout << "the input is invalid" << endl;
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cout << "The input is invalid\nPlease enter again" << endl;
+            cin.clear();
         }catch (...){
             cout<<"the type is not right"<<endl;
         }

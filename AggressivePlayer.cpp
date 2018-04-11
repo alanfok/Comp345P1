@@ -233,6 +233,7 @@ void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *
 
         cout<<"------------------------The player selected "<<toWhichRegion+1<<"------------------------"<<endl;
         py.prints();//print out the map
+
     } while (conquer_check == false);
     py.prints();
 }

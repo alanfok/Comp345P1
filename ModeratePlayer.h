@@ -32,5 +32,7 @@ public: 
     int toWhichRegion;
     int input;
     int fromWhichRegion;
+    int putRedeploymentPopulation;
+    int getRedeploymentPopulation;
 };
 #endif //COMP345P1_MODERATEPLAYER_H
