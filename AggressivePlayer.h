@@ -11,7 +11,7 @@ class AggressivePlayer: public PlayerType{
 public: 
     AggressivePlayer(); 
     ~AggressivePlayer();
-
+    Veiwer veiwer;
 
     NodeRegion *nr_ptr;
     int totalNumberOfRegion;

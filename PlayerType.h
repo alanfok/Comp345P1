@@ -11,7 +11,7 @@
 #include "ListofPlayer.h"
 #include <iostream>
 #include <vector>
-
+#include "Veiwer.h"
 
 using namespace std;
 

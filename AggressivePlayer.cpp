@@ -121,7 +121,7 @@ void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *
     toregion=false;
 
     do {
-
+        veiwer.getPlayerInfoAndShowOccupiedregion(lp->getidPlayer(),py);
         do{
             cout<<"From which region"<<endl;
             cin>>fromWhichRegion;
@@ -191,7 +191,7 @@ void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *
                  py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") != 0)){
             cout<<"The region costs more population than you have"<<endl;
         }
-        else if (py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1 &&
+        else if ((py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1||py.maploader.adjact[toWhichRegion].compare("y") == 0) &&
                  (((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") != 0 ||
                     py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") == 0))) &&
                  playerPopulation >= py.cost_of_population) {

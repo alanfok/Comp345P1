@@ -103,12 +103,10 @@ void DefensivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *n
     playerID = lp->getidPlayer();//get Player ID
     playerPopulation = lp->getpopulation();//get Player population
 
-    cout << py.vnodeRegion[toWhichRegion].getid_player() << "get " << py.vnodeRegion[toWhichRegion].getregion_status()
-         << endl;
     conquer_check = false;//get conquer_check to false to do-while loop purpose
 
         do {
-
+            veiwer.getPlayerInfoAndShowOccupiedregion(lp->getidPlayer(),py);
             fromregion=false;
             do{
                 cout<<"From which region"<<endl;

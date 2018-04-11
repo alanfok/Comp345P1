@@ -13,6 +13,7 @@ CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Player.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../PlayerType.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Subject.h
 CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Tokens.h
+CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o: ../Veiwer.h
 
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../DefensivePlayer.cpp
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../DefensivePlayer.h
@@ -26,6 +27,7 @@ CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../Player.h
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../PlayerType.h
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../Subject.h
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../Tokens.h
+CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o: ../Veiwer.h
 
 CMakeFiles/Comp345P1.dir/Die.cpp.o: ../Die.cpp
 CMakeFiles/Comp345P1.dir/Die.cpp.o: ../Die.h
@@ -94,6 +96,7 @@ CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: ../Player.h
 CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: ../PlayerType.h
 CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: ../Subject.h
 CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: ../Tokens.h
+CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o: ../Veiwer.h
 
 CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o: ../ListofPlayer.h
 CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o: ../NodeRegion.cpp
@@ -130,6 +133,7 @@ CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../RandomPlayer.cpp
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../RandomPlayer.h
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../Subject.h
 CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../Tokens.h
+CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o: ../Veiwer.h
 
 CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o: ../ListofPlayer.h
 CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o: ../Observer.h

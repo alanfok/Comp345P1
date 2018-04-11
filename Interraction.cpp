@@ -247,11 +247,16 @@ void Interraction ::setplayer(string map, int nbplayer) {
     player_pointer->attachStatic(so);
     player_pointer->notifyStatic(&player.vplayer,maploader.nbline);//so how many percentage that player occupied the map
     //turn 2-10
-    for (int j = 2; j <=10 ; ++j) {//2-10 loop
+    for (int j = 2; j <=3 ; ++j) {//2-10 loop
+
+
         player.token_sort();
         tempStorage.clear();
         tempStorage.shrink_to_fit();
         player_pointer->attach(po);
+
+
+
         for (int k = 0; k < player.sortbyvplayercoin.size(); ++k) {
             for (int l = 0; l < player.vplayer.size(); ++l) {
 
@@ -260,13 +265,14 @@ void Interraction ::setplayer(string map, int nbplayer) {
                 }
             }
         }
-
+     // player loop
     for (int indexOftempStorage = 0; indexOftempStorage < tempStorage.size(); ++indexOftempStorage) {
             indexOfPlayerVector=tempStorage[indexOftempStorage];
             indexOfPlayerVector-=1;
+         player.vplayer[indexOfPlayerVector].setTurn(j);
+        //////check decline ///////////
         if (player.vplayer[indexOfPlayerVector].getDecline() == true &&
             player.vplayer[indexOfPlayerVector].getdecline_lock() == 0) {//for player object who select decline
-            //  for (int i = 0; i < nbplayer; ++i) {
             player.setRace_population(0);
             numberOfPopulation = 0;
             player.vrace_vspecialpower_print();

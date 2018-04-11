@@ -14,6 +14,7 @@ CMakeFiles/Comp345P1.dir/AggressivePlayer.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h
 CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.cpp
  /Users/fokpoonkai/CLionProjects/Comp345P1/DefensivePlayer.h
@@ -27,6 +28,7 @@ CMakeFiles/Comp345P1.dir/DefensivePlayer.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h
 CMakeFiles/Comp345P1.dir/Die.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/Die.cpp
  /Users/fokpoonkai/CLionProjects/Comp345P1/Die.h
@@ -95,6 +97,7 @@ CMakeFiles/Comp345P1.dir/ModeratePlayer.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/PlayerType.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h
 CMakeFiles/Comp345P1.dir/NodeRegion.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/NodeRegion.cpp
@@ -131,6 +134,7 @@ CMakeFiles/Comp345P1.dir/RandomPlayer.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/RandomPlayer.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Subject.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Tokens.h
+ /Users/fokpoonkai/CLionProjects/Comp345P1/Veiwer.h
 CMakeFiles/Comp345P1.dir/StatisticsObserver.cpp.o
  /Users/fokpoonkai/CLionProjects/Comp345P1/ListofPlayer.h
  /Users/fokpoonkai/CLionProjects/Comp345P1/Observer.h

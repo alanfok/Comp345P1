@@ -34,7 +34,6 @@ void Tokens ::invade(int region,int idOfplayer,int invadeToRegion) {
 void Tokens::point_del() {
     maploader.maps.pointer_del();
     maploader.pointer_del();
-    cout<<"end game"<<endl;
 
 }
 

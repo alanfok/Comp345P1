@@ -10,7 +10,9 @@ class RandomPlayer:public PlayerType{
 public:
     RandomPlayer();
     ~RandomPlayer();
-
+ Veiwer veiwer;
+    bool fromregion;
+    bool toregion;
 //    Player py;
 //inherate in PlayerType Class
     void pickupRaceNSp(ListofPlayer *x);

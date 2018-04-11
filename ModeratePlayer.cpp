@@ -144,14 +144,14 @@ void ModeratePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr
                       py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") != 0)){
                 cout<<"The region costs more population than you have"<<endl;
             }
-            else if (py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1 &&
+            else if ((py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1||py.maploader.adjact[toWhichRegion].compare("y") == 0) &&
                      (((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") != 0 ||
                         py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") == 0))) &&
                      playerPopulation >= py.cost_of_population) {
 
                 //↓↓↓return to player who already occupied of this region↓↓↓
                 py.returnToPreviousPlayer(nr_vPtr,lp_vPtr,toWhichRegion);//in player class(Return to puopluation to ex-ocuppied player)
-                //occupied
+
                 lp->setpopulation(lp->getpopulation() - py.cost_of_population);//←reset player object population (player origional population - population that player spend)
                 py.conquers_v4(lp,nr_vPtr,py.cost_of_population,toWhichRegion);//in player class
                 py.invade_v2(playerID, toWhichRegion);//←set the matrix map to Player ID
@@ -163,7 +163,7 @@ void ModeratePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr
                     conquer_check=true;
                 }
             }
-            else if (py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1 &&
+            else if ((py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1 ||py.maploader.adjact[toWhichRegion].compare("y") == 0)&&
                      (((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") != 0 ||//←if the region is not a water region
                         py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") == 0))) &&//←or the player special power  Seafaring
                      playerPopulation < py.cost_of_population) {//the player population is smaller than the region costs

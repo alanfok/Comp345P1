@@ -79,7 +79,7 @@ void Player::declare_winner(){
                     break;
                 }
                 if(vplayer[j].getvictoryCoins()==i){
-                    cout <<vplayer[j].getidPlayer()<<"is winner"<<endl;
+                    cout <<"Player "<<vplayer[j].getidPlayer()<<" is winner"<<endl;
                     lock=true;
                     break;
                 }

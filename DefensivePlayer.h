@@ -15,7 +15,7 @@ public: 
 
     //   Player py;
 
-
+    Veiwer  veiwer;
     //inherate in PlayerType Class
     virtual  void pickupRaceNSp(ListofPlayer *x);
     virtual  void conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr);
