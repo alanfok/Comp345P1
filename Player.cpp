@@ -138,8 +138,7 @@ void Player::conquers_v4(ListofPlayer *lp,vector <NodeRegion> *nr_vPtr,int pop,i
     (*nr_vPtr)[regionid].setplayer_race(lp->getrace());//←reset the regional object to new Player population
     (*nr_vPtr)[regionid].setplayer_specialpower(lp->getspecialPower());//←reset the regional object to new Player special power
 
-   cout<<lp->getidPlayer()<<"tttttttt"<<endl;
-    cout<<lp->getNumberOfOccupiedRegion()<<endl;
+    //cout<<lp->getNumberOfOccupiedRegion()<<endl;
    lp->setNumberOfOccupiedRegion(lp->getNumberOfOccupiedRegion()+1);
 
 }

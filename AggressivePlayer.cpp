@@ -15,8 +15,6 @@ void AggressivePlayer::pickupRaceNSp(ListofPlayer *lp){
             "the end of the game."<<endl;
     cout<<"Player "<<lp->getidPlayer()<<" choose to be an agressive Player"<<endl;
     lp->setStrategyBehaviour(1);//locked strategy in Player object
-    lp->setTurn(1);
-    lp->setPhase("conquer");
 }
 
 
@@ -33,11 +31,6 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
     playerID=lp->getidPlayer();//get Player ID
     playerPopulation=lp->getpopulation();//get Player population
     do {//go to do loop to make sure the first region is from the edge of the map
-
-
-
-
-
         cout<<"please Enter the first region u want to occupy"<<endl;
 
         bool checkVaild=false;
@@ -45,7 +38,6 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
         do {
 
         cin>>toWhichRegion;
-        toWhichRegion-=1;
 
             try {
                 if(cin.fail()) {
@@ -54,7 +46,7 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
                     // if the input is not an integer, an error is thrown
                     // claudia
                 }
-                else if (toWhichRegion < 0 || toWhichRegion > totalNumberOfRegion) {
+                else if (toWhichRegion < 0 || toWhichRegion > totalNumberOfRegion-1) {
                     throw toWhichRegion;
                 }
                 else{
@@ -70,6 +62,8 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
             }// claudia : Added error validation
         }while (checkVaild==false);
 
+
+        toWhichRegion-=1;
         if (py.maploader.adjact[toWhichRegion].compare("y") != 0) {//←if the region is not an edge region
             Edgeoccupied=false;//no need to print out becuz it is a AI playing
             cout<<"The first entyr has to be from the edge."<<endl;
@@ -100,7 +94,7 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
     }while (Edgeoccupied==false);
     cout<<"------------------------The player selected "<<toWhichRegion+1<<"------------------------"<<endl;
     py.prints();//print out the map
-    cout<<"Update-->the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
+ //   cout<<"Update-->the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
 
 }
 
@@ -237,9 +231,9 @@ void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *
             }
         }
 
+        cout<<"------------------------The player selected "<<toWhichRegion+1<<"------------------------"<<endl;
+        py.prints();//print out the map
     } while (conquer_check == false);
-
-    cout << "the Player " << lp->getidPlayer() << " and " << lp->getpopulation() << endl;
     py.prints();
 }
 

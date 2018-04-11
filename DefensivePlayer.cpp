@@ -89,7 +89,6 @@ void DefensivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *
     }while (Edgeoccupied==false);
     cout<<"------------------------The player selected "<<toWhichRegion+1<<"------------------------"<<endl;
     py.prints();//print out the map
-    cout<<"Update-->the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
  //   firstLock=1;//mu
 }
 
@@ -198,16 +197,25 @@ void DefensivePlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion
                     regionPopulation=(*nr_vPtr)[fromWhichRegion].getregion_population();
                     cout<<"How many population you want to withdraw?\n"
                             "(if you take all of the population from region, you will loose the region)"<<endl;
-                    cin>>redeploymentPopulation;
-                    if(redeploymentPopulation>regionPopulation){
+                    cin>>getRedeploymentPopulation;
+
+                    if(getRedeploymentPopulation>regionPopulation){
                         cout<<"you cannot take more than Region has"<<endl;
                     }else{
-                        (*nr_vPtr)[fromWhichRegion].setregion_population(regionPopulation-redeploymentPopulation);
+                        (*nr_vPtr)[fromWhichRegion].setregion_population(regionPopulation-getRedeploymentPopulation);
+                        lp->setpopulation(lp->getpopulation()+getRedeploymentPopulation);
                         cout<<"Which region you want to put the population to"<<endl;
                         cin>>toWhichRegion;
                         toWhichRegion-=1;
+                        cout<<"How many population you want to put onregion?\n"
+                                "(if you take all of the population from region, you will loose the region)"<<endl;
+                        cin>>putRedeploymentPopulation;
+                        if(putRedeploymentPopulation>lp->getpopulation()){
+                            cout<<"you can't put more than you have"<<endl;
+                        }
                         regionPopulation=(*nr_vPtr)[toWhichRegion].getregion_population();
-                        (*nr_vPtr)[toWhichRegion].setregion_population(regionPopulation+redeploymentPopulation);
+                        (*nr_vPtr)[toWhichRegion].setregion_population(regionPopulation+putRedeploymentPopulation);
+                        lp->setpopulation(lp->getpopulation()-putRedeploymentPopulation);
                     }
                 }
             }

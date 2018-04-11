@@ -16,7 +16,8 @@ void Interraction ::setplayer(string map, int nbplayer) {
     maploader.setmap(maps_using);//important don't erase
     player.enter_race_sp_to_vector();//important don't erase
     player.set_vnodeRegion_Vector(player.maploader.nbline);
-
+    po=new PhaseObserver();
+    so=new StatisticsObserve();
     for (int p = 0; p < nbplayer; p++) {
         playercounter.push_back(0);
         lostRegions.push_back(0);
@@ -61,11 +62,11 @@ void Interraction ::setplayer(string map, int nbplayer) {
         cout << "This race you picking us " << player.getvrace(raceSelection) << " "
              << player.getvspecialpower(raceSelection) << endl;
         victorycoin = 5;//start with 5 victory coin
-        //using the static array to hold the victory coin ,if player pick the
-        //first race , player doesn't need to pay a victory coin
-        //if player pick the second , player has to pay one victory coin
+        /*using the static array to hold the victory coin ,if player pick the
+        first race , player doesn't need to pay a victory coin
+        if player pick the second , player has to pay one victory coin*/
 
-        //static array holding the coin
+
 
         for (int j = 1; j < raceSelection; j++) {
             race_coin[j] += 1;//put one coin into array
@@ -105,7 +106,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
         po=new PhaseObserver();
         so=new StatisticsObserve();
         player_pointer->attach(po);
-        player_pointer->attachStatic(so);
+//        player_pointer->attachStatic(so);
         inputCheck=false;
         do {
             cin >> input;
@@ -130,16 +131,17 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     aggressivePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
                                                &player.vplayer);//change  <~~make sure the player is entry from edge
 
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
-                    br();
+
+                    veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
+
                     player.vplayer[i].setPhase("conquer");
                     player_pointer->notify(&player.vplayer[i]);
 
                     aggressivePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
                                               &player.vplayer);//change <~~ occupied
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
+
+
 
                     br();
                     player.vplayer[i].setPhase("coin");
@@ -147,8 +149,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     aggressivePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion,
                                             &player.vplayer);
 
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     inputCheck=true;
                 } else if (input == 2) {
                     player.vplayer[i].setPhase("turn");
@@ -158,25 +159,18 @@ void Interraction ::setplayer(string map, int nbplayer) {
                                             &player.vplayer);//change  <~~make sure the player is entry from edge
 //                    defensePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
 //                                           &player.vplayer);//change  <~~ occupied
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     br();
 
-
-                    //  player.vplayer[i].setPhase("conquer");
-                    //  player_pointer->notify(&player.vplayer[i]);
                     defensePlayer.redeployment(&player.vplayer[i], player, &player.vnodeRegion,
                                                &player.vplayer);
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
-
+                    veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
 
                     br();
                     player.vplayer[i].setPhase("coin");
                     player_pointer->notify(&player.vplayer[i]);
                     defensePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     inputCheck=true;
                 } else if (input == 3) {
 
@@ -185,22 +179,19 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     moderatePlayer.pickupRaceNSp(&player.vplayer[i]);
                     moderatePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
                                              &player.vplayer);//change  <~~make sure the player is entry from edge
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     br();
                     player.vplayer[i].setPhase("conquer");
                     player_pointer->notify(&player.vplayer[i]);
                     moderatePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
                                             &player.vplayer);//change   <~~ occupied
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     br();
 
                     player.vplayer[i].setPhase("coin");
                     player_pointer->notify(&player.vplayer[i]);
                     moderatePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     inputCheck=true;
                 } else if (input == 4) {
 
@@ -214,8 +205,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     randomPlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
                                            &player.vplayer);//change  <~~make sure the player is entry from edge
 
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     br();
 
 
@@ -223,15 +213,13 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     player_pointer->notify(&player.vplayer[i]);
                     randomPlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
                                           &player.vplayer);//change   <~~ occupied
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     br();
 
                     player.vplayer[i].setPhase("coin");
                     player_pointer->notify(&player.vplayer[i]);
                     randomPlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[i].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     inputCheck=true;
                 }
 
@@ -247,6 +235,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
             catch (...){
                 cout<<"the type is not right"<<endl;
             }
+            player_pointer->detach();
         }while(inputCheck==false);
 
         cout << "the Player " << player.vplayer[i].getidPlayer() << " and " << player.vplayer[i].getpopulation()
@@ -254,11 +243,13 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
         player.prints();
     }
-        player.detach();
+    veiwer.showAllPlayerInformation(player);
+    player_pointer->attachStatic(so);
     player_pointer->notifyStatic(&player.vplayer,maploader.nbline);//so how many percentage that player occupied the map
     //turn 2-10
     player.token_sort();
     for (int j = 2; j <=10 ; ++j) {//2-10 loop
+        player_pointer->attach(po);
         for (int k = 0; k < player.sortbyvplayercoin.size(); ++k) {
             for (int l = 0; l < player.vplayer.size(); ++l) {
 
@@ -268,7 +259,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                 }
                 player.vplayer[indexOfPlayerVector].setTurn(j);  // To set the turn observer
 
-                //for decline <~~add to claudia computer
+                //////check decline///////////
                 if (player.vplayer[indexOfPlayerVector].getDecline() == true &&
                     player.vplayer[indexOfPlayerVector].getdecline_lock()==0) {//for player object who select decline
 
@@ -295,13 +286,9 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     player.pickupAfterDecline(&player.vplayer[indexOfPlayerVector],player.getvrace(raceSelection),player.getvspecialpower(raceSelection),numberOfPopulation);
                     player.shift(raceSelection);
 
-                    //    }
                 }
 
-
-
-
-
+                //////check decline end///////////
                 if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour()==1) {//Aggressive
 
 
@@ -313,8 +300,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     aggressivePlayer.redeployment(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                                   &player.vplayer);
 
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion( player.vplayer[indexOfPlayerVector].getidPlayer(),player);
                     br();
 
 
@@ -324,8 +310,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     aggressivePlayer.conquers(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                               &player.vplayer);
 
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[indexOfPlayerVector].getidPlayer(),player);
                     br();
 
                     player.vplayer[indexOfPlayerVector].setPhase("coin");
@@ -333,12 +318,10 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
                     aggressivePlayer.scores(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                             &player.vplayer);
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion( player.vplayer[indexOfPlayerVector].getidPlayer(),player);
 
 
                 } else if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour() == 2) {//defensive
-
 
                     //    player.vplayer[indexOfPlayerVector].setTurn(j);
                     player.vplayer[indexOfPlayerVector].setPhase("turn");
@@ -346,8 +329,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
                     defensePlayer.redeployment(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                                &player.vplayer);
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion( player.vplayer[indexOfPlayerVector].getidPlayer(),player);
                     br();
 
 
@@ -355,8 +337,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
                     defensePlayer.conquers(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                            &player.vplayer);
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion( player.vplayer[indexOfPlayerVector].getidPlayer(),player);
                     br();
 
 
@@ -364,8 +345,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
                     defensePlayer.scores(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                          &player.vplayer);
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion( player.vplayer[indexOfPlayerVector].getidPlayer(),player);
 
 
                 } else if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour() == 3) {//Moderate
@@ -376,8 +356,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
                     moderatePlayer.redeployment(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                                 &player.vplayer);
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion( player.vplayer[indexOfPlayerVector].getidPlayer(),player);
                     br();
 
 
@@ -385,16 +364,14 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
                     moderatePlayer.conquers(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                             &player.vplayer);//change   <~~ occupied
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion( player.vplayer[indexOfPlayerVector].getidPlayer(),player);
                     br();
 
 
                     player.vplayer[indexOfPlayerVector].setPhase("coin");
                     player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
                     moderatePlayer.scores(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion, &player.vplayer);
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion( player.vplayer[indexOfPlayerVector].getidPlayer(),player);
                 } else if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour() == 4) {
 
 
@@ -405,8 +382,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
                     randomPlayer.redeployment(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                               &player.vplayer);
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion( player.vplayer[indexOfPlayerVector].getidPlayer(),player);
                     br();
 
 
@@ -416,8 +392,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     randomPlayer.conquers(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
                                           &player.vplayer);//change   <~~ occupied
 
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+                    veiwer.getPlayerInfoAndShowOccupiedregion( player.vplayer[indexOfPlayerVector].getidPlayer(),player);
                     br();
 
 
@@ -425,12 +400,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
                     randomPlayer.scores(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion, &player.vplayer);
 
-                    veiwer.get_player_infomation(tempvplayerid,player);
-                    veiwer.show_region_are_occupied(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
-
-
-
-
+                    veiwer.getPlayerInfoAndShowOccupiedregion( player.vplayer[indexOfPlayerVector].getidPlayer(),player);
 
 
                 }
@@ -438,10 +408,9 @@ void Interraction ::setplayer(string map, int nbplayer) {
                      << player.vplayer[indexOfPlayerVector].getpopulation()
                      << endl;
             }
-
-
         }
         player_pointer->notifyStatic(&player.vplayer,maploader.nbline);
+        player_pointer->detach();
     }//turn 2-10 endloop
 
     //hod = new HandsObserverDecorator(PhaseObserver());
