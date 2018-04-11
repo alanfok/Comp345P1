@@ -247,8 +247,10 @@ void Interraction ::setplayer(string map, int nbplayer) {
     player_pointer->attachStatic(so);
     player_pointer->notifyStatic(&player.vplayer,maploader.nbline);//so how many percentage that player occupied the map
     //turn 2-10
-    player.token_sort();
     for (int j = 2; j <=10 ; ++j) {//2-10 loop
+        player.token_sort();
+        tempStorage.clear();
+        tempStorage.shrink_to_fit();
         player_pointer->attach(po);
         for (int k = 0; k < player.sortbyvplayercoin.size(); ++k) {
             for (int l = 0; l < player.vplayer.size(); ++l) {

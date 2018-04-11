@@ -167,9 +167,9 @@ void DefensivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *n
                       py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") != 0)){
                 cout<<"The region costs more population than you have"<<endl;
             }
-            else if (py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1 &&
-                     (((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") != 0 ||
-                        py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") == 0))) &&
+            else if ((py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1||py.maploader.adjact[toWhichRegion].compare("y") == 0) &&
+                     (py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") != 0 ||
+                        py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") == 0) &&
                      playerPopulation >= py.cost_of_population) {
 
                 //↓↓↓return to player who already occupied of this region↓↓↓
@@ -182,9 +182,9 @@ void DefensivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *n
                 playerPopulation -= py.cost_of_population;//←the player  population minus player spent population on the region
                 conquer_check= true;
             }
-            else if (py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1 &&
-                     (((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") != 0 ||//←if the region is not a water region
-                        py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") == 0))) &&//←or the player special power  Seafaring
+            else if ((py.maploader.maps.pt[fromWhichRegion][toWhichRegion] == 1||py.maploader.adjact[toWhichRegion].compare("y") == 0) &&
+                     (py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") != 0 ||//←if the region is not a water region
+                        py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") == 0) &&//←or the player special power  Seafaring
                      playerPopulation < py.cost_of_population) {//the player population is smaller than the region costs
                 cout << "throw the die" << endl;
                 int tempdice = py.getthrowdie();//the dice number which calling the dice class

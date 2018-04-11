@@ -51,17 +51,17 @@ public:
   void conquers(int region, int IdOfplayer, int invade_region,
                 int player_population );
     void redeployment(int region, int Idofplayer , int pop);
- //   void collecttoken(int playid);
+
     int tempNbIndex;
     void population_costv2(int playid,int regionid);
     void returnToPreviousPlayer(vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr,int regionid);
-  //  void conquers_v3(int player_population,ListofPlayer *lp, NodeRegion *nr
- //           , int region ,int invade_region);
+
     void conquers_v4(ListofPlayer *lp,vector <NodeRegion> *nr_vPtr ,int regionid,int pop);
     void redeploymentVeiw(ListofPlayer *lp,vector <NodeRegion> *nr_vPtr);
     void pickupAfterDecline(ListofPlayer * player,string specialpower,string race, int population);
-
+    void cleanUpsortbyvplayercoin();
 private:
+
  //   void check_region_is_zero_pop(int region);
 
 };

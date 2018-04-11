@@ -57,6 +57,8 @@ void Player::pickup(int i, int vic , int p , string specialPower, string race,bo
 
 
 void Player::token_sort() {    // sorting ny players coin
+
+   cleanUpsortbyvplayercoin();
     for (int i = 300; i >= 0; i--) {
         for(int j=0 ; j<vplayer.size();j++) {
             if(vplayer[j].getvictoryCoins()==i){
@@ -180,4 +182,9 @@ void Player::pickupAfterDecline(ListofPlayer *listofplayer, string race, string 
     listofplayer->setpopulation(population);
     listofplayer->setdecline_lock(1);
 
+}
+
+void Player::cleanUpsortbyvplayercoin() {
+    sortbyvplayercoin.clear();
+    sortbyvplayercoin.shrink_to_fit();
 }
