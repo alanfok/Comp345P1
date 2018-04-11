@@ -32,12 +32,9 @@ void ModeratePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *n
     do {//go to do loop to make sure the first region is from the edge of the map
         cout<<"please Enter the first region u want to occupy"<<endl;
         /*try{
-
         }catch(int toWhichRegion){
-
         }*/
         cin>>toWhichRegion;
-        toWhichRegion-=1;
 
         try {
             if(cin.fail()) {
@@ -89,6 +86,7 @@ void ModeratePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *n
             }
         }
     }while (Edgeoccupied==false);
+    toWhichRegion-=1;
     cout<<"------------------------The player selected "<<toWhichRegion+1<<"------------------------"<<endl;
     py.prints();//print out the map
     cout<<"Update-->the Player "<<lp->getidPlayer()<<" and "<< lp->getpopulation()<<endl;
@@ -127,9 +125,6 @@ void ModeratePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr
                 playerID = lp->getidPlayer();//get Player ID
                 playerPopulation = lp->getpopulation();//get Player population
 
-                /*cout<<"From which region"<<endl;
-                cin>>fromWhichRegion;*/
-                fromWhichRegion-=1;
 
                 do{
                     cout<<"From which region"<<endl;
