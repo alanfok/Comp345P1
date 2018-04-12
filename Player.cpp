@@ -158,8 +158,10 @@ void Player::returnToPreviousPlayer(vector<NodeRegion> *nr_vPtr, vector<ListofPl
         cout << "the region is belong Player " << temp_number << ", the population minus one will be turn to Player "
              << temp_number << endl;
 
-        (*vectorListOfPlayerPointer)[temp_number - 1].setpopulation((*nr_vPtr)[regionid].getregion_population() - 1);
+        (*vectorListOfPlayerPointer)[temp_number - 1].setpopulation((*vectorListOfPlayerPointer)[temp_number - 1].getpopulation()
+                                                                    + (*nr_vPtr)[regionid].getregion_population() - 1);//return the region population -1to ex-owner
         (*vectorListOfPlayerPointer)[temp_number - 1].setNumberOfOccupiedRegion((*vectorListOfPlayerPointer)[temp_number - 1].getNumberOfOccupiedRegion() - 1);
+        //set ex-owner one less owing region
     }
 }
 
@@ -177,10 +179,10 @@ void Player::redeploymentVeiw(ListofPlayer *lp, vector<NodeRegion> *nr_vPtr) {
 }
 
 void Player::pickupAfterDecline(ListofPlayer *listofplayer, string race, string specialpower, int population) {
-    listofplayer->setspecialpower(specialpower);
-    listofplayer->setrace(race);
-    listofplayer->setpopulation(population);
-    listofplayer->setdecline_lock(1);
+    listofplayer->setspecialpower(specialpower);//reset player specialpower
+    listofplayer->setrace(race);//reset player race
+    listofplayer->setpopulation(population);//reset player populatiom
+    listofplayer->setdecline_lock(1);//set the lock avoid the infinity decline
 
 }
 

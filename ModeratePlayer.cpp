@@ -103,7 +103,7 @@ void ModeratePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *n
 void ModeratePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
     //if(player no require decline in percious round and the player no even delcine before)
     cout<<"Because the player choose ModeratePlayer behavour , you can choose decline, However, for the player rule , u only can decline once"<<endl;
-
+lock=0;
     conquer_check=false;
     do{
         cout<<"Do you want to decline \nPress 1: yes\nPress 2: No"<<endl;
@@ -130,7 +130,7 @@ void ModeratePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr
             py.prints();
             playerID = lp->getidPlayer();//get Player ID
             playerPopulation = lp->getpopulation();//get Player population
-
+            veiwer.getPlayerInfoAndShowOccupiedregion(lp->getidPlayer(),py);
             cout<<"From which region"<<endl;
             cin>>fromWhichRegion;
             fromWhichRegion-=1;
@@ -140,7 +140,21 @@ void ModeratePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr
             py.population_costv2(playerID,toWhichRegion);
             if(py.maploader.maps.pt[fromWhichRegion][toWhichRegion]==0){
                 cout<<"they are not linking together"<<endl;
-            }else if((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") == 0 &&
+            }
+            else if(lock>=3){//safty lock to avoid infinity loop if no region link
+                cout<<"You already try to occupy region 3 times, to avoid infinity loop, you can press 1 to quit the occupy stage?" <<endl;
+                cin>>input2;
+                if(input2==1){
+                    conquer_check=true;
+                } else{
+                    cout<<"continue"<<endl;
+                }
+
+            }
+            else if(py.maploader.maps.pt[toWhichRegion][toWhichRegion]==lp->getidPlayer()){
+                cout<<"you already occupied that region"<<endl;
+            }
+            else if((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") == 0 &&
                       py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") != 0)){
                 cout<<"The region costs more population than you have"<<endl;
             }
@@ -197,6 +211,7 @@ void ModeratePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr
             cout << "The input is invalid\nPlease enter again" << endl;
             cin.clear();
         }
+        lock++;
     }while(conquer_check==false);
 
 
@@ -238,25 +253,24 @@ void ModeratePlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion>
                     regionPopulation=(*nr_vPtr)[fromWhichRegion].getregion_population();
                     cout<<"How many population you want to withdraw?\n"
                             "(if you take all of the population from region, you will loose the region)"<<endl;
-                    cin>>redeploymentPopulation;
-                    if(redeploymentPopulation>regionPopulation){
+                    cin>>getRedeploymentPopulation;
+                    if(getRedeploymentPopulation>regionPopulation){
                         cout<<"you cannot take more than Region has"<<endl;
                     }else{
-                        (*nr_vPtr)[fromWhichRegion].setregion_population(regionPopulation-redeploymentPopulation);
-                        lp->setpopulation(lp->getpopulation()+getRedeploymentPopulation);
+                        veiwer.getPlayerInfoAndShowOccupiedregion(lp->getidPlayer(),py);
+                        (*nr_vPtr)[fromWhichRegion].setregion_population(regionPopulation-getRedeploymentPopulation);//region population - the population you want to withdaw
+                        lp->setpopulation(lp->getpopulation()+getRedeploymentPopulation);//player own population + population withdraw from region
                         cout<<"Which region you want to put the population to"<<endl;
                         cin>>toWhichRegion;
                         toWhichRegion-=1;
                         cout<<"How many population you want to put on region?\n" <<endl;
                         cin>>putRedeploymentPopulation;
-                        if(putRedeploymentPopulation>lp->getpopulation()){
+                        if(putRedeploymentPopulation>lp->getpopulation()){//the redeploy population more the population player own
                             cout<<"you can't put more than you have"<<endl;
                         }
-                        regionPopulation=(*nr_vPtr)[toWhichRegion].getregion_population();
-                        (*nr_vPtr)[toWhichRegion].setregion_population(regionPopulation+redeploymentPopulation);
-                        regionPopulation=(*nr_vPtr)[toWhichRegion].getregion_population();
-                        (*nr_vPtr)[toWhichRegion].setregion_population(regionPopulation+putRedeploymentPopulation);
-                        lp->setpopulation(lp->getpopulation()-putRedeploymentPopulation);
+                        regionPopulation=(*nr_vPtr)[toWhichRegion].getregion_population();//population of region which you want to put
+                        (*nr_vPtr)[toWhichRegion].setregion_population(regionPopulation+putRedeploymentPopulation);//original region population+ the population you put
+                        lp->setpopulation(lp->getpopulation()-putRedeploymentPopulation);//player's population - population player put
                     }
                 }
             }

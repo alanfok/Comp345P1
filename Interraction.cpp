@@ -103,10 +103,10 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
         player_pointer=&player;
         lp=&player.vplayer[i];
-        po=new PhaseObserver();
-        so=new StatisticsObserve();
-        player_pointer->attach(po);
-//        player_pointer->attachStatic(so);
+        po=new PhaseObserver();//create object and put it into healp
+        so=new StatisticsObserve();;//create object and put it into healp
+        player_pointer->attach(po);//attach
+
         inputCheck=false;
         do {
             cin >> input;
@@ -124,8 +124,8 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     throw input;
                 }
                 else if (input == 1) {
-                    player.vplayer[i].setPhase("turn");
-                    player_pointer->notify(&player.vplayer[i]);
+                    player.vplayer[i].setPhase("turn");//set player phase to turn
+                    player_pointer->notify(&player.vplayer[i]);//print out
                     aggressivePlayer.pickupRaceNSp(&player.vplayer[i]);
                     br();
                     aggressivePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
@@ -139,6 +139,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
                     aggressivePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
                                               &player.vplayer);//change <~~ occupied
+                    //call aggressive conquer class
                     veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
 
 
@@ -148,12 +149,12 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     player_pointer->notify(&player.vplayer[i]);
                     aggressivePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion,
                                             &player.vplayer);
-
+                    //collect token
                     veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     inputCheck=true;
                 } else if (input == 2) {
-                    player.vplayer[i].setPhase("turn");
-                    player_pointer->notify(&player.vplayer[i]);
+                    player.vplayer[i].setPhase("turn");//set player phase to turn
+                    player_pointer->notify(&player.vplayer[i]);//print out
                     defensePlayer.pickupRaceNSp(&player.vplayer[i]);
                     defensePlayer.firstEdge(&player.vplayer[i], player, &player.vnodeRegion,
                                             &player.vplayer);//change  <~~make sure the player is entry from edge
@@ -164,12 +165,14 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
                     defensePlayer.redeployment(&player.vplayer[i], player, &player.vnodeRegion,
                                                &player.vplayer);
+                    //call redeploymment function in defensePlayer.cpp
                     veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
 
                     br();
                     player.vplayer[i].setPhase("coin");
                     player_pointer->notify(&player.vplayer[i]);
                     defensePlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
+                    //call scores function in defensePlayer.cpp
                     veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     inputCheck=true;
                 } else if (input == 3) {
@@ -182,9 +185,11 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     br();
                     player.vplayer[i].setPhase("conquer");
+                    //
                     player_pointer->notify(&player.vplayer[i]);
                     moderatePlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
                                             &player.vplayer);//change   <~~ occupied
+                    //call moderate conquer class
                     veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     br();
 
@@ -213,12 +218,14 @@ void Interraction ::setplayer(string map, int nbplayer) {
                     player_pointer->notify(&player.vplayer[i]);
                     randomPlayer.conquers(&player.vplayer[i], player, &player.vnodeRegion,
                                           &player.vplayer);//change   <~~ occupied
+                    //call randomPlayer conquer class
                     veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     br();
 
                     player.vplayer[i].setPhase("coin");
                     player_pointer->notify(&player.vplayer[i]);
                     randomPlayer.scores(&player.vplayer[i], player, &player.vnodeRegion, &player.vplayer);
+                    //call scores function in defensePlayer.cpp
                     veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[i].getidPlayer(),player);
                     inputCheck=true;
                 }
@@ -247,7 +254,7 @@ void Interraction ::setplayer(string map, int nbplayer) {
     player_pointer->attachStatic(so);
     player_pointer->notifyStatic(&player.vplayer,maploader.nbline);//so how many percentage that player occupied the map
     //turn 2-10
-    for (int j = 2; j <=3 ; ++j) {//2-10 loop
+    for (int j = 2; j <=10 ; ++j) {//2-10 loop
 
 
         player.token_sort();
@@ -299,27 +306,27 @@ void Interraction ::setplayer(string map, int nbplayer) {
         }
 
         //////check decline end///////////
-        if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour() == 1) {//Aggressive
 
 
-
-            //player.vplayer[indexOfPlayerVector].setTurn(j);
-            player.vplayer[indexOfPlayerVector].setPhase("turn");
-            player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+        if (player.vplayer[indexOfPlayerVector].getStrategyBehaviour() == 1) {//Aggressive behaviour
+            player.vplayer[indexOfPlayerVector].setPhase("turn");//set the phase of player
+            player_pointer->notify(&player.vplayer[indexOfPlayerVector]);//print out
 
             aggressivePlayer.redeployment(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
-                                          &player.vplayer);
+                                          &player.vplayer);//get redeployment to set the troop
 
             veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
+            //print out the info
             br();
 
 
             player.vplayer[indexOfPlayerVector].setPhase("conquer");
-            player_pointer->notify(&player.vplayer[indexOfPlayerVector]);
+            //set the phase to conquer
+            player_pointer->notify(&player.vplayer[indexOfPlayerVector]);//print out
 
             aggressivePlayer.conquers(&player.vplayer[indexOfPlayerVector], player, &player.vnodeRegion,
-                                      &player.vplayer);
-
+                                      &player.vplayer);//call the conquer function in aggressive class
+            //call aggressive conquer class
             veiwer.getPlayerInfoAndShowOccupiedregion(player.vplayer[indexOfPlayerVector].getidPlayer(), player);
             br();
 
@@ -423,18 +430,25 @@ void Interraction ::setplayer(string map, int nbplayer) {
 
     }//turn 2-10 endloop
 
+
+
+    //this is how to implement OberserverDecorator, I didn't use it in the assignment
     //hod = new HandsObserverDecorator(PhaseObserver());
     //player_pointer->attach(hod);
+
+
+
+
     player.declare_winner(); //declare who is winner
-    player.del_pointer();
-    player.vnodeRegion.clear();
-    player.vnodeRegion.shrink_to_fit();
-    player.vplayer.clear();
-    player.vplayer.shrink_to_fit();
-    po=NULL;
-    so=NULL;
-    delete(po);
-    delete(so);
+    player.del_pointer();//del pointer
+    player.vnodeRegion.clear();//clean up vnodeRegion
+    player.vnodeRegion.shrink_to_fit();//clean up vnodeRegion Capacity
+    player.vplayer.clear();//clean up vplayer
+    player.vplayer.shrink_to_fit();//clean up vplayer Capacity
+    po=NULL;//set to Null
+    so=NULL;//set to Null
+    delete(po);//delete po pointer
+    delete(so);//delete so pointer
     cout << "end game" << endl;
 
 }

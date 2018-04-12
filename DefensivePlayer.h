@@ -27,11 +27,12 @@ public: 
     int playerPopulation;
     bool conquer_check;
     bool Edgeoccupied;
-
+    int input;
+    int input2;
+    int lock;
     int toWhichRegion;
     int fromWhichRegion;
     bool redeployment_check;
-    int input;
     bool  fromregion;
     bool toregion;
     int regionPopulation;

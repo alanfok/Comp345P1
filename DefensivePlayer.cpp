@@ -52,7 +52,7 @@ void DefensivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *
 
         } catch (int toWhichRegion) {
             cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            cout << "The input is invalid\nPlease enter again" << endl;
+            cout << "The input is invalid\nPlease enter again" << endl;//catch the unexpect input from user
             cin.clear();
         }// claudia : Added error validatio
 
@@ -99,7 +99,7 @@ void DefensivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> *
 void DefensivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
     cout << "the Player " << lp->getidPlayer() << " has " << lp->getpopulation() <<" population.\n"
             "As Player choose the Defensive Behavier , you only can occpily one region"<< endl;
-  //  py.prints();
+    lock=0;
     playerID = lp->getidPlayer();//get Player ID
     playerPopulation = lp->getpopulation();//get Player population
 
@@ -126,7 +126,7 @@ void DefensivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *n
                     }
                 } catch (int fromWhichRegion) {
                     cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                    cout << "The input is invalid\nPlease enter again" << endl;
+                    cout << "The input is invalid\nPlease enter again" << endl;//catch the unexpect input
                     cin.clear();
                 }
             }while(fromregion == false);
@@ -157,11 +157,26 @@ void DefensivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *n
                 }// claudia : Added error validation
             }while(toregion == false);
             toWhichRegion-=1;
-            py.population_costv2(playerID,toWhichRegion);
+            py.population_costv2(playerID,toWhichRegion);//calculation the calculation that region cost: in token.cpp
             cout<< "the region cost "<<py.cost_of_population<<endl;
             if(py.maploader.maps.pt[fromWhichRegion][toWhichRegion]==0){
                 cout<<"they are not linking together"<<endl;
-            }else if((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") == 0 &&
+            }
+
+            else if(lock>=3){//safty lock to avoid infinity loop if no region link
+                cout<<"You already try to occupy region 3 times, to avoid infinity loop, you can press 1 to quit the occupy stage?" <<endl;
+                cin>>input2;
+                if(input2==1){
+                    conquer_check=true;
+                } else{
+                    cout<<"continue"<<endl;
+                }
+
+            }
+            else if(py.maploader.maps.pt[toWhichRegion][toWhichRegion]==lp->getidPlayer()){
+                cout<<"you already occupied that region"<<endl;
+            }
+            else if((py.vnodeRegion[toWhichRegion].getregion_status().compare("____water__") == 0 &&
                       py.vplayer[toWhichRegion].getspecialPower().compare("Seafaring") != 0)){
                 cout<<"The region costs more population than you have"<<endl;
             }
@@ -199,13 +214,14 @@ void DefensivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *n
                     playerPopulation -= py.cost_of_population;//←set the lost tride to none after ocuppied the region
                     conquer_check = true;
                 } else {
-                    cout<<"The total is less than the region costes, so you cannot occupy the region"<<endl;
+                    cout<<"The total is less than the region costs, so you cannot occupy the region"<<endl;
                     conquer_check = true;
                 }
             }
 
             cout << "the Player " << lp->getidPlayer() << " and " << lp->getpopulation() << endl;
             py.prints();
+            lock++;
         } while (conquer_check == false);
 
    // }
@@ -240,7 +256,7 @@ void DefensivePlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion
                 cout<<"we move to next step"<<endl;
             }
             else if(input==1){
-                py.redeploymentVeiw(lp,nr_vPtr);
+                veiwer.getPlayerInfoAndShowOccupiedregion(lp->getidPlayer(),py);//view the player and occupied region infor
                 cout<<"Which region you want to withdraw"<<endl;
                 cin>>fromWhichRegion;
                 fromWhichRegion-=1;

@@ -14,6 +14,7 @@ public: 
     Veiwer veiwer;
 
     NodeRegion *nr_ptr;
+    int lock;
     int totalNumberOfRegion;
     int playerID;
     int playerPopulation;
@@ -23,6 +24,7 @@ public: 
     int toWhichRegion;
     bool  fromregion;
     bool toregion;
+    int input;
     //inherate in PlayerType Class
     virtual void pickupRaceNSp(ListofPlayer *x);
     virtual  void conquers(ListofPlayer *x,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vtr);

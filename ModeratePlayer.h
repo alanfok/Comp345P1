@@ -12,7 +12,7 @@ class ModeratePlayer:public PlayerType{
 public: 
     ModeratePlayer();
     ~ModeratePlayer();
-
+    Veiwer veiwer;
     // Player py;
     //inherate in PlayerType Class
     virtual void pickupRaceNSp(ListofPlayer *x);
@@ -34,5 +34,7 @@ public: 
     int fromWhichRegion;
     int putRedeploymentPopulation;
     int getRedeploymentPopulation;
+    int lock;
+    int input2;
 };
 #endif //COMP345P1_MODERATEPLAYER_H

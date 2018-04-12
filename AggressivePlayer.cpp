@@ -106,10 +106,9 @@ void AggressivePlayer::firstEdge(ListofPlayer *lp,Player py,vector <NodeRegion> 
  * Object, pointer of vector which holding the player Object )
  *↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr) {
-    // observer.update_conquer();
     cout << "the Player " << lp->getidPlayer() << " has " << lp->getpopulation() <<" population.\n"
             "As Player choose the Aggressive Behavier , you only can occpied the region"<< endl;
-    // observer.update_conquer();
+    lock=0;
     py.prints();
     playerID = lp->getidPlayer();//get Player ID
     playerPopulation = lp->getpopulation();//get Player population
@@ -121,7 +120,7 @@ void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *
     toregion=false;
 
     do {
-        veiwer.getPlayerInfoAndShowOccupiedregion(lp->getidPlayer(),py);
+        veiwer.getPlayerInfoAndShowOccupiedregion(lp->getidPlayer(),py);// show player and occupied region infomation
         do{
             cout<<"From which region"<<endl;
             cin>>fromWhichRegion;
@@ -182,8 +181,20 @@ void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *
 
         if(py.maploader.maps.pt[fromWhichRegion][toWhichRegion]==0){
             cout<<"they are not linking together"<<endl;
+        }else if(lock>=3){//safty lock to avoid infinity loop if no region link
+         cout<<"You already try to occupy region 3 times, to avoid infinity loop, you can press 1 to quit the occupy stage?" <<endl;
+            cin>>input;
+            if(input==1){
+                conquer_check=true;
+            } else{
+                cout<<"continue"<<endl;
+            }
+
         }
-        else if(lp->getpopulation()==0){
+         else if(py.maploader.maps.pt[toWhichRegion][toWhichRegion]==lp->getidPlayer()){
+            cout<<"you already occupied that region"<<endl;
+        }
+        else if(lp->getpopulation()>=0){
             cout<<"Player has no population (token) left"<<endl;
             conquer_check = true;
         }
@@ -233,7 +244,7 @@ void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *
 
         cout<<"------------------------The player selected "<<toWhichRegion+1<<"------------------------"<<endl;
         py.prints();//print out the map
-
+        lock++;//safty lock for infinity loop if no linking region
     } while (conquer_check == false);
     py.prints();
 }
@@ -244,10 +255,11 @@ void AggressivePlayer::conquers(ListofPlayer *lp,Player py,vector <NodeRegion> *
 void AggressivePlayer::redeployment(ListofPlayer *lp,Player py,vector <NodeRegion> *nr_vPtr,vector<ListofPlayer> *lp_vPtr){
     cout<<"Because Player selected the Aggresssive behavior, it will stay 1 popluation(token) on the re"<<endl;
     for (int i = 0; i < py.vnodeRegion.size(); ++i) {
-        if((*nr_vPtr)[i].getid_player()==lp->getidPlayer()){
-            if((*nr_vPtr)[i].getregion_population()>1){
-                (*nr_vPtr)[i].setregion_population((*nr_vPtr)[i].getregion_population()-1);
-                lp->setpopulation(lp->getpopulation()+1);
+        if((*nr_vPtr)[i].getid_player()==lp->getidPlayer()){//find the region player idn match player ID
+            if((*nr_vPtr)[i].getregion_population()>1){ //if the region has more than 1 population
+                lp->setpopulation(lp->getpopulation()+(*nr_vPtr)[i].getregion_population()-1);//get all the regionpopulation except 1 on the region
+                (*nr_vPtr)[i].setregion_population((*nr_vPtr)[i].getregion_population()-
+                                                           ((*nr_vPtr)[i].getregion_population()-1));//just leave 1 token on the region
             }
         }
     }
