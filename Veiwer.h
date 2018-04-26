@@ -12,17 +12,11 @@ class Veiwer{
 
 
 public:
-    void get_individual_region_info(int nb, Player py);
+    void getPlayerInfoAndShowOccupiedregion(int nb, Player py);
+    void showAllPlayerInformation(Player py);
+private:
     void get_player_infomation(int nb, Player py);
     void show_region_are_occupied(int nb,Player py);
-
-
-
-
-
-
-
-
 
 };
 

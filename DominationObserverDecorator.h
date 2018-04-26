@@ -1,28 +1,18 @@
 //
-// Created by fok poon kai on 2018-04-03.
+// Created by fok poon kai on 2018-04-07.
 //
 
 #ifndef COMP345P1_DOMINATIONOBSERVERDECORATOR_H
 #define COMP345P1_DOMINATIONOBSERVERDECORATOR_H
+//https://gist.github.com/dlivingstone/3006324
+#include "ObserverDecorator.h"
+#include "ListofPlayer.h"
 #include <iostream>
 #include <vector>
-
 using namespace std;
-#include "gameStatsObserver.h"
-
-class DominationObserverDecorator : gameStatsObserver{
+class DominationObserverDecorator: public ObserverDecorator{
 public:
-    void regions_lost(vector <int> lostRegions, int nbplayers ) ;
-    void update_region_control(vector <int> playercounter,int nbplayers);
-    void regions_owned(vector <int> playercounter,int nbplayers, Player player);
-    int one;
-    int two;
-    int three;
-    int four;
-    int five;
-
-    //virtual void player_cards(int population_number , int nbplayers , vector <listOfPlayer> vplayer);
-    // int *numberregionlost [5];
+    DominationObserverDecorator(Observer decoratedObserver) :ObserverDecorator(decoratedObserver) {};
+    virtual void Update(vector<ListofPlayer> *lp_vPtr,int numberOfRegion);
 };
-
 #endif //COMP345P1_DOMINATIONOBSERVERDECORATOR_H

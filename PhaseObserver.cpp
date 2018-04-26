@@ -1,46 +1,30 @@
 //
-// Created by fok poon kai on 2018-04-02.
+// Created by fok poon kai on 2018-04-07.
 //
 
 #include "PhaseObserver.h"
-/*
- * This function gets the status of the coins owned by each player. It indicated if the player gains,
- * looses or retains the coins he has
- * */
 
-void PhaseObserver::update_coin(string coin_status ,int nb) {
-    cout<<"Player "<< nb << coin_status << endl;
+
+PhaseObserver::PhaseObserver() {
+
+
+
 }
+void PhaseObserver::update(ListofPlayer *lp){
+ phase=lp->getPhase();
 
-/*
- * This function gets the status of the regions owned by each player . It indicated if the player gains,
- * looses or retains the regions he has
- * */
+ //cout<<phase<<endl;
+ if(phase.compare("turn")==0){
+  cout<<"-------------Player "<<lp->getidPlayer()<<": turn "<<lp->getTurn()<<" .---------------------------------"<<endl;
+ }
+ if(phase.compare("coin")==0){
+  cout<<"-------------Player "<<lp->getidPlayer()<<": Scores some victory coins.-------------"<<endl;
+ }
+ if(phase.compare("conquer")==0){
+  cout<<"-------------Player "<<lp->getidPlayer()<<"conquer some regions.-------------"<<endl;
+ }
 
-void PhaseObserver::update_region_conquer(vector <listOfPlayer> phaseObserver, string region_status, int nb) {
-    cout<<"Player "<< nb
-        << region_status <<endl;
+
+
+
 }
-
-/*
- * This function gets the status of the regions owned by each player. It indicates when the player
- * conquers regions.
- * */
-
-void PhaseObserver::update_conquer(vector <listOfPlayer> phaseObserver) {
-    for (int i = 0; i < phaseObserver.size(); ++i) {
-        cout<<"Player "<< phaseObserver[i].getidPlayer() << " conquers some regions" <<endl;
-    }
-}
-
-/*
- * This function gets the status of the race picked by the player
- * */
-void PhaseObserver::race_picked(string race ,string specialpower) {
-    cout << "The race picked is : " << race << " "
-         << specialpower << endl;
-}
-
-
-
-

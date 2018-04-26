@@ -1,21 +1,18 @@
 //
-// Created by Claudia Feochari on 2018-04-02.
+// Created by fok poon kai on 2018-04-07.
 //
 
-#ifndef SW_VICTORYCOINSOBSERVERDECORATOR_H
-#define SW_VICTORYCOINSOBSERVERDECORATOR_H
-
+#ifndef COMP345P1_VICTORYCOINSOBSERVERDECORATOR_H
+#define COMP345P1_VICTORYCOINSOBSERVERDECORATOR_H
+#include "ObserverDecorator.h"
+#include "ListofPlayer.h"
 #include <iostream>
-#include <fstream>
 #include <vector>
-#include "Player.h"
 using namespace std;
-
-class VictoryCoinsObserverDecorator {
+class VictoryCoinsObserverDecorator: public ObserverDecorator{
 public:
-
-    void coins_scored(int nb, Player py);
+    VictoryCoinsObserverDecorator(Observer decoratedObserver) :ObserverDecorator(decoratedObserver) {};
+    virtual void Update(ListofPlayer *lp);
 
 };
-
-#endif //SW_VICTORYCOINSOBSERVERDECORATOR_H
+#endif //COMP345P1_VICTORYCOINSOBSERVERDECORATOR_H

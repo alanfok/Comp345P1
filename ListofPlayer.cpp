@@ -3,7 +3,7 @@
 //
 #include "ListofPlayer.h"
 
-listOfPlayer::listOfPlayer()
+ListofPlayer::ListofPlayer()
 {
     idPlayer = 0;
     victoryCoins = 0;
@@ -12,10 +12,14 @@ listOfPlayer::listOfPlayer()
     race = "";
     decline=false;
     decline_lock=0;
+    strategyBehaviour=0;
+    numberOfOccupiedRegion=0;
+    phase="";
+    turn=1;
 
 }
 
-listOfPlayer::listOfPlayer(int idPlayer,int victoryCoins,int population,
+ListofPlayer::ListofPlayer(int idPlayer,int victoryCoins,int population,
                            string specialPower,string race,bool decline)
 {
     this->idPlayer = idPlayer;
@@ -25,79 +29,115 @@ listOfPlayer::listOfPlayer(int idPlayer,int victoryCoins,int population,
     this->race = race;
     this->decline=decline;
     decline_lock=0;
+    strategyBehaviour=0;
+    numberOfOccupiedRegion=0;
+    phase="turn";
+    turn=1;
 }
 
-int listOfPlayer::getidPlayer()
+int ListofPlayer::getTurn() const {
+    return turn;
+}
+
+void ListofPlayer::setTurn(int turn) {
+    ListofPlayer::turn = turn;
+}
+
+int ListofPlayer::getStrategyBehaviour() {
+    return strategyBehaviour;
+}
+
+void ListofPlayer::setStrategyBehaviour(int strategyBehaviour) {
+    this->strategyBehaviour = strategyBehaviour;
+}
+
+int ListofPlayer::getidPlayer()
 {
     return idPlayer;
 
 }
 
-int listOfPlayer::getvictoryCoins(){
+int ListofPlayer::getvictoryCoins(){
 
     return victoryCoins;
 }
 
 
-int listOfPlayer::getpopulation(){
+int ListofPlayer::getpopulation(){
 
     return population;
 }
 
-string listOfPlayer::getspecialPower(){
+string ListofPlayer::getspecialPower(){
 
     return specialPower;
 }
-string listOfPlayer::getrace(){
+string ListofPlayer::getrace(){
 
     return race;
 }
 
-void listOfPlayer::setidPlayer(int idPlayer)
-{
-    this->idPlayer=idPlayer;
+//void ListofPlayer::setidPlayer(int idPlayer)
+//{
+//    this->idPlayer=idPlayer;
+//
+//}
 
-}
-
-void listOfPlayer::setvictoryCoins(int victoryCoins){
+void ListofPlayer::setvictoryCoins(int victoryCoins){
 
     this->victoryCoins=victoryCoins;
 }
 
 
-void listOfPlayer::setpopulation(int population){
+void ListofPlayer::setpopulation(int population){
 
     this->population=population;
 }
 
-void listOfPlayer::setspecialpower( string specialPower){
+void ListofPlayer::setspecialpower( string specialPower){
 
     this->specialPower= specialPower;
 }
-void  listOfPlayer::setrace( string race){
+void  ListofPlayer::setrace( string race){
 
     this->race=race;
 }
 
 
-listOfPlayer::~listOfPlayer(){}
+ListofPlayer::~ListofPlayer(){}
 
-bool listOfPlayer::isDecline() const {
-    return decline;
-}
 
-void listOfPlayer::setDecline(bool decline) {
-    listOfPlayer::decline = decline;
+void ListofPlayer::setDecline(bool decline) {
+    ListofPlayer::decline = decline;
 };
 
-int listOfPlayer::getdecline_lock(){
+int ListofPlayer::getdecline_lock(){
     return decline_lock;
 }
 
-void listOfPlayer::setdecline_lock(int nb) {
+void ListofPlayer::setdecline_lock(int nb) {
     decline_lock=nb;
 }
 
-bool listOfPlayer::getDecline(){
+bool ListofPlayer::getDecline(){
     return decline;
 }
+
+int ListofPlayer::getNumberOfOccupiedRegion() {
+    return numberOfOccupiedRegion;
+}
+
+void ListofPlayer::setNumberOfOccupiedRegion(int numberOfOccupiedRegion) {
+    ListofPlayer::numberOfOccupiedRegion = numberOfOccupiedRegion;
+}
+
+const string &ListofPlayer::getPhase() const {
+    return phase;
+}
+
+void ListofPlayer::setPhase(const string &phase) {
+    ListofPlayer::phase = phase;
+}
+
+
+

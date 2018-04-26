@@ -37,7 +37,7 @@ public :
     void setplayer_specialpower(string str);
     void setlost_tride(bool bn);
     void setid_player(int id_p);
-    void setconquese(listOfPlayer np);
+    void setconquese(ListofPlayer np);
 
 
 private:

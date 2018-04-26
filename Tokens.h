@@ -21,7 +21,6 @@ public:
     Maploader maploader;
     int temp_of_shift;
     int race_population=0;
-    int victorycoin = 8;
     //bool edgechecking;
 
     vector <string> racess  = {"Amazons","Dwarves","Elves","Ghouls","Ratmen","Skeletons",
@@ -35,16 +34,15 @@ public:
             ,"Spirit","Stout","Swamp","Underworld","Wealthy" };
 
     bool edgeentry=false;
-    void occupied(int region,int IdOfplayer,int invade_region);//used
+
 
 
     void invade(int idPlayer,int region,int invadeOfRegion);//need
-    void withdraw(int idplayer, int region);
     void point_del();
     void prints();
     vector <string> vrace;
     vector <string> vspecialpower;
-    void collecttoken();
+
     void enter_race_sp_to_vector();
     void shift(int nb_of_race);
     string getvrace(int nb_of_race);
@@ -53,8 +51,7 @@ public:
     int race_population_determind(string race,string specialpower);
     int getRace_population();
     void setRace_population(int number);
-    bool first_time_check_side(int n);
-    void player_information();
+
 
     bool edgecheck(int from , int to);
     void invade_v2(int pyid, int regionid);

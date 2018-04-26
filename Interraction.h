@@ -1,7 +1,6 @@
 //
 // Created by fok poon kai on 2018-03-09.
 //
-
 #ifndef COMP345P1_INTERRACTION_H
 #define COMP345P1_INTERRACTION_H
 
@@ -13,12 +12,13 @@
 #include <iostream>
 #include "ListofPlayer.h"
 #include "Veiwer.h"
-#include "Observer.h"
-#include "Strategy.h"
 #include "PhaseObserver.h"
-
-
-
+#include "StatisticsObserver.h"
+#include "AggressivePlayer.h"
+#include "DefensivePlayer.h"
+#include "ModeratePlayer.h"
+#include "RandomPlayer.h"
+#include "HandsObserverDecorator.h"
 
 using namespace std;
 class Interraction{
@@ -28,47 +28,37 @@ public:
     Maploader maploader;
     Tokens tokens;
     Maps maps;
-    Observer observer;
+    ListofPlayer *lp;
     AggressivePlayer aggressivePlayer;
-    PhaseObserver phase_observer;
+
     DefensivePlayer  defensePlayer;
     ModeratePlayer moderatePlayer;
-    //HumanPlayer humanPlayer;
     RandomPlayer randomPlayer;
     int tempvplayerid;
     int tempvplayerpop;
-
+    HandsObserverDecorator *hod;
+    vector <int> tempStorage;
     vector <int> playercounter;
     vector <int> lostRegions;
-
-    string tempvrace ;
-    string tempsp;
-
-    int turn;
+    Player* player_pointer;
+    PhaseObserver* po;
+    StatisticsObserve* so;
     int input;
-    int temp_population=2;//all region need at least 2 to occupied
     string maps_using ;//<~~~change
     int temp_id;
-    int input_from;
-    int input_to;
-    void setplayer(string map,int nbplayer);
-    bool nextturn;//for turn2-10
-    bool Occupiedcheck2To10;//for turn 2-10
-    bool pick_pop_during_Occupied2To10;//for turn 2-10
-    bool Redeploymentcheck2TO10;
-    int nbOfracetaking;
-    int nb_pop ;
+    void setplayer(string map, int nbplayer);
+
+    bool inputCheck;//for turn 2-10
+    int raceSelection;
+    int numberOfPopulation ;
     int victorycoin;
-    int input_select;
-    int input_temp_enter_pop;
-    int select_play_type;
-    bool flag_Occ;//check the Occupied
-    bool flag_redeployment;//check the redeployment
+    int indexOfPlayerVector;
+    bool check;
     bool first_time_edge;
     bool edge_check;
+
     int race_coin  [6] ={0,0,0,0,0,0};
-    void population_cost(int regionid , int playerid);
-    void invade_pack(int input_to, int tempvplayerid, int temp_occ_pp);
+
     void br();
 
 };

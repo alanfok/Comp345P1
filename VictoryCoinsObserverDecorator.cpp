@@ -1,11 +1,8 @@
-// Created by Claudia Feochari on 2018-04-02.
+//
+// Created by fok poon kai on 2018-04-07.
 //
 
 #include "VictoryCoinsObserverDecorator.h"
-
-void VictoryCoinsObserverDecorator::coins_scored(int nb, Player py)
-{
-    nb-=1;
-    cout<<"player "<<py.vplayer[nb].getidPlayer()<< " has "
-        << py.vplayer[nb].getvictoryCoins()<< " coin(s)"<<endl;
+void VictoryCoinsObserverDecorator::Update(ListofPlayer *lp) {
+    cout<<"Player: "<<lp->getidPlayer()<<" has "<<lp->getvictoryCoins()<<" victory coin"<<endl;
 }

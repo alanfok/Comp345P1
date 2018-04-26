@@ -85,7 +85,7 @@ void NodeRegion::setlost_tride(bool bn) {
 void NodeRegion::setid_player(int id_player) {
     this->id_player=id_player;
 }
-void NodeRegion::setconquese(listOfPlayer np) {
+void NodeRegion::setconquese(ListofPlayer np) {
     this->id_player=np.getidPlayer();
     this->region_population=np.getpopulation();
     this->player_specialpower=np.getspecialPower();
